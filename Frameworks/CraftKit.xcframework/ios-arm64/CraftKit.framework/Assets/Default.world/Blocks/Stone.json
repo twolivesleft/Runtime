@@ -1,0 +1,14 @@
+{
+    "index" : 5,
+    "name" : "Stone",
+    "variants" :
+    {
+        "normal" :
+        {
+            "geo_type" : "solid",
+            "textures" : "gravel_stone",
+            "face_colors" : [[1,1,1]],
+            "face_textures" : ["gravel_stone"]
+        }
+    }
+}

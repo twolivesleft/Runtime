@@ -1,0 +1,23 @@
+{
+    "index" : 7,
+    "name" : "Wood",
+    "script_type" : "none",
+    "variants" :
+    {
+        "normal" :
+        {
+            "geo_type" : "solid",
+            "textures" :
+            {
+                "$east" : "trunk_side",
+                "$south" : "trunk_side",
+                "$west" : "trunk_side",
+                "$north" : "trunk_side",
+                "$up" : "trunk_top",
+                "$down" : "trunk_top"
+            },
+            "face_colors" : [[1,1,1]],
+            "face_textures" : ["trunk_side", "trunk_side", "trunk_side", "trunk_side", "trunk_top", "trunk_top"]
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+   "index" : 16,
+   "name" : "Castle",
+   "preview_show_ground" : false,
+   "preview_size" : "massive",
+   "script_code" : "-- Castle\n\nCastle = class('Castle', Block)\n\nfunction Castle:turret(x,y,z,r,h)\n    world:box(x-r,y,z-r,x+r,y+h-2,z+r,\"stone\")\n    world:box(x-r-1,y+h-1,z-r-1,x+r+1,y+h,z+r+1,\"stone\")\nend\n\nfunction Castle:wall(p1,p2,height, thickness)\n    for i=p1.y,p1.y+height do        \n        world:line(p1.x,i,p1.z,p2.x,i,p2.z,\"stone\")\n    end\nend\n\nfunction Castle:foundations(x,y,z)\n    local width = 18\n    local height = 10\n    local depth = 18\n\n    local tl = ivec3(x-width/2, y, z-depth/2)\n    local tr = ivec3(x+width/2, y, z-depth/2)\n    local br = ivec3(x+width/2, y, z+depth/2)\n    local bl = ivec3(x-width/2, y, z+depth/2)\n\n    local corners = {tl, tr, br, bl}\n\n    world:box(tl.x,tl.y-10,tl.z,br.x,br.y-1,br.z,\"dirt\")\n    world:box(tl.x,tl.y+1,tl.z,br.x,127,br.z,\"air\")\n    world:box(tl.x+1,tl.y,tl.z+1,br.x-1,br.y,br.z-1,\"stone\") \n\n    self:turret(tl.x+1,tl.y,tl.z+1,1,height)   \n    self:turret(tr.x-1,tr.y,tr.z+1,1,height) \n    self:turret(bl.x+1,bl.y,bl.z,1,height)     \n    self:turret(br.x-1,br.y,br.z-1,1,height)   \n\n    self:wall(tl,tr,height-4,1)\nend\n\nfunction Castle:created()\n    local x,y,z = self:xyz()\n\n    self:foundations(x,y,z)\n\nend\n\nfunction Castle:destroyed()\nend\n\n-- Called when an entity places this block\n-- details is a table containing information on the placement of this block\n-- details.entity = entity that placed this block\n-- details.facing = facing of the entity placing this block (NORTH, EAST, SOUTH...)\n-- details.adjacent = coordinates of the block this one is built on\n-- details.adjacentFace = the face this block was placed on (NORTH, EAST, SOUTH...)\nfunction Castle:placed(details)\nend\n\n-- Called when an entity removes this block\n-- details.entity = entity that removed this block\n-- details.facing = facing of the entity that removed this block\nfunction Castle:removed(details)\nend\n\n",
+   "script_type" : "static",
+   "state" : null,
+   "variants" : {
+      "normal" : {
+         "face_colors" : [
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ]
+         ],
+         "face_textures" : [ "missing", "missing", "missing", "missing", "missing", "missing" ],
+         "geo_type" : "solid"
+      }
+   }
+}

@@ -1,0 +1,11 @@
+framework module RuntimeKit {
+  umbrella header "RuntimeKit.h"
+  export *
+
+  module * { export * }
+}
+
+module RuntimeKit.Swift {
+  header "RuntimeKit-Swift.h"
+  requires objc
+}

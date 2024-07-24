@@ -1,0 +1,160 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Tools
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+@_exported import Tools
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol WebBrowserDelegate : AnyObject {
+  func webBrowser(_ webBrowser: Tools.WebBrowserViewController, didStartLoad url: Foundation.URL?)
+  func webBrowser(_ webBrowser: Tools.WebBrowserViewController, didFinishLoad url: Foundation.URL?)
+  func webBrowser(_ webBrowser: Tools.WebBrowserViewController, didFailLoad url: Foundation.URL?, withError error: any Swift.Error)
+  func webBrowserWillDismiss(_ webBrowser: Tools.WebBrowserViewController)
+  func webBrowserDidDismiss(_ webBrowser: Tools.WebBrowserViewController)
+  func webBrowser(_ webBrowser: Tools.WebBrowserViewController, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void) -> Swift.Bool
+}
+extension Tools.WebBrowserDelegate {
+  public func webBrowser(_ webBrowser: Tools.WebBrowserViewController, didStartLoad url: Foundation.URL?)
+  public func webBrowser(_ webBrowser: Tools.WebBrowserViewController, didFinishLoad url: Foundation.URL?)
+  public func webBrowser(_ webBrowser: Tools.WebBrowserViewController, didFailLoad url: Foundation.URL?, withError error: any Swift.Error)
+  public func webBrowserWillDismiss(_ webBrowser: Tools.WebBrowserViewController)
+  public func webBrowserDidDismiss(_ webBrowser: Tools.WebBrowserViewController)
+  public func webBrowser(_ webBrowser: Tools.WebBrowserViewController, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers open class SafariActivity : UIKit.UIActivity {
+  open var url: Foundation.URL?
+  @objc override dynamic open var activityType: UIKit.UIActivity.ActivityType? {
+    @objc get
+  }
+  @objc override dynamic open var activityTitle: Swift.String? {
+    @objc get
+  }
+  @objc override dynamic open var activityImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc override dynamic open func canPerform(withActivityItems activityItems: [Any]) -> Swift.Bool
+  @objc override dynamic open func prepare(withActivityItems activityItems: [Any])
+  @objc override dynamic open func perform()
+  @objc override dynamic public init()
+  @objc deinit
+}
+public class MulticastDelegate<T> {
+  public init()
+  public func add(_ delegate: T)
+  public func remove(_ delegateToRemove: T)
+  public func invoke(_ invocation: (T) -> Swift.Void)
+  @objc deinit
+}
+public enum WebBrowserLanguage {
+  case english
+  case simplifiedChinese
+  case traditionalChinese
+  case korean
+  case japanese
+  public static func == (a: Tools.WebBrowserLanguage, b: Tools.WebBrowserLanguage) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class WebBrowserViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) weak open var delegate: (any Tools.WebBrowserDelegate)?
+  @_Concurrency.MainActor(unsafe) open var language: Tools.WebBrowserLanguage {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var tintColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var barTintColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var isToolbarHidden: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var toolbarItemSpace: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var isShowActionBarButton: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var customApplicationActivities: [UIKit.UIActivity]
+  @_Concurrency.MainActor(unsafe) open var isShowURLInNavigationBarWhenLoading: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var isShowPageTitleInNavigationBar: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var onOpenExternalAppHandler: ((_ isOpen: Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) convenience public init(configuration: WebKit.WKWebViewConfiguration)
+  @objc @_Concurrency.MainActor(unsafe) open class func rootNavigationWebBrowser(webBrowser: Tools.WebBrowserViewController) -> UIKit.UINavigationController
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) open func loadRequest(_ request: Foundation.URLRequest)
+  @objc @_Concurrency.MainActor(unsafe) open func loadURL(_ url: Foundation.URL)
+  @_Concurrency.MainActor(unsafe) open func loadURLString(_ urlString: Swift.String)
+  @_Concurrency.MainActor(unsafe) open func loadHTMLString(_ htmlString: Swift.String, baseURL: Foundation.URL?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension Tools.WebBrowserViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+}
+extension Tools.WebBrowserViewController : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+}
+extension Tools.WebBrowserViewController : WebKit.WKUIDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+}
+extension UIKit.UIColor {
+  @objc dynamic public var data: Foundation.Data? {
+    @objc get
+  }
+}
+extension Foundation.NSData {
+  @objc dynamic public var color: UIKit.UIColor? {
+    @objc get
+  }
+}
+extension Foundation.Data {
+  public var color: UIKit.UIColor? {
+    get
+  }
+}
+public struct RestorableProjectKey {
+  public static let sessionType: Swift.String
+  public static let fileURL: Swift.String
+  public static let bookmark: Swift.String
+  public static let useLegacyViewer: Swift.String
+  public static let useLegacyEditor: Swift.String
+}
+public protocol RestorableProject {
+  var url: Foundation.URL { get }
+  func viewerActivity(activityType: Swift.String, useLegacyViewer: Swift.Bool) -> Foundation.NSUserActivity
+  func editorActivity(activityType: Swift.String, useLegacyEditor: Swift.Bool) -> Foundation.NSUserActivity
+}
+extension Tools.RestorableProject {
+  public var userActivityTitle: Swift.String {
+    get
+  }
+  public var userActivityInfo: [Swift.AnyHashable : Any] {
+    get
+  }
+  public func viewerActivity(activityType: Swift.String, useLegacyViewer: Swift.Bool = false) -> Foundation.NSUserActivity
+  public func editorActivity(activityType: Swift.String, useLegacyEditor: Swift.Bool = false) -> Foundation.NSUserActivity
+}
+extension Tools.WebBrowserLanguage : Swift.Equatable {}
+extension Tools.WebBrowserLanguage : Swift.Hashable {}

@@ -1,0 +1,373 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name RuntimeKit
+import AVKit
+import AssetKit
+import Foundation
+@_exported import RuntimeKit
+import Swift
+import Tools
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+extension RuntimeKit.ProjectManager {
+  public static func configureInfoPlist(wrapper: Foundation.FileWrapper, updatedDict: [Swift.String : Any?])
+  public static func loadProjects(atPath path: Foundation.URL, userProjects: Swift.Bool) -> [RuntimeKit.Project]
+}
+@objc public class ExternalAssetPack : RuntimeKit.AssetPack {
+  @objc override dynamic public var info: Foundation.NSMutableDictionary {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var userPack: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var resolvedPath: Swift.String {
+    @objc get
+  }
+  @objc public var allowImportAll: Swift.Bool
+  @objc public var path: Swift.String?
+  @objc public var bookmarkedUrl: Foundation.URL? {
+    @objc get
+  }
+  public init(path: Swift.String, validFileTypes: [Any]? = nil, allowImportAll: Swift.Bool = false)
+  @objc override dynamic public func childAssetPack(atPath path: Swift.String) -> RuntimeKit.AssetPack
+  @objc override dynamic public func createFolder(_ folderName: Swift.String)
+  @objc override dynamic public func writeAsset(_ fileName: Swift.String, writer: @escaping RuntimeKit.AssetPackWriter)
+  @objc override dynamic public func reloadFilesFromBundlePath()
+  @objc override dynamic public func startAccessingSecurityScopedResource() -> Swift.Bool
+  @objc override dynamic public func stopAccessingSecurityScopedResource()
+  @objc deinit
+}
+@objc extension Foundation.NSNotification {
+  @objc public static var projectManagerDidCopyExamplesNotification: Swift.String {
+    @objc get
+  }
+}
+extension Foundation.NSNotification.Name {
+  public static let projectManagerDidCopyExamples: Foundation.Notification.Name
+}
+public struct CloudDirectoryHelper {
+  public static var iCloudURL: Foundation.URL? {
+    get
+  }
+  public static func createCloudFolderIfNeeded() -> Foundation.URL?
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ProjectManager : ObjectiveC.NSObject {
+  @objc public static let shared: RuntimeKit.ProjectManager
+  @objc public static let defaultProjectCollectionName: Swift.String
+  @objc final public let local: RuntimeKit.ProjectRepository
+  @objc public var iCloud: RuntimeKit.ProjectRepository
+  @objc public func project(withName name: Swift.String) -> RuntimeKit.Project?
+  @objc public func hasProject(withName name: Swift.String) -> Swift.Bool
+  @objc public func collection(withName name: Swift.String) -> RuntimeKit.ProjectCollection?
+  @objc public func collection(forProject project: RuntimeKit.Project) -> RuntimeKit.ProjectCollection?
+  @objc public var defaultProjectTemplate: RuntimeKit.Project {
+    @objc get
+  }
+  @objc public var templateProjects: [RuntimeKit.Project] {
+    @objc get
+  }
+  public var sortOrder: RuntimeKit.ProjectCollectionSorting {
+    get
+    set
+  }
+  public static func isProjectStringValid(_ projectString: Swift.String) -> Swift.Bool
+  @objc public func saveProject(_ project: RuntimeKit.Project) -> Swift.Bool
+  @objc public func embedDependenciesIntoProject(_ project: RuntimeKit.Project)
+  @objc deinit
+}
+extension RuntimeKit.RuntimeBundle {
+  public var url: Foundation.URL {
+    get
+  }
+}
+@objc extension RuntimeKit.Project {
+  @objc dynamic public func fixDependencies()
+}
+extension RuntimeKit.Project {
+  public func fixDependencies(_ projectManager: RuntimeKit.ProjectManager)
+}
+@objc extension RuntimeKit.ProjectManager {
+  @objc dynamic public func sortedDependentProjects(forProject project: RuntimeKit.Project, shouldFix fix: Swift.Bool) -> [RuntimeKit.Project]
+  @objc dynamic public func allDependentProjects(forProject project: RuntimeKit.Project, shouldFix fix: Swift.Bool) -> Swift.Set<RuntimeKit.Project>
+  @objc dynamic public func allDependentProjects(forProject project: RuntimeKit.Project, shouldFix fix: Swift.Bool, dependencies: Swift.Set<RuntimeKit.Project>) -> Swift.Set<RuntimeKit.Project>
+}
+@_inheritsConvenienceInitializers @objc public class RuntimeStyle : ObjectiveC.NSObject {
+  @objc public static func codeFont(withSize size: CoreFoundation.CGFloat, weight: UIKit.UIFont.Weight) -> UIKit.UIFont
+  @objc public static func codeFont(forTextStyle textStyle: UIKit.UIFont.TextStyle, weight: UIKit.UIFont.Weight) -> UIKit.UIFont
+  @objc public static func defaultFont(withSize size: CoreFoundation.CGFloat, weight: UIKit.UIFont.Weight) -> UIKit.UIFont
+  @objc public static func preferredFont(forTextStyle textStyle: UIKit.UIFont.TextStyle, weight: UIKit.UIFont.Weight) -> UIKit.UIFont
+  @objc public static let sidebarTitleFont: UIKit.UIFont
+  @objc public static let parameterTitleFont: UIKit.UIFont
+  @objc public static let parameterValueFont: UIKit.UIFont
+  @objc public static let parameterActionFont: UIKit.UIFont
+  @objc public static let parameterTextFont: UIKit.UIFont
+  @objc public static let capturePanelTitleFont: UIKit.UIFont
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct ProjectRepositoryMetadata : Swift.Codable {
+  public enum CollectionVisibility : Swift.Int, Swift.Codable {
+    case visible
+    case hidden
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum CollectionType : Swift.Int, Swift.Codable {
+    case user
+    case external
+    case builtIn
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public struct Metadata : Swift.Codable {
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func visibility(forCollection collection: RuntimeKit.ProjectCollection) -> RuntimeKit.ProjectRepositoryMetadata.CollectionVisibility
+  public func type(forCollection collection: RuntimeKit.ProjectCollection) -> RuntimeKit.ProjectRepositoryMetadata.CollectionType
+  public func order(for name: Swift.String) -> Swift.Int
+  public func order(forCollection collection: RuntimeKit.ProjectCollection) -> Swift.Int
+  public func localizedTitleKey(forCollection collection: RuntimeKit.ProjectCollection) -> Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension RuntimeKit.ProjectRepositoryMetadata {
+  public func updateCollections(_ collections: [RuntimeKit.ProjectCollection]) -> RuntimeKit.ProjectRepositoryMetadata
+  public func updateCollections(names: [Swift.String]) -> RuntimeKit.ProjectRepositoryMetadata
+  public func updateOrders(_ orders: [(Swift.Int, Swift.String)]) -> RuntimeKit.ProjectRepositoryMetadata
+  public func updateVisibility(_ visibility: RuntimeKit.ProjectRepositoryMetadata.CollectionVisibility, forCollection collection: RuntimeKit.ProjectCollection) -> RuntimeKit.ProjectRepositoryMetadata?
+  public func updateLocalizedTitleKey(_ localizedTitleKey: Swift.String?, forCollection collection: RuntimeKit.ProjectCollection) -> RuntimeKit.ProjectRepositoryMetadata?
+}
+@_inheritsConvenienceInitializers @objc public class OSCManager : ObjectiveC.NSObject {
+  @objc public static let shared: RuntimeKit.OSCManager
+  @objc public var host: Swift.String
+  @objc public var port: Swift.Int
+  @objc public var messageHandler: (RuntimeKit.OSCMessage) -> Swift.Void {
+    @objc get
+    @objc set
+  }
+  @objc public func startServer(port: Swift.Int = 9000, completion: (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  @objc public func stopServer()
+  @objc public func sendMessage(_ address: Swift.String, contents: [Any])
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol ProjectCollectionRepositoryDelegate {
+  @objc func repository(_ repository: RuntimeKit.ProjectRepository, didInsertProject project: RuntimeKit.Project, at indexPath: Foundation.IndexPath)
+  @objc func repository(_ repository: RuntimeKit.ProjectRepository, didRemoveProject project: RuntimeKit.Project, at indexPath: Foundation.IndexPath)
+  @objc func repository(_ repository: RuntimeKit.ProjectRepository, didModifyProject project: RuntimeKit.Project, at indexPath: Foundation.IndexPath)
+  @objc func repository(_ repository: RuntimeKit.ProjectRepository, didInsertCollectionAtIndex index: Swift.Int)
+  @objc func repository(_ repository: RuntimeKit.ProjectRepository, didRemoveCollectionAtIndex index: Swift.Int)
+  @objc func repository(_ repository: RuntimeKit.ProjectRepository, reloadedCollectionAtIndex index: Swift.Int)
+  @objc func repositoryDidReload(_ repository: RuntimeKit.ProjectRepository)
+}
+@objc @_inheritsConvenienceInitializers public class ProjectRepository : AssetKit.DirectoryMonitor, RuntimeKit.ProjectCollectionDelegate {
+  public var delegate: Tools.MulticastDelegate<any RuntimeKit.ProjectCollectionRepositoryDelegate>
+  @objc deinit
+  public var rootCollection: RuntimeKit.ProjectCollection? {
+    get
+  }
+  public var subCollections: [RuntimeKit.ProjectCollection] {
+    get
+  }
+  @objc public var collections: [RuntimeKit.ProjectCollection] {
+    @objc get
+  }
+  public var nonEmptyCollections: [RuntimeKit.ProjectCollection] {
+    get
+  }
+  public func isCollectionVisible(_ collection: RuntimeKit.ProjectCollection) -> Swift.Bool
+  public func setCollectionVisible(_ collection: RuntimeKit.ProjectCollection, visible: Swift.Bool)
+  public func isCollectionVisibleAtIndex(_ index: Swift.Int) -> Swift.Bool
+  public func setCollectionVisible(atIndex index: Swift.Int, visible: Swift.Bool)
+  public func localizedName(_ collection: RuntimeKit.ProjectCollection) -> Swift.String?
+  public func localizedNameAtIndex(_ index: Swift.Int) -> Swift.String?
+  public func applyLocalizationKeys(_ localizationKeys: [Swift.String : Swift.String])
+  public func order(for name: Swift.String) -> Swift.Int
+  public func order(for collection: RuntimeKit.ProjectCollection) -> Swift.Int
+  public func updateOrders(_ orders: [(Swift.Int, Swift.String)])
+  public func createCollection(withName name: Swift.String, completion: @escaping (RuntimeKit.ProjectCollection?, (any Swift.Error)?) -> ())
+  public func deleteCollection(withName name: Swift.String, completion: @escaping ((any Swift.Error)?) -> ())
+  override public func shouldManageUrl(_ url: Foundation.URL) -> Swift.Bool
+  override public func urlCacheUpdated()
+  override public func itemChanged(_ url: Foundation.URL, change: AssetKit.DirectoryMonitor.ChangeType)
+  override public func metadataItemsUpdated(_ updatedItems: [AssetKit.MetadataMonitor.MetadataItem])
+  @objc public func projectCollection(_ collection: RuntimeKit.ProjectCollection, removedProject project: RuntimeKit.Project, at index: Swift.Int)
+  @objc public func projectCollection(_ collection: RuntimeKit.ProjectCollection, insertedProject project: RuntimeKit.Project, at index: Swift.Int)
+  @objc public func projectCollection(_ collection: RuntimeKit.ProjectCollection, modifiedProject project: RuntimeKit.Project, at index: Swift.Int)
+  @objc public func reloadProjectCollection(_ collection: RuntimeKit.ProjectCollection)
+  public func indexPath(for project: RuntimeKit.Project) -> Foundation.IndexPath?
+  public func indexPath(for path: Swift.String) -> Foundation.IndexPath?
+  @objc override public init(url: Foundation.URL?, monitorForUpdates: Swift.Bool, skipHiddenFiles: Swift.Bool = super)
+}
+extension RuntimeKit.AssetManager {
+  @objc dynamic public func addShaderBundleAssetPack(url: Foundation.URL)
+}
+@_inheritsConvenienceInitializers @objc public class WifiAddress : ObjectiveC.NSObject {
+  @objc public static var current: Swift.String? {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor(unsafe) public func findViewController(from controller: UIKit.UIViewController, for luaState: RuntimeKit.CodeaLuaState) -> UIKit.UIViewController?
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func viewController(for luaState: RuntimeKit.CodeaLuaState) -> UIKit.UIViewController?
+}
+extension RuntimeKit.Project {
+  public func dependentProjects(projectManager: RuntimeKit.ProjectManager) -> [RuntimeKit.Project]
+}
+@objc @_Concurrency.MainActor(unsafe) open class CodeaViewController : UIKit.UIViewController, RuntimeKit.ThreadedRuntimeViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) final public let activityType: Swift.String
+  @objc nonisolated final public let runtime: RuntimeKit.ThreadedRuntimeViewController
+  @_Concurrency.MainActor(unsafe) public var output: Tools.MulticastDelegate<any RuntimeKit.CodeaOutputDelegate>
+  @_Concurrency.MainActor(unsafe) public var runtimeDelegate: Tools.MulticastDelegate<any RuntimeKit.CodeaRuntimeDelegate>
+  @_Concurrency.MainActor(unsafe) public var parameters: Tools.MulticastDelegate<any RuntimeKit.CodeaParameterDelegate>
+  @_Concurrency.MainActor(unsafe) public init(runtime: RuntimeKit.ThreadedRuntimeViewController, activityType: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc public func runtimeViewControllerDidFinishSetup(_ context: Any)
+  @_Concurrency.MainActor(unsafe) @objc public func runtimeViewController(_ context: Any, willPause pause: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc public func runtimeViewControllerDidRestart(_ context: Any)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersPointerLocked: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @objc deinit
+}
+extension RuntimeKit.CodeaViewController {
+  @_Concurrency.MainActor(unsafe) public func loadProject(at path: Foundation.URL)
+  @_Concurrency.MainActor(unsafe) public func runProject(at path: Foundation.URL, completion: @escaping () -> Swift.Void)
+}
+extension RuntimeKit.CodeaViewController {
+  @_Concurrency.MainActor(unsafe) public var paused: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func restart()
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public func captureScreenshot() async -> UIKit.UIImage?
+  #endif
+  @_Concurrency.MainActor(unsafe) public func updateProjectIcon(_ image: UIKit.UIImage)
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public func callWillClose() async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public func closeViewer() async
+  #endif
+}
+extension RuntimeKit.CodeaViewController : RuntimeKit.CodeaLuaStateDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaStateCreated(_ state: RuntimeKit.CodeaLuaState!, isValidating validating: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, printedText text: Swift.String!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, tracedText text: Swift.String!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, warningText text: Swift.String!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, errorOccured error: Swift.String!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func clearOutput(for state: RuntimeKit.CodeaLuaState!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func removeAllParameters(for state: RuntimeKit.CodeaLuaState!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerWatch expression: Swift.String!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerFloatParameter name: Swift.String!, initialValue value: CoreFoundation.CGFloat, withMin minVal: CoreFoundation.CGFloat, andMax maxVal: CoreFoundation.CGFloat, callback: Swift.Int32)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerIntegerParameter name: Swift.String!, initialValue value: Swift.Int, withMin minVal: Swift.Int, andMax maxVal: Swift.Int, callback: Swift.Int32)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerColorParameter name: Swift.String!, initialRed red: CoreFoundation.CGFloat, initialGreen green: CoreFoundation.CGFloat, initialBlue blue: CoreFoundation.CGFloat, initialAlpha alpha: CoreFoundation.CGFloat, callback: Swift.Int32)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerBoolParameter name: Swift.String!, initialValue initial: Swift.Bool, callback: Swift.Int32)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerTextParameter name: Swift.String!, initialValue initial: Swift.String!, callback: Swift.Int32)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerActionParameter name: Swift.String!, callback: Swift.Int32)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaStateUpdatedParameters(_ state: RuntimeKit.CodeaLuaState!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func luaStateWillClose(_ state: RuntimeKit.CodeaLuaState!)
+}
+extension RuntimeKit.Project : Tools.RestorableProject {
+}
+extension RuntimeKit.CodeaViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var isStandaloneEditor: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func closeScene()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func configureUserActivity()
+}
+extension RuntimeKit.ProjectManager {
+  @objc public static func createProject(withName name: Swift.String, withProjectString projectString: Swift.String, in collection: RuntimeKit.ProjectCollection, tintColor: UIKit.UIColor?, completion: @escaping (RuntimeKit.Project?, (any Swift.Error)?) -> ())
+  @objc public static func createProject(withName name: Swift.String, withTemplate template: RuntimeKit.Project, in collection: RuntimeKit.ProjectCollection, tintColor: UIKit.UIColor? = nil, completion: @escaping (RuntimeKit.Project?, (any Swift.Error)?) -> ())
+}
+extension RuntimeKit.ProjectManager {
+  @objc dynamic public func createCollection(withName name: Swift.String, completion: @escaping (RuntimeKit.ProjectCollection?, (any Swift.Error)?) -> ())
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AudioManager : ObjectiveC.NSObject {
+  @objc public static let shared: RuntimeKit.AudioManager
+  @objc deinit
+  @objc public var micAmplitude: Swift.Double {
+    @objc get
+  }
+  @objc public var micFrequency: Swift.Double {
+    @objc get
+  }
+  @objc public func startMicTracker()
+  @objc public func stopMicTracker()
+}
+@objc public enum ProjectCollectionSorting : Swift.Int {
+  case date
+  case name
+  case ordered
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol ProjectCollectionDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func projectCollection(_ collection: RuntimeKit.ProjectCollection, removedProject project: RuntimeKit.Project, at index: Swift.Int)
+  @objc func projectCollection(_ collection: RuntimeKit.ProjectCollection, insertedProject project: RuntimeKit.Project, at index: Swift.Int)
+  @objc func projectCollection(_ collection: RuntimeKit.ProjectCollection, modifiedProject project: RuntimeKit.Project, at index: Swift.Int)
+  @objc func reloadProjectCollection(_ collection: RuntimeKit.ProjectCollection)
+}
+@objc public class ProjectCollection : AssetKit.DirectoryMonitor {
+  @objc weak public var delegate: (any RuntimeKit.ProjectCollectionDelegate)?
+  @objc public init(url: Foundation.URL?, monitorForUpdates: Swift.Bool)
+  override public func urlCacheUpdated()
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  public func renameProject(withFileWrapper wrapper: Foundation.FileWrapper, project: RuntimeKit.Project, name: Swift.String, tintColor: UIKit.UIColor? = nil) -> Swift.Bool
+  public func createProject(withFileWrapper wrapper: Foundation.FileWrapper, named name: Swift.String, completion: @escaping (RuntimeKit.Project?, (any Swift.Error)?) -> ())
+  @objc public func deleteProject(_ project: RuntimeKit.Project) -> Swift.Bool
+  @objc public func hasProject(_ project: RuntimeKit.Project) -> Swift.Bool
+  @objc public func hasProject(withName name: Swift.String) -> Swift.Bool
+  @objc public func project(withName name: Swift.String) -> RuntimeKit.Project?
+  @objc public var count: Swift.Int {
+    @objc get
+  }
+  public var isBuiltIn: Swift.Bool {
+    get
+  }
+  @objc public var sortOrder: RuntimeKit.ProjectCollectionSorting {
+    @objc get
+    @objc set
+  }
+  @objc public var sortedProjects: [RuntimeKit.Project] {
+    @objc get
+  }
+  public static func projects(_ projects: [RuntimeKit.Project], sortedBy sortOption: RuntimeKit.ProjectCollectionSorting, isBuiltIn: Swift.Bool) -> [RuntimeKit.Project]
+  override public func shouldManageUrl(_ url: Foundation.URL) -> Swift.Bool
+  override public func itemChanged(_ url: Foundation.URL, change: AssetKit.DirectoryMonitor.ChangeType)
+  public static func == (lhs: RuntimeKit.ProjectCollection, rhs: RuntimeKit.ProjectCollection) -> Swift.Bool
+  @objc deinit
+}
+extension RuntimeKit.ProjectRepositoryMetadata.CollectionVisibility : Swift.Equatable {}
+extension RuntimeKit.ProjectRepositoryMetadata.CollectionVisibility : Swift.Hashable {}
+extension RuntimeKit.ProjectRepositoryMetadata.CollectionVisibility : Swift.RawRepresentable {}
+extension RuntimeKit.ProjectRepositoryMetadata.CollectionType : Swift.Equatable {}
+extension RuntimeKit.ProjectRepositoryMetadata.CollectionType : Swift.Hashable {}
+extension RuntimeKit.ProjectRepositoryMetadata.CollectionType : Swift.RawRepresentable {}
+extension RuntimeKit.ProjectCollectionSorting : Swift.Equatable {}
+extension RuntimeKit.ProjectCollectionSorting : Swift.Hashable {}
+extension RuntimeKit.ProjectCollectionSorting : Swift.RawRepresentable {}

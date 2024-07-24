@@ -1,0 +1,224 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AssetKit
+@_exported import AssetKit
+import Combine
+import Foundation
+import Swift
+import UIKit
+import UniformTypeIdentifiers
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class MetadataMonitor {
+  public struct MetadataItem : Swift.Hashable {
+    public enum Status : Swift.Hashable {
+      case downloading, downloaded, notDownloaded
+      public static func == (a: AssetKit.MetadataMonitor.MetadataItem.Status, b: AssetKit.MetadataMonitor.MetadataItem.Status) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public let url: Foundation.URL
+    public let isShared: Swift.Bool
+    public let downloadingStatus: Foundation.URLUbiquitousItemDownloadingStatus
+    public let isDownloading: Swift.Bool
+    public var status: AssetKit.MetadataMonitor.MetadataItem.Status {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AssetKit.MetadataMonitor.MetadataItem, b: AssetKit.MetadataMonitor.MetadataItem) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class ExternalAssetMonitor : AssetKit.DirectoryMonitor {
+  @objc public var itemDidChange: (Foundation.URL) -> ()
+  override public func itemChanged(_ url: Foundation.URL, change: AssetKit.DirectoryMonitor.ChangeType)
+  override public func shouldManageUrl(_ url: Foundation.URL) -> Swift.Bool
+  @objc override public init(url: Foundation.URL?, monitorForUpdates: Swift.Bool, skipHiddenFiles: Swift.Bool = super)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class ExternalAssets : ObjectiveC.NSObject {
+  @objc public static func createBookmarkMonitor() -> AssetKit.ExternalAssetMonitor
+  @objc public static func createOrGetBookmarkLocation() -> Foundation.URL
+  @objc public static var bookmarks: [Foundation.URL] {
+    @objc get
+  }
+  @objc public static func resolveBookmark(url: Foundation.URL) -> Foundation.URL?
+  @objc public static func removeBookmark(url: Foundation.URL)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc open class DirectoryMonitor : ObjectiveC.NSObject, Foundation.NSFilePresenter {
+  @objc open var presentedItemURL: Foundation.URL?
+  public var urls: Swift.Set<Foundation.URL> {
+    get
+  }
+  public var metadataItems: [AssetKit.MetadataMonitor.MetadataItem]
+  @objc open var presentedItemOperationQueue: Foundation.OperationQueue
+  @objc public init(url: Foundation.URL?, monitorForUpdates: Swift.Bool, skipHiddenFiles: Swift.Bool = true)
+  @objc open func startMonitoring()
+  @objc open func stopMonitoring()
+  open func shouldManageUrl(_ url: Foundation.URL) -> Swift.Bool
+  open func itemChanged(_ url: Foundation.URL, change: AssetKit.DirectoryMonitor.ChangeType)
+  open func urlCacheUpdated()
+  open func metadataItemsUpdated(_ updatedItems: [AssetKit.MetadataMonitor.MetadataItem])
+  public enum ChangeType {
+    case changed
+    case added
+    case removed
+    public static func == (a: AssetKit.DirectoryMonitor.ChangeType, b: AssetKit.DirectoryMonitor.ChangeType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  open func updateUrlCache() async
+  #endif
+  open func createItem(at url: Foundation.URL, writer: (Foundation.URL) throws -> (), completion: @escaping ((any Swift.Error)?) -> ())
+  open func renameItem(at url: Foundation.URL, name: Swift.String) -> Foundation.URL?
+  open func deleteItem(at url: Foundation.URL) -> Swift.Bool
+  @objc open func presentedSubitem(at oldURL: Foundation.URL, didMoveTo newURL: Foundation.URL)
+  @objc open func presentedSubitemDidChange(at url: Foundation.URL)
+  @objc public static func standardizedDirectoryURL(_ url: Foundation.URL) -> Foundation.URL
+  @objc deinit
+}
+extension Foundation.URL {
+  public var standardizedDirectoryURL: Foundation.URL {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class StandardURL : ObjectiveC.NSObject {
+  @objc public class func standardizedDirectoryURL(for url: Foundation.URL) -> Foundation.URL
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Foundation.URL {
+  public enum BookmarkError : Swift.Error {
+    case noBookmarkData(url: Foundation.URL)
+  }
+  public init(resolvingAndUpdatingStaleBookmarkData data: Foundation.Data) throws
+  public init(resolvingAndUpdatingStaleBookmarkUrl url: Foundation.URL) throws
+}
+@_inheritsConvenienceInitializers @objc public class URLBookmarkHelper : ObjectiveC.NSObject {
+  @objc public class func urlByResolvingAndUpdatingStaleBookmarkUrl(_ url: Foundation.URL) throws -> Foundation.URL
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum AssetContentType : Swift.Int {
+  case library
+  case media
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class AssetContent : ObjectiveC.NSObject {
+  @objc public var type: AssetKit.AssetContentType
+  @objc public init(library: AssetKit.AssetLibrary)
+  @objc public init(media: Swift.String, rootUrl: Foundation.URL?)
+  @objc public var library: AssetKit.AssetLibrary?
+  @objc public var media: Swift.String?
+  @objc public var rootUrl: Foundation.URL?
+  @objc deinit
+}
+@objc public class AssetLibrary : AssetKit.DirectoryMonitor {
+  @objc open var rootURL: Foundation.URL?
+  @objc public var cacheInvalidated: (() -> Swift.Void)?
+  @objc public var libraryName: Swift.String {
+    @objc get
+  }
+  @objc public var contents: AssetKit.AssetContentStorage {
+    @objc get
+  }
+  @objc public init(url: Foundation.URL, rootUrl: Foundation.URL)
+  @objc public func coordinateRead(_ reader: @escaping (Foundation.URL?, (any Swift.Error)?) -> Swift.Void)
+  @objc public static func safeName(fileName: Swift.String) -> Swift.String?
+  override public func shouldManageUrl(_ url: Foundation.URL) -> Swift.Bool
+  override public func itemChanged(_ url: Foundation.URL, change: AssetKit.DirectoryMonitor.ChangeType)
+  override public func urlCacheUpdated()
+  @objc deinit
+}
+public enum AssetType : Swift.String, Swift.CaseIterable {
+  case folder
+  case project
+  case scene
+  case image
+  case music
+  case sound
+  case shader
+  case text
+  case model
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [AssetKit.AssetType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [AssetKit.AssetType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension AssetKit.AssetType {
+  public static var imageExtensions: Swift.Set<Swift.String> {
+    get
+  }
+  public static var projectExtensions: Swift.Set<Swift.String> {
+    get
+  }
+  public static var sceneExtensions: Swift.Set<Swift.String> {
+    get
+  }
+  public static var soundExtensions: Swift.Set<Swift.String> {
+    get
+  }
+  public static var musicExtensions: Swift.Set<Swift.String> {
+    get
+  }
+  public static var shaderExtensions: Swift.Set<Swift.String> {
+    get
+  }
+  public static var textExtensions: Swift.Set<Swift.String> {
+    get
+  }
+  public static var modelExtensions: Swift.Set<Swift.String> {
+    get
+  }
+  public var supportedExtensions: Swift.Set<Swift.String> {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class AssetTypeSupport : ObjectiveC.NSObject {
+  @objc public static let folder: Swift.String
+  @objc public static let project: Swift.String
+  @objc public static let scene: Swift.String
+  @objc public static let image: Swift.String
+  @objc public static let music: Swift.String
+  @objc public static let sound: Swift.String
+  @objc public static let shader: Swift.String
+  @objc public static let text: Swift.String
+  @objc public static let model: Swift.String
+  @objc public static let other: Swift.String
+  @objc public static func typeFromExtension(_ ext: Swift.String) -> Swift.String
+  @objc public static func extensionsForType(_ type: Swift.String) -> [Swift.String]
+  @objc public static var allSupportedExtensions: [Swift.String] {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension AssetKit.DirectoryMonitor.ChangeType : Swift.Equatable {}
+extension AssetKit.DirectoryMonitor.ChangeType : Swift.Hashable {}
+extension AssetKit.AssetContentType : Swift.Equatable {}
+extension AssetKit.AssetContentType : Swift.Hashable {}
+extension AssetKit.AssetContentType : Swift.RawRepresentable {}
+extension AssetKit.AssetType : Swift.Equatable {}
+extension AssetKit.AssetType : Swift.Hashable {}
+extension AssetKit.AssetType : Swift.RawRepresentable {}

@@ -1,0 +1,6 @@
+framework module LuaKit {
+  umbrella header "LuaKit.h"
+  export *
+
+  module * { export * }
+}

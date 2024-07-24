@@ -1,0 +1,16 @@
+{
+    "index" : 2,
+    "name" : "Error",
+    "variants" :
+    {
+        "normal" :
+        {
+            "geo_type" : "solid",
+            "textures" : "error",
+            "face_colors" : [[1,1,1]],
+            "face_textures" : ["error"]
+        }
+    },
+    "locked" : true,
+    "obtainable" : false
+}

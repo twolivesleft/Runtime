@@ -1,0 +1,11 @@
+framework module AssetKit {
+  umbrella header "AssetKit.h"
+  export *
+
+  module * { export * }
+}
+
+module AssetKit.Swift {
+  header "AssetKit-Swift.h"
+  requires objc
+}

@@ -1,0 +1,5531 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Tools"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebBrowserDelegate",
+        "printedName": "WebBrowserDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "webBrowser",
+            "printedName": "webBrowser(_:didStartLoad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegateP03webC0_12didStartLoadyAA0bC14ViewControllerC_10Foundation3URLVSgtF",
+            "mangledName": "$s5Tools18WebBrowserDelegateP03webC0_12didStartLoadyAA0bC14ViewControllerC_10Foundation3URLVSgtF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowser",
+            "printedName": "webBrowser(_:didFinishLoad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegateP03webC0_13didFinishLoadyAA0bC14ViewControllerC_10Foundation3URLVSgtF",
+            "mangledName": "$s5Tools18WebBrowserDelegateP03webC0_13didFinishLoadyAA0bC14ViewControllerC_10Foundation3URLVSgtF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowser",
+            "printedName": "webBrowser(_:didFailLoad:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegateP03webC0_11didFailLoad9withErroryAA0bC14ViewControllerC_10Foundation3URLVSgs0J0_ptF",
+            "mangledName": "$s5Tools18WebBrowserDelegateP03webC0_11didFailLoad9withErroryAA0bC14ViewControllerC_10Foundation3URLVSgs0J0_ptF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowserWillDismiss",
+            "printedName": "webBrowserWillDismiss(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegateP03webC11WillDismissyyAA0bC14ViewControllerCF",
+            "mangledName": "$s5Tools18WebBrowserDelegateP03webC11WillDismissyyAA0bC14ViewControllerCF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowserDidDismiss",
+            "printedName": "webBrowserDidDismiss(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegateP03webC10DidDismissyyAA0bC14ViewControllerCF",
+            "mangledName": "$s5Tools18WebBrowserDelegateP03webC10DidDismissyyAA0bC14ViewControllerCF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowser",
+            "printedName": "webBrowser(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationActionPolicy",
+                    "printedName": "WebKit.WKNavigationActionPolicy",
+                    "usr": "c:@E@WKNavigationActionPolicy"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegateP03webC0_15decidePolicyFor15decisionHandlerSbAA0bC14ViewControllerC_So18WKNavigationActionCySo0mnG0VctF",
+            "mangledName": "$s5Tools18WebBrowserDelegateP03webC0_15decidePolicyFor15decisionHandlerSbAA0bC14ViewControllerC_So18WKNavigationActionCySo0mnG0VctF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowser",
+            "printedName": "webBrowser(_:didStartLoad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegatePAAE03webC0_12didStartLoadyAA0bC14ViewControllerC_10Foundation3URLVSgtF",
+            "mangledName": "$s5Tools18WebBrowserDelegatePAAE03webC0_12didStartLoadyAA0bC14ViewControllerC_10Foundation3URLVSgtF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowser",
+            "printedName": "webBrowser(_:didFinishLoad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegatePAAE03webC0_13didFinishLoadyAA0bC14ViewControllerC_10Foundation3URLVSgtF",
+            "mangledName": "$s5Tools18WebBrowserDelegatePAAE03webC0_13didFinishLoadyAA0bC14ViewControllerC_10Foundation3URLVSgtF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowser",
+            "printedName": "webBrowser(_:didFailLoad:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegatePAAE03webC0_11didFailLoad9withErroryAA0bC14ViewControllerC_10Foundation3URLVSgs0J0_ptF",
+            "mangledName": "$s5Tools18WebBrowserDelegatePAAE03webC0_11didFailLoad9withErroryAA0bC14ViewControllerC_10Foundation3URLVSgs0J0_ptF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowserWillDismiss",
+            "printedName": "webBrowserWillDismiss(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegatePAAE03webC11WillDismissyyAA0bC14ViewControllerCF",
+            "mangledName": "$s5Tools18WebBrowserDelegatePAAE03webC11WillDismissyyAA0bC14ViewControllerCF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowserDidDismiss",
+            "printedName": "webBrowserDidDismiss(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegatePAAE03webC10DidDismissyyAA0bC14ViewControllerCF",
+            "mangledName": "$s5Tools18WebBrowserDelegatePAAE03webC10DidDismissyyAA0bC14ViewControllerCF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webBrowser",
+            "printedName": "webBrowser(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationActionPolicy",
+                    "printedName": "WebKit.WKNavigationActionPolicy",
+                    "usr": "c:@E@WKNavigationActionPolicy"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserDelegatePAAE03webC0_15decidePolicyFor15decisionHandlerSbAA0bC14ViewControllerC_So18WKNavigationActionCySo0mnG0VctF",
+            "mangledName": "$s5Tools18WebBrowserDelegatePAAE03webC0_15decidePolicyFor15decisionHandlerSbAA0bC14ViewControllerC_So18WKNavigationActionCySo0mnG0VctF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.WebBrowserDelegate>",
+            "sugared_genericSig": "<Self where Self : Tools.WebBrowserDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:5Tools18WebBrowserDelegateP",
+        "mangledName": "$s5Tools18WebBrowserDelegateP",
+        "moduleName": "Tools",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SafariActivity",
+        "printedName": "SafariActivity",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools14SafariActivityC3url10Foundation3URLVSgvp",
+            "mangledName": "$s5Tools14SafariActivityC3url10Foundation3URLVSgvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools14SafariActivityC3url10Foundation3URLVSgvg",
+                "mangledName": "$s5Tools14SafariActivityC3url10Foundation3URLVSgvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools14SafariActivityC3url10Foundation3URLVSgvs",
+                "mangledName": "$s5Tools14SafariActivityC3url10Foundation3URLVSgvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools14SafariActivityC3url10Foundation3URLVSgvM",
+                "mangledName": "$s5Tools14SafariActivityC3url10Foundation3URLVSgvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activityType",
+            "printedName": "activityType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIActivity.ActivityType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivityType",
+                    "printedName": "UIKit.UIActivity.ActivityType",
+                    "usr": "c:@T@UIActivityType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tools@objc(cs)SafariActivity(py)activityType",
+            "mangledName": "$s5Tools14SafariActivityC12activityTypeSo010UIActivityE0aSgvp",
+            "moduleName": "Tools",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "activityType",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIActivity.ActivityType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActivityType",
+                        "printedName": "UIKit.UIActivity.ActivityType",
+                        "usr": "c:@T@UIActivityType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tools@objc(cs)SafariActivity(im)activityType",
+                "mangledName": "$s5Tools14SafariActivityC12activityTypeSo010UIActivityE0aSgvg",
+                "moduleName": "Tools",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "activityType",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activityTitle",
+            "printedName": "activityTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tools@objc(cs)SafariActivity(py)activityTitle",
+            "mangledName": "$s5Tools14SafariActivityC13activityTitleSSSgvp",
+            "moduleName": "Tools",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "activityTitle",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tools@objc(cs)SafariActivity(im)activityTitle",
+                "mangledName": "$s5Tools14SafariActivityC13activityTitleSSSgvg",
+                "moduleName": "Tools",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "activityTitle",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activityImage",
+            "printedName": "activityImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tools@objc(cs)SafariActivity(py)activityImage",
+            "mangledName": "$s5Tools14SafariActivityC13activityImageSo7UIImageCSgvp",
+            "moduleName": "Tools",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "activityImage",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tools@objc(cs)SafariActivity(im)activityImage",
+                "mangledName": "$s5Tools14SafariActivityC13activityImageSo7UIImageCSgvg",
+                "moduleName": "Tools",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "activityImage",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "canPerform",
+            "printedName": "canPerform(withActivityItems:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tools@objc(cs)SafariActivity(im)canPerformWithActivityItems:",
+            "mangledName": "$s5Tools14SafariActivityC10canPerform04withC5ItemsSbSayypG_tF",
+            "moduleName": "Tools",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "canPerformWithActivityItems:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepare",
+            "printedName": "prepare(withActivityItems:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tools@objc(cs)SafariActivity(im)prepareWithActivityItems:",
+            "mangledName": "$s5Tools14SafariActivityC7prepare04withC5ItemsySayypG_tF",
+            "moduleName": "Tools",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "prepareWithActivityItems:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "perform",
+            "printedName": "perform()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tools@objc(cs)SafariActivity(im)performActivity",
+            "mangledName": "$s5Tools14SafariActivityC7performyyF",
+            "moduleName": "Tools",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "performActivity",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SafariActivity",
+                "printedName": "Tools.SafariActivity",
+                "usr": "c:@M@Tools@objc(cs)SafariActivity"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Tools@objc(cs)SafariActivity(im)init",
+            "mangledName": "$s5Tools14SafariActivityCACycfc",
+            "moduleName": "Tools",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Tools@objc(cs)SafariActivity",
+        "mangledName": "$s5Tools14SafariActivityC",
+        "moduleName": "Tools",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIActivity",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIActivity",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MulticastDelegate",
+        "printedName": "MulticastDelegate",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MulticastDelegate",
+                "printedName": "Tools.MulticastDelegate<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:5Tools17MulticastDelegateC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Tools17MulticastDelegateCACyxGycfc",
+            "mangledName": "$s5Tools17MulticastDelegateCACyxGycfc",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "add",
+            "printedName": "add(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools17MulticastDelegateC3addyyxF",
+            "mangledName": "$s5Tools17MulticastDelegateC3addyyxF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remove",
+            "printedName": "remove(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools17MulticastDelegateC6removeyyxF",
+            "mangledName": "$s5Tools17MulticastDelegateC6removeyyxF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invoke",
+            "printedName": "invoke(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools17MulticastDelegateC6invokeyyyxXEF",
+            "mangledName": "$s5Tools17MulticastDelegateC6invokeyyyxXEF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5Tools17MulticastDelegateC",
+        "mangledName": "$s5Tools17MulticastDelegateC",
+        "moduleName": "Tools",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebBrowserLanguage",
+        "printedName": "WebBrowserLanguage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "english",
+            "printedName": "english",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tools.WebBrowserLanguage.Type) -> Tools.WebBrowserLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebBrowserLanguage",
+                    "printedName": "Tools.WebBrowserLanguage",
+                    "usr": "s:5Tools18WebBrowserLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tools.WebBrowserLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebBrowserLanguage",
+                        "printedName": "Tools.WebBrowserLanguage",
+                        "usr": "s:5Tools18WebBrowserLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Tools18WebBrowserLanguageO7englishyA2CmF",
+            "mangledName": "$s5Tools18WebBrowserLanguageO7englishyA2CmF",
+            "moduleName": "Tools"
+          },
+          {
+            "kind": "Var",
+            "name": "simplifiedChinese",
+            "printedName": "simplifiedChinese",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tools.WebBrowserLanguage.Type) -> Tools.WebBrowserLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebBrowserLanguage",
+                    "printedName": "Tools.WebBrowserLanguage",
+                    "usr": "s:5Tools18WebBrowserLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tools.WebBrowserLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebBrowserLanguage",
+                        "printedName": "Tools.WebBrowserLanguage",
+                        "usr": "s:5Tools18WebBrowserLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Tools18WebBrowserLanguageO17simplifiedChineseyA2CmF",
+            "mangledName": "$s5Tools18WebBrowserLanguageO17simplifiedChineseyA2CmF",
+            "moduleName": "Tools"
+          },
+          {
+            "kind": "Var",
+            "name": "traditionalChinese",
+            "printedName": "traditionalChinese",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tools.WebBrowserLanguage.Type) -> Tools.WebBrowserLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebBrowserLanguage",
+                    "printedName": "Tools.WebBrowserLanguage",
+                    "usr": "s:5Tools18WebBrowserLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tools.WebBrowserLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebBrowserLanguage",
+                        "printedName": "Tools.WebBrowserLanguage",
+                        "usr": "s:5Tools18WebBrowserLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Tools18WebBrowserLanguageO18traditionalChineseyA2CmF",
+            "mangledName": "$s5Tools18WebBrowserLanguageO18traditionalChineseyA2CmF",
+            "moduleName": "Tools"
+          },
+          {
+            "kind": "Var",
+            "name": "korean",
+            "printedName": "korean",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tools.WebBrowserLanguage.Type) -> Tools.WebBrowserLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebBrowserLanguage",
+                    "printedName": "Tools.WebBrowserLanguage",
+                    "usr": "s:5Tools18WebBrowserLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tools.WebBrowserLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebBrowserLanguage",
+                        "printedName": "Tools.WebBrowserLanguage",
+                        "usr": "s:5Tools18WebBrowserLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Tools18WebBrowserLanguageO6koreanyA2CmF",
+            "mangledName": "$s5Tools18WebBrowserLanguageO6koreanyA2CmF",
+            "moduleName": "Tools"
+          },
+          {
+            "kind": "Var",
+            "name": "japanese",
+            "printedName": "japanese",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tools.WebBrowserLanguage.Type) -> Tools.WebBrowserLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebBrowserLanguage",
+                    "printedName": "Tools.WebBrowserLanguage",
+                    "usr": "s:5Tools18WebBrowserLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tools.WebBrowserLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebBrowserLanguage",
+                        "printedName": "Tools.WebBrowserLanguage",
+                        "usr": "s:5Tools18WebBrowserLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Tools18WebBrowserLanguageO8japaneseyA2CmF",
+            "mangledName": "$s5Tools18WebBrowserLanguageO8japaneseyA2CmF",
+            "moduleName": "Tools"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserLanguage",
+                "printedName": "Tools.WebBrowserLanguage",
+                "usr": "s:5Tools18WebBrowserLanguageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserLanguage",
+                "printedName": "Tools.WebBrowserLanguage",
+                "usr": "s:5Tools18WebBrowserLanguageO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserLanguageO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5Tools18WebBrowserLanguageO2eeoiySbAC_ACtFZ",
+            "moduleName": "Tools",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools18WebBrowserLanguageO9hashValueSivp",
+            "mangledName": "$s5Tools18WebBrowserLanguageO9hashValueSivp",
+            "moduleName": "Tools",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools18WebBrowserLanguageO9hashValueSivg",
+                "mangledName": "$s5Tools18WebBrowserLanguageO9hashValueSivg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools18WebBrowserLanguageO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s5Tools18WebBrowserLanguageO4hash4intoys6HasherVz_tF",
+            "moduleName": "Tools",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5Tools18WebBrowserLanguageO",
+        "mangledName": "$s5Tools18WebBrowserLanguageO",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Tools"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebBrowserViewController",
+        "printedName": "WebBrowserViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any Tools.WebBrowserDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools24WebBrowserViewControllerC8delegateAA0bC8Delegate_pSgvp",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC8delegateAA0bC8Delegate_pSgvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Tools.WebBrowserDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebBrowserDelegate",
+                        "printedName": "any Tools.WebBrowserDelegate",
+                        "usr": "s:5Tools18WebBrowserDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC8delegateAA0bC8Delegate_pSgvg",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC8delegateAA0bC8Delegate_pSgvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Tools.WebBrowserDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebBrowserDelegate",
+                        "printedName": "any Tools.WebBrowserDelegate",
+                        "usr": "s:5Tools18WebBrowserDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC8delegateAA0bC8Delegate_pSgvs",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC8delegateAA0bC8Delegate_pSgvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC8delegateAA0bC8Delegate_pSgvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC8delegateAA0bC8Delegate_pSgvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "language",
+            "printedName": "language",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserLanguage",
+                "printedName": "Tools.WebBrowserLanguage",
+                "usr": "s:5Tools18WebBrowserLanguageO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools24WebBrowserViewControllerC8languageAA0bC8LanguageOvp",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC8languageAA0bC8LanguageOvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebBrowserLanguage",
+                    "printedName": "Tools.WebBrowserLanguage",
+                    "usr": "s:5Tools18WebBrowserLanguageO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC8languageAA0bC8LanguageOvg",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC8languageAA0bC8LanguageOvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebBrowserLanguage",
+                    "printedName": "Tools.WebBrowserLanguage",
+                    "usr": "s:5Tools18WebBrowserLanguageO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC8languageAA0bC8LanguageOvs",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC8languageAA0bC8LanguageOvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC8languageAA0bC8LanguageOvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC8languageAA0bC8LanguageOvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tintColor",
+            "printedName": "tintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tools@objc(cs)WebBrowserViewController(py)tintColor",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC9tintColorSo7UIColorCvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController(im)tintColor",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC9tintColorSo7UIColorCvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController(im)setTintColor:",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC9tintColorSo7UIColorCvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC9tintColorSo7UIColorCvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC9tintColorSo7UIColorCvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "barTintColor",
+            "printedName": "barTintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools24WebBrowserViewControllerC12barTintColorSo7UIColorCSgvp",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC12barTintColorSo7UIColorCSgvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC12barTintColorSo7UIColorCSgvg",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC12barTintColorSo7UIColorCSgvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC12barTintColorSo7UIColorCSgvs",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC12barTintColorSo7UIColorCSgvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC12barTintColorSo7UIColorCSgvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC12barTintColorSo7UIColorCSgvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isToolbarHidden",
+            "printedName": "isToolbarHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools24WebBrowserViewControllerC15isToolbarHiddenSbvp",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC15isToolbarHiddenSbvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC15isToolbarHiddenSbvg",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC15isToolbarHiddenSbvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC15isToolbarHiddenSbvs",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC15isToolbarHiddenSbvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC15isToolbarHiddenSbvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC15isToolbarHiddenSbvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toolbarItemSpace",
+            "printedName": "toolbarItemSpace",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools24WebBrowserViewControllerC16toolbarItemSpace14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC16toolbarItemSpace12CoreGraphics7CGFloatVvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC16toolbarItemSpace14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC16toolbarItemSpace12CoreGraphics7CGFloatVvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC16toolbarItemSpace14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC16toolbarItemSpace12CoreGraphics7CGFloatVvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC16toolbarItemSpace14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC16toolbarItemSpace12CoreGraphics7CGFloatVvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isShowActionBarButton",
+            "printedName": "isShowActionBarButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools24WebBrowserViewControllerC21isShowActionBarButtonSbvp",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC21isShowActionBarButtonSbvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC21isShowActionBarButtonSbvg",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC21isShowActionBarButtonSbvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC21isShowActionBarButtonSbvs",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC21isShowActionBarButtonSbvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC21isShowActionBarButtonSbvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC21isShowActionBarButtonSbvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customApplicationActivities",
+            "printedName": "customApplicationActivities",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIActivity]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIActivity",
+                    "printedName": "UIKit.UIActivity",
+                    "usr": "c:objc(cs)UIActivity"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools24WebBrowserViewControllerC27customApplicationActivitiesSaySo10UIActivityCGvp",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC27customApplicationActivitiesSaySo10UIActivityCGvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIActivity]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIActivity",
+                        "printedName": "UIKit.UIActivity",
+                        "usr": "c:objc(cs)UIActivity"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC27customApplicationActivitiesSaySo10UIActivityCGvg",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC27customApplicationActivitiesSaySo10UIActivityCGvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIActivity]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIActivity",
+                        "printedName": "UIKit.UIActivity",
+                        "usr": "c:objc(cs)UIActivity"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC27customApplicationActivitiesSaySo10UIActivityCGvs",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC27customApplicationActivitiesSaySo10UIActivityCGvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC27customApplicationActivitiesSaySo10UIActivityCGvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC27customApplicationActivitiesSaySo10UIActivityCGvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isShowURLInNavigationBarWhenLoading",
+            "printedName": "isShowURLInNavigationBarWhenLoading",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools24WebBrowserViewControllerC35isShowURLInNavigationBarWhenLoadingSbvp",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC35isShowURLInNavigationBarWhenLoadingSbvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC35isShowURLInNavigationBarWhenLoadingSbvg",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC35isShowURLInNavigationBarWhenLoadingSbvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC35isShowURLInNavigationBarWhenLoadingSbvs",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC35isShowURLInNavigationBarWhenLoadingSbvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC35isShowURLInNavigationBarWhenLoadingSbvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC35isShowURLInNavigationBarWhenLoadingSbvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isShowPageTitleInNavigationBar",
+            "printedName": "isShowPageTitleInNavigationBar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools24WebBrowserViewControllerC30isShowPageTitleInNavigationBarSbvp",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC30isShowPageTitleInNavigationBarSbvp",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC30isShowPageTitleInNavigationBarSbvg",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC30isShowPageTitleInNavigationBarSbvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC30isShowPageTitleInNavigationBarSbvs",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC30isShowPageTitleInNavigationBarSbvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC30isShowPageTitleInNavigationBarSbvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC30isShowPageTitleInNavigationBarSbvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onOpenExternalAppHandler",
+            "printedName": "onOpenExternalAppHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools24WebBrowserViewControllerC24onOpenExternalAppHandlerySbcSgvp",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC24onOpenExternalAppHandlerySbcSgvp",
+            "moduleName": "Tools",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC24onOpenExternalAppHandlerySbcSgvg",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC24onOpenExternalAppHandlerySbcSgvg",
+                "moduleName": "Tools",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC24onOpenExternalAppHandlerySbcSgvs",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC24onOpenExternalAppHandlerySbcSgvs",
+                "moduleName": "Tools",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools24WebBrowserViewControllerC24onOpenExternalAppHandlerySbcSgvM",
+                "mangledName": "$s5Tools24WebBrowserViewControllerC24onOpenExternalAppHandlerySbcSgvM",
+                "moduleName": "Tools",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tools@objc(cs)WebBrowserViewController(im)viewDidLoad",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC11viewDidLoadyyF",
+            "moduleName": "Tools",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillAppear",
+            "printedName": "viewWillAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tools@objc(cs)WebBrowserViewController(im)viewWillAppear:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC14viewWillAppearyySbF",
+            "moduleName": "Tools",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewWillAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tools@objc(cs)WebBrowserViewController(im)viewWillDisappear:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC17viewWillDisappearyySbF",
+            "moduleName": "Tools",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebViewConfiguration",
+                "printedName": "WebKit.WKWebViewConfiguration",
+                "usr": "c:objc(cs)WKWebViewConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Tools24WebBrowserViewControllerC13configurationACSo05WKWebD13ConfigurationC_tcfc",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC13configurationACSo05WKWebD13ConfigurationC_tcfc",
+            "moduleName": "Tools",
+            "declAttributes": [
+              "Custom",
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "rootNavigationWebBrowser",
+            "printedName": "rootNavigationWebBrowser(webBrowser:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UINavigationController",
+                "printedName": "UIKit.UINavigationController",
+                "usr": "c:objc(cs)UINavigationController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tools@objc(cs)WebBrowserViewController(cm)rootNavigationWebBrowserWithWebBrowser:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC014rootNavigationbC003webC0So012UINavigationE0CAC_tFZ",
+            "moduleName": "Tools",
+            "static": true,
+            "isOpen": true,
+            "objc_name": "rootNavigationWebBrowserWithWebBrowser:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadRequest",
+            "printedName": "loadRequest(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools24WebBrowserViewControllerC11loadRequestyy10Foundation10URLRequestVF",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC11loadRequestyy10Foundation10URLRequestVF",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadURL",
+            "printedName": "loadURL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tools@objc(cs)WebBrowserViewController(im)loadURL:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC7loadURLyy10Foundation0G0VF",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadURLString",
+            "printedName": "loadURLString(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools24WebBrowserViewControllerC13loadURLStringyySSF",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC13loadURLStringyySSF",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadHTMLString",
+            "printedName": "loadHTMLString(_:baseURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools24WebBrowserViewControllerC14loadHTMLString_7baseURLySS_10Foundation0I0VSgtF",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC14loadHTMLString_7baseURLySS_10Foundation0I0VSgtF",
+            "moduleName": "Tools",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebBrowserViewController",
+                "printedName": "Tools.WebBrowserViewController",
+                "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Tools@objc(cs)WebBrowserViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "Tools",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Tools.WebBrowserViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebBrowserViewController",
+                    "printedName": "Tools.WebBrowserViewController",
+                    "usr": "c:@M@Tools@objc(cs)WebBrowserViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Tools@objc(cs)WebBrowserViewController(im)initWithCoder:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "Tools",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "observeValue",
+            "printedName": "observeValue(forKeyPath:of:change:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.NSKeyValueChangeKey : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Foundation.NSKeyValueChangeKey : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSKeyValueChangeKey",
+                        "printedName": "Foundation.NSKeyValueChangeKey",
+                        "usr": "c:@T@NSKeyValueChangeKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafeMutableRawPointer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafeMutableRawPointer",
+                    "printedName": "Swift.UnsafeMutableRawPointer",
+                    "usr": "s:Sv"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tools@objc(cs)WebBrowserViewController(im)observeValueForKeyPath:ofObject:change:context:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC12observeValue10forKeyPath2of6change7contextySSSg_ypSgSDySo05NSKeyg6ChangeI0aypGSgSvSgtF",
+            "moduleName": "Tools",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "observeValueForKeyPath:ofObject:change:context:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:didStartProvisionalNavigation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tools@objc(cs)WebBrowserViewController(im)webView:didStartProvisionalNavigation:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC03webD0_29didStartProvisionalNavigationySo05WKWebD0C_So12WKNavigationCSgtF",
+            "moduleName": "Tools",
+            "objc_name": "webView:didStartProvisionalNavigation:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:didFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tools@objc(cs)WebBrowserViewController(im)webView:didFinishNavigation:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC03webD0_9didFinishySo05WKWebD0C_So12WKNavigationCSgtF",
+            "moduleName": "Tools",
+            "objc_name": "webView:didFinishNavigation:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:didFailProvisionalNavigation:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tools@objc(cs)WebBrowserViewController(im)webView:didFailProvisionalNavigation:withError:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC03webD0_28didFailProvisionalNavigation9withErrorySo05WKWebD0C_So12WKNavigationCSgs0L0_ptF",
+            "moduleName": "Tools",
+            "objc_name": "webView:didFailProvisionalNavigation:withError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:didFail:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tools@objc(cs)WebBrowserViewController(im)webView:didFailNavigation:withError:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC03webD0_7didFail9withErrorySo05WKWebD0C_So12WKNavigationCSgs0J0_ptF",
+            "moduleName": "Tools",
+            "objc_name": "webView:didFailNavigation:withError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationActionPolicy",
+                    "printedName": "WebKit.WKNavigationActionPolicy",
+                    "usr": "c:@E@WKNavigationActionPolicy"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tools@objc(cs)WebBrowserViewController(im)webView:decidePolicyForNavigationAction:decisionHandler:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC03webD0_15decidePolicyFor15decisionHandlerySo05WKWebD0C_So18WKNavigationActionCySo0mnH0VctF",
+            "moduleName": "Tools",
+            "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:createWebViewWith:for:windowFeatures:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebViewConfiguration",
+                "printedName": "WebKit.WKWebViewConfiguration",
+                "usr": "c:objc(cs)WKWebViewConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWindowFeatures",
+                "printedName": "WebKit.WKWindowFeatures",
+                "usr": "c:objc(cs)WKWindowFeatures"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tools@objc(cs)WebBrowserViewController(im)webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "mangledName": "$s5Tools24WebBrowserViewControllerC03webD0_06createbD4With3for14windowFeaturesSo05WKWebD0CSgAI_So0lD13ConfigurationCSo18WKNavigationActionCSo08WKWindowK0CtF",
+            "moduleName": "Tools",
+            "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Tools@objc(cs)WebBrowserViewController",
+        "mangledName": "$s5Tools24WebBrowserViewControllerC",
+        "moduleName": "Tools",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RestorableProjectKey",
+        "printedName": "RestorableProjectKey",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sessionType",
+            "printedName": "sessionType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools20RestorableProjectKeyV11sessionTypeSSvpZ",
+            "mangledName": "$s5Tools20RestorableProjectKeyV11sessionTypeSSvpZ",
+            "moduleName": "Tools",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools20RestorableProjectKeyV11sessionTypeSSvgZ",
+                "mangledName": "$s5Tools20RestorableProjectKeyV11sessionTypeSSvgZ",
+                "moduleName": "Tools",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fileURL",
+            "printedName": "fileURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools20RestorableProjectKeyV7fileURLSSvpZ",
+            "mangledName": "$s5Tools20RestorableProjectKeyV7fileURLSSvpZ",
+            "moduleName": "Tools",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools20RestorableProjectKeyV7fileURLSSvgZ",
+                "mangledName": "$s5Tools20RestorableProjectKeyV7fileURLSSvgZ",
+                "moduleName": "Tools",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bookmark",
+            "printedName": "bookmark",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools20RestorableProjectKeyV8bookmarkSSvpZ",
+            "mangledName": "$s5Tools20RestorableProjectKeyV8bookmarkSSvpZ",
+            "moduleName": "Tools",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools20RestorableProjectKeyV8bookmarkSSvgZ",
+                "mangledName": "$s5Tools20RestorableProjectKeyV8bookmarkSSvgZ",
+                "moduleName": "Tools",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "useLegacyViewer",
+            "printedName": "useLegacyViewer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools20RestorableProjectKeyV15useLegacyViewerSSvpZ",
+            "mangledName": "$s5Tools20RestorableProjectKeyV15useLegacyViewerSSvpZ",
+            "moduleName": "Tools",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools20RestorableProjectKeyV15useLegacyViewerSSvgZ",
+                "mangledName": "$s5Tools20RestorableProjectKeyV15useLegacyViewerSSvgZ",
+                "moduleName": "Tools",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "useLegacyEditor",
+            "printedName": "useLegacyEditor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools20RestorableProjectKeyV15useLegacyEditorSSvpZ",
+            "mangledName": "$s5Tools20RestorableProjectKeyV15useLegacyEditorSSvpZ",
+            "moduleName": "Tools",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools20RestorableProjectKeyV15useLegacyEditorSSvgZ",
+                "mangledName": "$s5Tools20RestorableProjectKeyV15useLegacyEditorSSvgZ",
+                "moduleName": "Tools",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5Tools20RestorableProjectKeyV",
+        "mangledName": "$s5Tools20RestorableProjectKeyV",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RestorableProject",
+        "printedName": "RestorableProject",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools17RestorableProjectP3url10Foundation3URLVvp",
+            "mangledName": "$s5Tools17RestorableProjectP3url10Foundation3URLVvp",
+            "moduleName": "Tools",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools17RestorableProjectP3url10Foundation3URLVvg",
+                "mangledName": "$s5Tools17RestorableProjectP3url10Foundation3URLVvg",
+                "moduleName": "Tools",
+                "genericSig": "<τ_0_0 where τ_0_0 : Tools.RestorableProject>",
+                "sugared_genericSig": "<Self where Self : Tools.RestorableProject>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewerActivity",
+            "printedName": "viewerActivity(activityType:useLegacyViewer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSUserActivity",
+                "printedName": "Foundation.NSUserActivity",
+                "usr": "c:objc(cs)NSUserActivity"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools17RestorableProjectP14viewerActivity12activityType15useLegacyViewerSo06NSUserE0CSS_SbtF",
+            "mangledName": "$s5Tools17RestorableProjectP14viewerActivity12activityType15useLegacyViewerSo06NSUserE0CSS_SbtF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.RestorableProject>",
+            "sugared_genericSig": "<Self where Self : Tools.RestorableProject>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "editorActivity",
+            "printedName": "editorActivity(activityType:useLegacyEditor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSUserActivity",
+                "printedName": "Foundation.NSUserActivity",
+                "usr": "c:objc(cs)NSUserActivity"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools17RestorableProjectP14editorActivity12activityType15useLegacyEditorSo06NSUserE0CSS_SbtF",
+            "mangledName": "$s5Tools17RestorableProjectP14editorActivity12activityType15useLegacyEditorSo06NSUserE0CSS_SbtF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.RestorableProject>",
+            "sugared_genericSig": "<Self where Self : Tools.RestorableProject>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "userActivityTitle",
+            "printedName": "userActivityTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools17RestorableProjectPAAE17userActivityTitleSSvp",
+            "mangledName": "$s5Tools17RestorableProjectPAAE17userActivityTitleSSvp",
+            "moduleName": "Tools",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools17RestorableProjectPAAE17userActivityTitleSSvg",
+                "mangledName": "$s5Tools17RestorableProjectPAAE17userActivityTitleSSvg",
+                "moduleName": "Tools",
+                "genericSig": "<τ_0_0 where τ_0_0 : Tools.RestorableProject>",
+                "sugared_genericSig": "<Self where Self : Tools.RestorableProject>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userActivityInfo",
+            "printedName": "userActivityInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Tools17RestorableProjectPAAE16userActivityInfoSDys11AnyHashableVypGvp",
+            "mangledName": "$s5Tools17RestorableProjectPAAE16userActivityInfoSDys11AnyHashableVypGvp",
+            "moduleName": "Tools",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Tools17RestorableProjectPAAE16userActivityInfoSDys11AnyHashableVypGvg",
+                "mangledName": "$s5Tools17RestorableProjectPAAE16userActivityInfoSDys11AnyHashableVypGvg",
+                "moduleName": "Tools",
+                "genericSig": "<τ_0_0 where τ_0_0 : Tools.RestorableProject>",
+                "sugared_genericSig": "<Self where Self : Tools.RestorableProject>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewerActivity",
+            "printedName": "viewerActivity(activityType:useLegacyViewer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSUserActivity",
+                "printedName": "Foundation.NSUserActivity",
+                "usr": "c:objc(cs)NSUserActivity"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools17RestorableProjectPAAE14viewerActivity12activityType15useLegacyViewerSo06NSUserE0CSS_SbtF",
+            "mangledName": "$s5Tools17RestorableProjectPAAE14viewerActivity12activityType15useLegacyViewerSo06NSUserE0CSS_SbtF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.RestorableProject>",
+            "sugared_genericSig": "<Self where Self : Tools.RestorableProject>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "editorActivity",
+            "printedName": "editorActivity(activityType:useLegacyEditor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSUserActivity",
+                "printedName": "Foundation.NSUserActivity",
+                "usr": "c:objc(cs)NSUserActivity"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Tools17RestorableProjectPAAE14editorActivity12activityType15useLegacyEditorSo06NSUserE0CSS_SbtF",
+            "mangledName": "$s5Tools17RestorableProjectPAAE14editorActivity12activityType15useLegacyEditorSo06NSUserE0CSS_SbtF",
+            "moduleName": "Tools",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tools.RestorableProject>",
+            "sugared_genericSig": "<Self where Self : Tools.RestorableProject>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:5Tools17RestorableProjectP",
+        "mangledName": "$s5Tools17RestorableProjectP",
+        "moduleName": "Tools",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tools"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Tools"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Tools"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "Tools"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIColor",
+        "printedName": "UIColor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Tools@@objc(cs)UIColor(py)data",
+            "mangledName": "$sSo7UIColorC5ToolsE4data10Foundation4DataVSgvp",
+            "moduleName": "Tools",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Tools@@objc(cs)UIColor(im)data",
+                "mangledName": "$sSo7UIColorC5ToolsE4data10Foundation4DataVSgvg",
+                "moduleName": "Tools",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIColor",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIColor",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByColorLiteral",
+            "printedName": "_ExpressibleByColorLiteral",
+            "usr": "s:s26_ExpressibleByColorLiteralP",
+            "mangledName": "$ss26_ExpressibleByColorLiteralP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NSData",
+        "printedName": "NSData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Tools@@objc(cs)NSData(py)color",
+            "mangledName": "$sSo6NSDataC5ToolsE5colorSo7UIColorCSgvp",
+            "moduleName": "Tools",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Tools@@objc(cs)NSData(im)color",
+                "mangledName": "$sSo6NSDataC5ToolsE5colorSo7UIColorCSgvg",
+                "moduleName": "Tools",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSData",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "objc_name": "NSData",
+        "declAttributes": [
+          "ObjC",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.Data]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RandomAccessCollection",
+            "printedName": "RandomAccessCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<Foundation.NSData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSData",
+                        "printedName": "Foundation.NSData",
+                        "usr": "c:objc(cs)NSData"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sk",
+            "mangledName": "$sSk"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<Foundation.NSData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSData",
+                        "printedName": "Foundation.NSData",
+                        "usr": "c:objc(cs)NSData"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<Foundation.NSData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSData",
+                        "printedName": "Foundation.NSData",
+                        "usr": "c:objc(cs)NSData"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<Foundation.NSData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSData",
+                        "printedName": "Foundation.NSData",
+                        "usr": "c:objc(cs)NSData"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<Foundation.NSData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSData",
+                        "printedName": "Foundation.NSData",
+                        "usr": "c:objc(cs)NSData"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Data",
+        "printedName": "Data",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation4DataV5ToolsE5colorSo7UIColorCSgvp",
+            "mangledName": "$s10Foundation4DataV5ToolsE5colorSo7UIColorCSgvp",
+            "moduleName": "Tools",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation4DataV5ToolsE5colorSo7UIColorCSgvg",
+                "mangledName": "$s10Foundation4DataV5ToolsE5colorSo7UIColorCSgvg",
+                "moduleName": "Tools",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Foundation4DataV",
+        "mangledName": "$s10Foundation4DataV",
+        "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RandomAccessCollection",
+            "printedName": "RandomAccessCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sk",
+            "mangledName": "$sSk"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableCollection",
+            "printedName": "MutableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SM",
+            "mangledName": "$sSM"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Foundation.Data.Iterator",
+                    "usr": "s:10Foundation4DataV8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<Foundation.Data>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Foundation.Data.Iterator",
+                    "usr": "s:10Foundation4DataV8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/ToolbarAppearance.swift",
+      "kind": "BooleanLiteral",
+      "offset": 216,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/ToolbarAppearance.swift",
+      "kind": "BooleanLiteral",
+      "offset": 309,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/WebBrowserViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 794,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/WebBrowserViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 691,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/WebBrowserViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1011,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/WebBrowserViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1193,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/WebBrowserViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1244,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/WebBrowserViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2356,
+      "length": 10,
+      "value": "\"backIcon\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/WebBrowserViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2665,
+      "length": 13,
+      "value": "\"forwardIcon\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/NavigationBarAppearance.swift",
+      "kind": "BooleanLiteral",
+      "offset": 228,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/NavigationBarAppearance.swift",
+      "kind": "BooleanLiteral",
+      "offset": 322,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/WebBrowser.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 19,
+      "value": "\"estimatedProgress\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/WebBrowser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 287,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/WebBrowser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "kind": "StringLiteral",
+      "offset": 247,
+      "length": 13,
+      "value": "\"sessionType\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "kind": "StringLiteral",
+      "offset": 293,
+      "length": 9,
+      "value": "\"fileURL\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "kind": "StringLiteral",
+      "offset": 336,
+      "length": 10,
+      "value": "\"bookmark\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 17,
+      "value": "\"useLegacyViewer\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "kind": "StringLiteral",
+      "offset": 445,
+      "length": 17,
+      "value": "\"useLegacyEditor\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1460,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1751,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Build\/Build\/Intermediates.noindex\/Tools.build\/Release-iphoneos\/Tools.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 729,
+      "length": 10,
+      "value": "\"backIcon\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Build\/Build\/Intermediates.noindex\/Tools.build\/Release-iphoneos\/Tools.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 871,
+      "length": 13,
+      "value": "\"forwardIcon\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Build\/Build\/Intermediates.noindex\/Tools.build\/Release-iphoneos\/Tools.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1014,
+      "length": 12,
+      "value": "\"safariIcon\""
+    }
+  ]
+}
