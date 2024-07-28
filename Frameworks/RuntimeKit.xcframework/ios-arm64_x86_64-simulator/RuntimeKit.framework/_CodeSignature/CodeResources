@@ -118,7 +118,7 @@
 		</data>
 		<key>Headers/CodeaAddon.h</key>
 		<data>
-		5fez/wir/bJ1ewrE7ZWAR5MTt40=
+		F2lcKNE7zGYaiL5p/gb0DqSo1A8=
 		</data>
 		<key>Headers/CodeaGame.h</key>
 		<data>
@@ -382,11 +382,11 @@
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		selA1JrdlDi13r9rLBSHXiKYzwk=
+		x3+GIXc+l3kR+Rp+GpmV1UPbrMY=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		kC3xExW8MQrzEYlzaL5Adchnegk=
+		Xkf8H2fhniGPY8YrxUpvRBn/BIQ=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -877,7 +877,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zMoS4ZflCqMmSD+DsariZbwRpZKLgBUyaM4rFrxn+zk=
+			Dnxvw66DLE0czy/Y+5A4scmExgX9uUnl1m51ruFGkFQ=
 			</data>
 		</dict>
 		<key>Headers/CodeaGame.h</key>
@@ -1332,14 +1332,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JfdPl4HHPYBMPm1aO45L+iisNI0wGme8qXKz/7/7teQ=
+			JXh3hm+ol8BdiEgmYI4nKgtTO0QZ64q/YiflMYTIm0Y=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XEwDT3qcBXRSsj06e5S8BRgEiaYx7STQNLMWN/oBI04=
+			XDJg279HNnf2veVs6ammSquUSnpHUD64ufUOXhvNXz0=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
