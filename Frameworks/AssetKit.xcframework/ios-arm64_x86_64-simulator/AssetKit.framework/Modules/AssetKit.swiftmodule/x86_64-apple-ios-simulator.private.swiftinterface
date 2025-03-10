@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios13.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AssetKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import AssetKit
 import Combine
 import Foundation
@@ -77,9 +78,7 @@ import _SwiftConcurrencyShims
       get
     }
   }
-  #if compiler(>=5.3) && $AsyncAwait
-  open func updateUrlCache() async
-  #endif
+  open func updateUrlCache(completion: @escaping () -> Swift.Void = {})
   open func createItem(at url: Foundation.URL, writer: (Foundation.URL) throws -> (), completion: @escaping ((any Swift.Error)?) -> ())
   open func renameItem(at url: Foundation.URL, name: Swift.String) -> Foundation.URL?
   open func deleteItem(at url: Foundation.URL) -> Swift.Bool
@@ -159,7 +158,7 @@ public enum AssetType : Swift.String, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [AssetKit.AssetType]
   public typealias RawValue = Swift.String
-  public static var allCases: [AssetKit.AssetType] {
+  nonisolated public static var allCases: [AssetKit.AssetType] {
     get
   }
   public var rawValue: Swift.String {

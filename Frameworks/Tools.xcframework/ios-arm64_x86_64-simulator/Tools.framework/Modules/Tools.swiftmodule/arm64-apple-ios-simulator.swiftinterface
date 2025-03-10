@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Tools
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import DeveloperToolsSupport
 import Foundation
 import Swift
@@ -63,61 +64,61 @@ public enum WebBrowserLanguage {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class WebBrowserViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) weak open var delegate: (any Tools.WebBrowserDelegate)?
-  @_Concurrency.MainActor(unsafe) open var language: Tools.WebBrowserLanguage {
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class WebBrowserViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency weak open var delegate: (any Tools.WebBrowserDelegate)?
+  @_Concurrency.MainActor @preconcurrency open var language: Tools.WebBrowserLanguage {
     get
     set
   }
-  @objc @_Concurrency.MainActor(unsafe) open var tintColor: UIKit.UIColor {
+  @objc @_Concurrency.MainActor @preconcurrency open var tintColor: UIKit.UIColor {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) open var barTintColor: UIKit.UIColor? {
+  @_Concurrency.MainActor @preconcurrency open var barTintColor: UIKit.UIColor? {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) open var isToolbarHidden: Swift.Bool {
+  @_Concurrency.MainActor @preconcurrency open var isToolbarHidden: Swift.Bool {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) open var toolbarItemSpace: CoreFoundation.CGFloat {
+  @_Concurrency.MainActor @preconcurrency open var toolbarItemSpace: CoreFoundation.CGFloat {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) open var isShowActionBarButton: Swift.Bool {
+  @_Concurrency.MainActor @preconcurrency open var isShowActionBarButton: Swift.Bool {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) open var customApplicationActivities: [UIKit.UIActivity]
-  @_Concurrency.MainActor(unsafe) open var isShowURLInNavigationBarWhenLoading: Swift.Bool
-  @_Concurrency.MainActor(unsafe) open var isShowPageTitleInNavigationBar: Swift.Bool
-  @_Concurrency.MainActor(unsafe) public var onOpenExternalAppHandler: ((_ isOpen: Swift.Bool) -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) convenience public init(configuration: WebKit.WKWebViewConfiguration)
-  @objc @_Concurrency.MainActor(unsafe) open class func rootNavigationWebBrowser(webBrowser: Tools.WebBrowserViewController) -> UIKit.UINavigationController
+  @_Concurrency.MainActor @preconcurrency open var customApplicationActivities: [UIKit.UIActivity]
+  @_Concurrency.MainActor @preconcurrency open var isShowURLInNavigationBarWhenLoading: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open var isShowPageTitleInNavigationBar: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var onOpenExternalAppHandler: ((_ isOpen: Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency convenience public init(configuration: WebKit.WKWebViewConfiguration)
+  @objc @_Concurrency.MainActor @preconcurrency open class func rootNavigationWebBrowser(webBrowser: Tools.WebBrowserViewController) -> UIKit.UINavigationController
   @objc deinit
-  @_Concurrency.MainActor(unsafe) open func loadRequest(_ request: Foundation.URLRequest)
-  @objc @_Concurrency.MainActor(unsafe) open func loadURL(_ url: Foundation.URL)
-  @_Concurrency.MainActor(unsafe) open func loadURLString(_ urlString: Swift.String)
-  @_Concurrency.MainActor(unsafe) open func loadHTMLString(_ htmlString: Swift.String, baseURL: Foundation.URL?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency open func loadRequest(_ request: Foundation.URLRequest)
+  @objc @_Concurrency.MainActor @preconcurrency open func loadURL(_ url: Foundation.URL)
+  @_Concurrency.MainActor @preconcurrency open func loadURLString(_ urlString: Swift.String)
+  @_Concurrency.MainActor @preconcurrency open func loadHTMLString(_ htmlString: Swift.String, baseURL: Foundation.URL?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension Tools.WebBrowserViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
 }
 extension Tools.WebBrowserViewController : WebKit.WKNavigationDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
 }
 extension Tools.WebBrowserViewController : WebKit.WKUIDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
 }
 extension UIKit.UIColor {
   @objc dynamic public var data: Foundation.Data? {

@@ -10,5 +10,6 @@
 
 #include <LuaKit/lua.hpp>
 #include <LuaKit/AssetKey.hpp>
+#include <LuaKit/AssetKeySol2.hpp>
 
 #endif /* LuaKit_h */

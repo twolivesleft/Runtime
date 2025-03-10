@@ -75,8 +75,6 @@
 - (void) reloadFilesFromBundlePath;
 - (NSMutableDictionary*) defaultInfoDictionary;
 
-- (NSData*) serializedRepresentation;
-
 - (BOOL) isFileValid:(NSString*)path;
 
 

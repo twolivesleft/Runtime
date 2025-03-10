@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "RuntimeKit",
+    "printedName": "RuntimeKit",
     "children": [
       {
         "kind": "Import",
@@ -851,6 +851,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1024,6 +1038,22 @@
         "moduleName": "RuntimeKit",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2244,6 +2274,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2854,6 +2898,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3079,6 +3137,20 @@
             ],
             "enumRawTypeName": "Int",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -3331,6 +3403,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -3446,6 +3532,20 @@
               "AccessControl"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Decodable",
@@ -3881,6 +3981,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -4458,6 +4572,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4810,6 +4938,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6034,6 +6178,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6216,6 +6374,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6325,8 +6497,9 @@
             "moduleName": "RuntimeKit",
             "declAttributes": [
               "Final",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "isLet": true,
@@ -6433,8 +6606,9 @@
             "moduleName": "RuntimeKit",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -6544,8 +6718,9 @@
             "moduleName": "RuntimeKit",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -6655,8 +6830,9 @@
             "moduleName": "RuntimeKit",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -6769,6 +6945,7 @@
             "mangledName": "$s10RuntimeKit19CodeaViewControllerC7runtime12activityTypeACSo08ThreadedadE0C_SStcfc",
             "moduleName": "RuntimeKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6810,6 +6987,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl"
@@ -6839,6 +7017,7 @@
             "objc_name": "runtimeViewControllerDidFinishSetup:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6874,6 +7053,7 @@
             "objc_name": "runtimeViewController:willPause:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6902,6 +7082,7 @@
             "objc_name": "runtimeViewControllerDidRestart:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6928,6 +7109,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -7007,6 +7189,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -7041,6 +7224,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -7097,6 +7281,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -7124,6 +7309,7 @@
             "mangledName": "$s10RuntimeKit19CodeaViewControllerC11loadProject2aty10Foundation3URLV_tF",
             "moduleName": "RuntimeKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -7168,6 +7354,7 @@
             "mangledName": "$s10RuntimeKit19CodeaViewControllerC10runProject2at10completiony10Foundation3URLV_yyctF",
             "moduleName": "RuntimeKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -7190,6 +7377,7 @@
             "mangledName": "$s10RuntimeKit19CodeaViewControllerC6pausedSbvp",
             "moduleName": "RuntimeKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -7274,6 +7462,7 @@
             "mangledName": "$s10RuntimeKit19CodeaViewControllerC7restartyyF",
             "moduleName": "RuntimeKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -7304,6 +7493,7 @@
             "mangledName": "$s10RuntimeKit19CodeaViewControllerC17captureScreenshotSo7UIImageCSgyYaF",
             "moduleName": "RuntimeKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -7331,6 +7521,7 @@
             "mangledName": "$s10RuntimeKit19CodeaViewControllerC17updateProjectIconyySo7UIImageCF",
             "moduleName": "RuntimeKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -7352,6 +7543,7 @@
             "mangledName": "$s10RuntimeKit19CodeaViewControllerC13callWillCloseyyYaF",
             "moduleName": "RuntimeKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -7373,6 +7565,7 @@
             "mangledName": "$s10RuntimeKit19CodeaViewControllerC11closeVieweryyYaF",
             "moduleName": "RuntimeKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -7417,6 +7610,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7470,6 +7664,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7523,6 +7718,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7576,6 +7772,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7629,6 +7826,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7668,6 +7866,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7707,6 +7906,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7760,6 +7960,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7837,6 +8038,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7914,6 +8116,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7997,6 +8200,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -8062,6 +8266,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -8135,6 +8340,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -8194,6 +8400,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -8233,6 +8440,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -8272,6 +8480,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -8296,6 +8505,7 @@
             "moduleName": "RuntimeKit",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -8343,6 +8553,7 @@
             "moduleName": "RuntimeKit",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -8366,6 +8577,7 @@
             "moduleName": "RuntimeKit",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -8379,6 +8591,7 @@
         "moduleName": "RuntimeKit",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -8390,6 +8603,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8698,6 +8925,181 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LuaKit",
+        "printedName": "LuaKit",
+        "declKind": "Import",
+        "moduleName": "RuntimeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CodeaStandardLibrary",
+        "printedName": "CodeaStandardLibrary",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "codea",
+            "printedName": "codea(_:didCreateLuaState:isValidating:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ThreadedRuntimeViewController",
+                "printedName": "RuntimeKit.ThreadedRuntimeViewController",
+                "usr": "c:objc(cs)ThreadedRuntimeViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpaquePointer",
+                "printedName": "Swift.OpaquePointer",
+                "usr": "s:s13OpaquePointerV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary(im)codea:didCreateLuaState:isValidating:",
+            "mangledName": "$s10RuntimeKit20CodeaStandardLibraryC5codea_17didCreateLuaState12isValidatingySo08ThreadedA14ViewControllerC_s13OpaquePointerVSbtF",
+            "moduleName": "RuntimeKit",
+            "objc_name": "codea:didCreateLuaState:isValidating:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaStandardLibrary",
+                "printedName": "RuntimeKit.CodeaStandardLibrary",
+                "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary(im)init",
+            "mangledName": "$s10RuntimeKit20CodeaStandardLibraryCACycfc",
+            "moduleName": "RuntimeKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary",
+        "mangledName": "$s10RuntimeKit20CodeaStandardLibraryC",
+        "moduleName": "RuntimeKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8991,6 +9393,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9198,6 +9614,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -10147,6 +10579,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10268,6 +10714,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10395,6 +10855,20 @@
         "isFromExtension": true,
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
@@ -10537,6 +11011,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10692,6 +11180,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10801,6 +11303,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10892,6 +11408,7 @@
             "mangledName": "$sSo13UIApplicationC10RuntimeKitE18findViewController4from3forSo06UIViewF0CSgAH_So13CodeaLuaStateCtF",
             "moduleName": "RuntimeKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -10930,6 +11447,7 @@
             "objc_name": "viewControllerFor:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -10944,6 +11462,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIApplication",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -10958,6 +11477,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11028,18 +11561,11 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ExternalAssetPack.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectManager.swift",
       "kind": "StringLiteral",
-      "offset": 183,
-      "length": 17,
-      "value": "\"RuntimeKit.ExternalAssetPack\""
-    },
-    {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ExternalAssetPack.swift",
-      "kind": "StringLiteral",
-      "offset": 183,
-      "length": 17,
-      "value": "\"RuntimeKit.ExternalAssetPack\""
+      "offset": 324,
+      "length": 31,
+      "value": "\"ProjectManagerDidCopyExamples\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectManager.swift",
@@ -11063,6 +11589,13 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4409,
+      "length": 9,
+      "value": "\"default\""
+    },
+    {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Common\/RuntimeStyle.swift",
       "kind": "IntegerLiteral",
       "offset": 3920,
@@ -11075,48 +11608,6 @@
       "offset": 329,
       "length": 6,
       "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 329,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 329,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 425,
-      "length": 8,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 447,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 425,
-      "length": 8,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 447,
-      "length": 7,
-      "value": "2"
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
@@ -11168,6 +11659,34 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
+      "kind": "IntegerLiteral",
+      "offset": 517,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
+      "kind": "StringLiteral",
+      "offset": 1085,
+      "length": 5,
+      "value": "\"en0\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1245,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1487,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/CodeaViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 649,
@@ -11175,25 +11694,25 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/CodeaViewController.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/CodeaViewController+Scene.swift",
       "kind": "StringLiteral",
-      "offset": 193,
-      "length": 19,
-      "value": "\"RuntimeKit.CodeaViewController\""
+      "offset": 338,
+      "length": 17,
+      "value": "\"io.codea.viewer\""
     },
     {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 290,
-      "length": 4,
-      "value": "1"
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/AudioManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 815,
+      "length": 3,
+      "value": "0.0"
     },
     {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
-      "kind": "IntegerLiteral",
-      "offset": 304,
-      "length": 7,
-      "value": "2"
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/AudioManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 987,
+      "length": 3,
+      "value": "0.0"
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
@@ -11219,9 +11738,9 @@
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
       "kind": "StringLiteral",
-      "offset": 912,
-      "length": 17,
-      "value": "\"RuntimeKit.ProjectCollection\""
+      "offset": 2467,
+      "length": 9,
+      "value": "\"Unknown\""
     }
   ]
 }

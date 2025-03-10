@@ -22,22 +22,26 @@ struct AssetKey {
     using ReadSaveCoordinator = std::function<void(const std::string&)>;
 
     std::string _path;
+    mutable void* _rootUrl;
+    mutable void* _bookmarkData;
     
+    AssetKey(): _path(""), _rootUrl(nullptr), _bookmarkData(nullptr) {}
+    ~AssetKey();
+    
+    explicit AssetKey(const std::string& path);
+    explicit AssetKey(const std::string& path, void* rootUrl);
+    explicit AssetKey(const std::string& path, bool withBookmarkData);
+    explicit AssetKey(void* _Nonnull bookmarkData);
+    AssetKey(AssetKey&& other) noexcept;
+        
     #ifdef __OBJC__
-    NSURL* _Nullable _rootUrl;
-    #else
-    void* _rootUrl; // C++ compatibility
+    explicit AssetKey(const std::string& path, NSURL* _Nonnull rootUrl);
+    explicit AssetKey(NSData* _Nonnull bookmarkData);
     #endif
+    AssetKey(const AssetKey& other);
     
-    AssetKey() {}
-    
-    explicit AssetKey(const std::string& path): _path(path) {}
-    
-    #ifdef __OBJC__
-    explicit AssetKey(const std::string& path, NSURL* _Nonnull rootUrl): _path(path), _rootUrl(rootUrl) {}
-    #else
-    explicit AssetKey(const std::string& path, void* rootUrl): _path(path), _rootUrl(rootUrl) {}
-    #endif
+    AssetKey& operator=(const AssetKey& other);
+    AssetKey& operator=(AssetKey&& other) noexcept;
     
     std::string name() const;
             
@@ -45,18 +49,14 @@ struct AssetKey {
         return _path;
     }
 
-    #ifdef __OBJC__
-    const NSURL* _Nullable rootUrl() const {
-        return _rootUrl;
-    }
-    #else
-    const void* rootUrl() const {
-        return _rootUrl;
-    }
-    #endif
+    bool startAccessingRootURL() const;
+    void stopAccessingRootURL() const;
+    
+    void createOrRefreshBookmarkData() const;
+    
+    void resolveBookmarkUrl() const;
     
     void coordinateRead(ReadSaveCoordinator reader) const;
-    
     void coordinateSave(ReadSaveCoordinator saver) const;
 
     std::string ext() const;
@@ -89,9 +89,16 @@ AssetKey lua_assetkey(struct lua_State* _Nonnull L, int index);
 ///   - L: The Lua state
 ///   - index: Stack index 
 bool lua_isassetkey(struct lua_State* _Nonnull L, int index);
+
+/// Pushes an AssetKey onto the Lua stack
+/// - Parameters:
+///  - L: The Lua state
+///  - key: The AssetKey to push
+void lua_pushassetkey(lua_State* _Nonnull L, const AssetKey& key);
 #else
 AssetKey lua_assetkey(struct lua_State* L, int index);
 bool lua_isassetkey(struct lua_State* L, int index);
+void lua_pushassetkey(lua_State* L, const AssetKey& key);
 #endif
 
 #endif /* __cplusplus */

@@ -30,11 +30,16 @@ LUALIB_API int (luaopen_objc) (lua_State *L);
 @property (atomic, retain) RenderMutex* renderMutex;
 @property (atomic, retain) NSMutableSet* activeClassNames;
 @property (atomic, retain) NSMutableArray* waitingSemaphores;
+@property (atomic, retain) dispatch_queue_t backgroundQueue;
 
 @property (copy) void (^warningHandler)(NSString*);
 @property (copy) void (^errorHandler)(NSString*);
 
 @property (copy) UIViewController* (^getViewer)(void);
+
+@property (copy) BOOL (^isUIColor)(lua_State* L, int n);
+@property (copy) BOOL (^isUIImage)(lua_State* L, int n);
+@property (copy) BOOL (^isCGPoint)(lua_State* L, int n);
 
 @property (copy) UIColor* (^getUIColor)(lua_State* L, int n);
 @property (copy) UIImage* (^getUIImage)(lua_State* L, int n);

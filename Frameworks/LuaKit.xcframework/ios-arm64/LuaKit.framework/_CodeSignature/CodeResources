@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/AssetKey.hpp</key>
 		<data>
-		lc4Kr6aS0itz0csJ5PlyYShHYoM=
+		s2bz9jwmKAxAP+SLCp+C/fRopEY=
 		</data>
 		<key>Headers/Assets.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/LuaBridgedFunctions.h</key>
 		<data>
-		xQwS9y4TiIMy4+1ch2qSZPGxvMI=
+		GCjrzoxldnQ1IBzU3vNC4tVKsVk=
 		</data>
 		<key>Headers/LuaKit.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/LuaKit.hpp</key>
 		<data>
-		4kI4Sr20czMdmDSC1gF+wTG9lqM=
+		48uWqy6vNlwORBmV0cZbv6M97B8=
 		</data>
 		<key>Headers/LuaLibraries.h</key>
 		<data>
@@ -114,15 +114,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1cv0QuktbXP0BuvT0cRWZ103Ohg=
+		Ru0ya2e0M2fTtD7a5SZ2p/CAJT0=
 		</data>
 		<key>LuaBridge.lua</key>
 		<data>
-		ZME0z9uLeH2k2ikgF8Z7wlNaIP0=
+		G1g79JUY5PXccu1G1Ay4250mX8E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Ypwtw1TMuIDsy41R5ov6JNQqRT8=
+		</data>
+		<key>common.lua</key>
+		<data>
+		Xe5GmeXiXUD/3qwRjKHz6xc8n5g=
 		</data>
 		<key>ftp.lua</key>
 		<data>
@@ -136,6 +140,10 @@
 		<data>
 		dGTQk/v79dYoUIPiwSATsZ0Vxlw=
 		</data>
+		<key>legacy.lua</key>
+		<data>
+		rcg7GeeTSRscbqD9i0bNnzLlkvw=
+		</data>
 		<key>ltn12.lua</key>
 		<data>
 		c/4/kdBEMh4gK3i7HcPpbuWYnHI=
@@ -148,9 +156,25 @@
 		<data>
 		Yx8U8XE3omFWA6EUI82OfL5xrGc=
 		</data>
+		<key>modern.lua</key>
+		<data>
+		r8N9k2Hkqy7HvR0zzhjEN9YqZCw=
+		</data>
+		<key>pasteboard.lua</key>
+		<data>
+		db/x0SMTYbUzgfZ2AJrp+/7bGqw=
+		</data>
+		<key>pickers.lua</key>
+		<data>
+		rpuX5UbU22vwEsBXmRYdxRPprQ4=
+		</data>
 		<key>re.lua</key>
 		<data>
 		b6mQJAA4gpjytkh23LdM1Tu1leo=
+		</data>
+		<key>require.lua</key>
+		<data>
+		ZB0Tc5nDb6uYpTZ7I5RJ7iMkCsQ=
 		</data>
 		<key>smtp.lua</key>
 		<data>
@@ -160,17 +184,33 @@
 		<data>
 		J9qKWARiyNcnMLKD4CGm8o/G+VY=
 		</data>
+		<key>tableExtensions.lua</key>
+		<data>
+		PIyIDYhohDVQ6UdyvCnyj7ikTwY=
+		</data>
 		<key>tp.lua</key>
 		<data>
 		cngQB22a1m2BpVnjExhLc4D/pYY=
+		</data>
+		<key>typeof.lua</key>
+		<data>
+		ucodgbKcLE5S/PCK2CmQFKoW6KY=
 		</data>
 		<key>url.lua</key>
 		<data>
 		0+EptpsxOKTV3F8GiKL26Yx/ABY=
 		</data>
+		<key>viewer.lua</key>
+		<data>
+		qjzay65tF5j5B7sItKIR/tYasZA=
+		</data>
 		<key>vscode-debuggee.lua</key>
 		<data>
 		/7pfZ8IjcJxmRdA6C3QV776OhPY=
+		</data>
+		<key>vscode-userdata.lua</key>
+		<data>
+		lVFptUgtBabQVKwI5iuVuNg6xyY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -193,7 +233,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CQVTcLeUaNpVJlY+3mNc/+c/sYDNXa/0xEtytrpKMDs=
+			iiIt6CkJmny/prDWlnbm6i9Cq1Tk5H2oQDOX3b280Cs=
 			</data>
 		</dict>
 		<key>Headers/Assets.h</key>
@@ -207,7 +247,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hwDqNeOZ8WcsnOGYNumHL4o6JY1mt7ZlHiIZ8abECTg=
+			W1RqXiGDiiuSyl6KsPbk3LBSUMzcVoCc+BEEUnE17FE=
 			</data>
 		</dict>
 		<key>Headers/LuaKit.h</key>
@@ -221,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iI7VM0ag7AYW8DW2FRQPuJoZYeOJWTzZD26cXM+Iypk=
+			asCcvYJtrz0BmHeobmmrbL8PeU0JZ2WquKG7VeAodQc=
 			</data>
 		</dict>
 		<key>Headers/LuaLibraries.h</key>
@@ -368,7 +408,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RCfTa234JQ+bIb2+RWSvJk8RYCGPFgLn9tYln4HqL8Q=
+			h1LOwwvxeW/40HXfbmB8EvLqbqWngQXntJfijcoMZk0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -376,6 +416,13 @@
 			<key>hash2</key>
 			<data>
 			JqbjL63kjywatnpxDfn/zZQ9qo8aZDTc+yJLY4uiyUc=
+			</data>
+		</dict>
+		<key>common.lua</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o9exgvtoZEhWmzJMtXw0IMATRPtZt3CVXmfZUnLcrZg=
 			</data>
 		</dict>
 		<key>ftp.lua</key>
@@ -399,6 +446,13 @@
 			ttM1o8LWClf5N3Z9J2BPRbuB+4x007zjzaBC8ZheTxY=
 			</data>
 		</dict>
+		<key>legacy.lua</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=
+			</data>
+		</dict>
 		<key>ltn12.lua</key>
 		<dict>
 			<key>hash2</key>
@@ -420,11 +474,39 @@
 			OVo+8RBAktv/o5k157RvtUOZIzHb1R22t47VRe5A5R4=
 			</data>
 		</dict>
+		<key>modern.lua</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7o5Z+yPSwonTd28KtMIhAMoJ7MKFbPK5p1R7OYQOhDY=
+			</data>
+		</dict>
+		<key>pasteboard.lua</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lTZIVvYW98CWiUGtwRvqbZtlyv2cG1oXxDq+IMCIalQ=
+			</data>
+		</dict>
+		<key>pickers.lua</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LSBk+epZbS8kYobTy4k1T1Gn3/yGK/Qm2VGl7ekuPgY=
+			</data>
+		</dict>
 		<key>re.lua</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			GfR5io+6pCapdliktna/SMeikGwM1ranjcWgWWmGAJw=
+			</data>
+		</dict>
+		<key>require.lua</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sUQw5ng1LzapNeMqsvzgujbtE6gp/8CZf5FkoRla4sY=
 			</data>
 		</dict>
 		<key>smtp.lua</key>
@@ -441,11 +523,25 @@
 			3rqSN5VNcND7A5wiQgFaGZ+zfkSy2qd+xNQyV26w+IU=
 			</data>
 		</dict>
+		<key>tableExtensions.lua</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w/tiIcyovdsIVSJr4TATxkFQxVJ6/r8mDC3I6zX7tFs=
+			</data>
+		</dict>
 		<key>tp.lua</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			OrTw/IWAfBscCzKf+Cx0+NzPmyoOrE8lcZVmQeiQwUk=
+			</data>
+		</dict>
+		<key>typeof.lua</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Oqin1gaT4jK2W+F2GkVMwkX1lD2hJOdNAOru+y/J6M0=
 			</data>
 		</dict>
 		<key>url.lua</key>
@@ -455,11 +551,25 @@
 			iXZsdpdnSx9i6skf025HnBPRpAnLZ4SQEEs3jhHM89M=
 			</data>
 		</dict>
+		<key>viewer.lua</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mwrUkitgoJTHl49BikuecU4Yf4t/IDkosScc98IuG7k=
+			</data>
+		</dict>
 		<key>vscode-debuggee.lua</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			nJPTOvaDke5OnqmWuTveSqZEZtdcN41ipqLGzCBi16s=
+			</data>
+		</dict>
+		<key>vscode-userdata.lua</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eqO68/QdTRwBkC0Ey2lY1/clVEKxVe8GHf2zTFG9HsA=
 			</data>
 		</dict>
 	</dict>

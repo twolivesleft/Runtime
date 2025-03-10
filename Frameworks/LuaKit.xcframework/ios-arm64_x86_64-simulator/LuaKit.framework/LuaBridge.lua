@@ -44,7 +44,7 @@ function objcCallMethod(target, name, ...)
           name .. "' not found, are you using '.' instead of ':'?")
     return
   end
-  if type(ret) == "userdata" then
+  if objc.islightuserdata(ret) then
     return wrap(ret)
   else
     return ret
@@ -75,7 +75,7 @@ end
 
 local object_mt = {
   __tostring = function (o)
-    return "<"..(o.Class)..">"
+    return "<"..(o.Class).."> Retained: "..tostring(o.Retained)
   end,
   __index = function(inObject, inKey)
     if hasvariable_or_property(inObject, inKey) then
@@ -139,7 +139,9 @@ local object_mt = {
     end
   end,
   __gc = function(inObject)
-    objc.release(unwrap(inObject))
+    if inObject["Retained"] then
+        objc.release(unwrap(inObject))
+    end
   end,
   __eq = function(a, b)
     local wrappedA = a["WrappedObject"]
@@ -151,10 +153,11 @@ local object_mt = {
 }
 
 -- Wrap Objective-C Objects
-function wrap(obj)
+function wrap(obj, retained)
     local o = {}
     o["WrappedObject"] = obj;
     o["Class"] = objc.classof(obj);
+    o["Retained"] = retained ~= false
     setmetatable(o, object_mt)
     return o
 end
@@ -287,7 +290,7 @@ function objcdelegate()
         return o
     end
     mt.__tostring = function (o)
-        if o._protocol ~= nil then
+        if o._protocol ~= nil and o.classname ~= nil then
             return "<delegate "..(o.classname)..">"
         elseif o._classname ~= nil then
             return "<class "..(o._classname)..">"

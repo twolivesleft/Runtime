@@ -44,15 +44,11 @@
 
 - (nonnull NSMutableDictionary*) defaultInfoDictionary;
 
-- (nonnull NSData*) serializedRepresentation;
-
 - (BOOL) isFileValid:(nonnull NSString*)path;
 
 - (void) invalidateLastModifiedDate;
 - (void) updateLastModifiedDate:(nonnull NSDate *)date updateFileAttributes:(BOOL)update;
 - (void) updateLastModifiedDate:(nonnull NSDate *)date;
-
-- (void) writeInfoToBundlePath;
 
 // For subclasses
 
