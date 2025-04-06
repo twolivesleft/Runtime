@@ -55,6 +55,7 @@ local props = {
     safeArea = propertyAccess("safeArea"),
     runtime = propertyAccess("runtime", nil, true),
     uniformResizing = propertyAccess("uniformResizing"),
+    paused = propertyAccess("paused"),
     isPresenting = function(obj)
         return obj.presentedViewController ~= nil
     end

@@ -6755,14 +6755,14 @@
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 10607,
+      "offset": 10707,
       "length": 25,
       "value": "\"io.codea.directoryCache\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
       "kind": "Dictionary",
-      "offset": 10687,
+      "offset": 10787,
       "length": 3,
       "value": "[]"
     },

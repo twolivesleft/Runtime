@@ -52,10 +52,6 @@
 		<data>
 		bPqkiK5pZ7qtSzy1i+teOSuA+SU=
 		</data>
-		<key>ClassTemplate.lua</key>
-		<data>
-		QbEPDG385/EXRMKAUAuTSih3iiM=
-		</data>
 		<key>ColorSampleBackground.png</key>
 		<data>
 		64fRi/g87VWQfioT1EUeo1VikK8=
@@ -246,7 +242,7 @@
 		</data>
 		<key>Headers/RuntimeKit-Swift.h</key>
 		<data>
-		PaR6KUxBnIGl1JIPSVDZv1LT2XI=
+		9mLVUjspTIzvNJjbCkSewqD3vgc=
 		</data>
 		<key>Headers/RuntimeKit.h</key>
 		<data>
@@ -326,7 +322,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/8n1s+CRFTzqomIU3Sgl8aU3Jxc=
+		9e2lcnSwvDJ3VV9MWxSwVPUcNqU=
 		</data>
 		<key>LineRoundCapShader.fsh</key>
 		<data>
@@ -382,51 +378,51 @@
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		3xW/zgIbKso7TMweh5bp9zzKU00=
+		6TheNSCf4NjdBsB4jgyEaAaMC/c=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		YP44d/YKlI6Wj3Ysn/BoxNMxDjo=
+		a8td1BTVVOSeVqVbytZZvsBkG0A=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		lwivnOQRfa4A9YETxpZzpAYtyn8=
+		xg9eUXS37mRRAkAyjbcJ00ai14M=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iiIbGGEGLqtnQ+aoBgPLQ5cMdIk=
+		GhVvL+1vcNMCDkmNwt6vTilNAo4=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3ghSJb8ZY1pwAE7lttnMKoE4zYA=
+		Ibk1cOyCf8b9SC+Jji9MEDETLAQ=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iiIbGGEGLqtnQ+aoBgPLQ5cMdIk=
+		GhVvL+1vcNMCDkmNwt6vTilNAo4=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		k85mMy5K3jRzg7rISiVe0vb+Kkk=
+		sSd45TwZGSGc1SQDOToHy94Pgl0=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lwivnOQRfa4A9YETxpZzpAYtyn8=
+		xg9eUXS37mRRAkAyjbcJ00ai14M=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		s0IAS6Qmr9uj7ICf4m+UgRkKx9I=
+		H/gBrPjQp9Uuy2Gse+sWZh7eNUU=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mqUGC65VM6RvOZgRz6ARAtIRym0=
+		BIUkvjX7S3Ilw1Y4+H1BkGadrSc=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		s0IAS6Qmr9uj7ICf4m+UgRkKx9I=
+		H/gBrPjQp9Uuy2Gse+sWZh7eNUU=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yH/Hnpqs4GOCO3dMwPUxoa96WmI=
+		A20mdl+IHB6zvodNHcmBbX/MWHw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -759,13 +755,6 @@
 			<key>hash2</key>
 			<data>
 			+teewKzsUkV++v854VzF6ZddjhQfGyON3aS3njdjMt8=
-			</data>
-		</dict>
-		<key>ClassTemplate.lua</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qwqERhR366J8r8CLxTDYOOjX5HF9szigSDWSvPiFJ18=
 			</data>
 		</dict>
 		<key>ColorSampleBackground.png</key>
@@ -1101,7 +1090,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iKWXY1LWZoC+MOhzVdCWVQPDxa9o+3LEPe6ONqgnVEg=
+			Vn9cairM0GWOhGk90rwuqbAQjMKFdDtOcc5jRnr/888=
 			</data>
 		</dict>
 		<key>Headers/RuntimeKit.h</key>
@@ -1332,84 +1321,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y0VaycUEGqrffI3K1t4X5KtmrHdxVs9LxWGszwjpqv8=
+			kawoEen9jHdhLQvZX+yOblbd3yOiwcG5ZkJ8Q+dPu94=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Y8I+P3r4eWylq7/8694S/HC3BmTRPRHjZHQP/PUis8=
+			zLwx0uXyy2S4m2s09IMDHcJsjIejWbR+nJrbUTbMM6M=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r4YzeBxzkXS/9SeQZuvY/sgzrkHael1yEtsdgRMZBCI=
+			dbOWs64oSMxAcKMGpwk58ln4alqq1pbkUnrjCCxVpyA=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WOIm++SoGSTQvLeMnlozlGu/dWejOWinchzv/T2Ll0o=
+			V5XX4MYy5OszcbIjZA6rlXLRq3FLY3+tcFG6c0vl520=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gUkKLjPcCtFX4BN4j2Hn8WgoGN8VHhJSeKIn/lpBkFA=
+			Mor5XQmGZCwH/x6KVybV8olSBEiqjl9e6gLP7rpV1Uo=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WOIm++SoGSTQvLeMnlozlGu/dWejOWinchzv/T2Ll0o=
+			V5XX4MYy5OszcbIjZA6rlXLRq3FLY3+tcFG6c0vl520=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7/Qr894Oj25z7WppULvXPYSgutqdl6arGWNMYvXKabk=
+			nXoigYWNcGZh/TelrtLSeZIMBTdBSqch84Qwny/1tDM=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r4YzeBxzkXS/9SeQZuvY/sgzrkHael1yEtsdgRMZBCI=
+			dbOWs64oSMxAcKMGpwk58ln4alqq1pbkUnrjCCxVpyA=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MbAt+v8SuUeMKz1EMGzEnmoMtz8D3tCUafeMGmZiUuQ=
+			FZEhGAV67wud6XeMd0ImnCruH8cW3rtStw260VU5zbw=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c/KTnRYK8oo9uMQr9bFEFa6swgDX/C8Phuwsbyl6zGw=
+			RwncyRWvfnBdwmWEKut9ScVjlpUrnQAQ+rakTW7l/2A=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MbAt+v8SuUeMKz1EMGzEnmoMtz8D3tCUafeMGmZiUuQ=
+			FZEhGAV67wud6XeMd0ImnCruH8cW3rtStw260VU5zbw=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			39I2Bi588kghYWIIQoYLQsLDZyg1sCM0P5GJsHDwR1M=
+			A0VByGtRf2V+J1kEREvF85QNLia20RtWZFrB9ZRESZs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
