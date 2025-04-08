@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6n0Yi7YJcTBd/fAQkteRRvs112A=
+		gtCx5HDdlLIxPwY5SvbuFcDg90o=
 		</data>
 		<key>Modules/AssetKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/AssetKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bV1zdwKTO4uehxCk3Ao1XTtEVj8=
+		tNWu5rpogkTWgenk9FYbPf9f8mk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -153,7 +153,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rDmayyl4sSsWyYPu2tSMtOkzUy8nh+uinUgot7pJkXg=
+			eVssMRKHbRqEbZ5CQn5YL1UwwWRyZkOIVn6ScKbRfr8=
 			</data>
 		</dict>
 		<key>Modules/AssetKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -188,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BDOiWuApwl7wA/YSdbTnb0KyTS0u7dGCWb+F0azBUq0=
+			CCZFEH2d7Co/F/5eH6MTK6b/EBQO4n6YfKdZiDph2SU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
