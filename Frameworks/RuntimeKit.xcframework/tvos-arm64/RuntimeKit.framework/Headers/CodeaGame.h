@@ -130,10 +130,9 @@ extern "C" {
 #endif
 - (void) setupRenderGlobals;
 - (void) setupPhysicsGlobals;
-- (void) setupAccelerometerValues;
-
 - (void) updateScriptScreenDimensions:(CGRect)bounds;
 #if !TARGET_OS_TV
+- (void) setupAccelerometerValues;
 - (void) updateScriptOrientation:(UIInterfaceOrientation)interfaceOrientation;
 #endif
 - (void) start:(void(^)())completion;
