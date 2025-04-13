@@ -6678,35 +6678,35 @@
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 2035,
+      "offset": 2126,
       "length": 7,
       "value": "\"codea\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2461,
+      "offset": 2552,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
       "kind": "FloatLiteral",
-      "offset": 2513,
+      "offset": 2604,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 2567,
+      "offset": 2658,
       "length": 6,
       "value": "\"*.%@\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 2656,
+      "offset": 2747,
       "length": 12,
       "value": "\"%K LIKE %@\""
     },

@@ -59,9 +59,11 @@ struct Gesture {
         this->location = CGPointMake(location.x, inView.bounds.size.height - location.y);
         this->numberOfTouches = uiGesture.numberOfTouches;
         
+#if !TARGET_OS_TV
         if (@available(iOS 13.4, *)) {
             this->modifierFlags = uiGesture.modifierFlags;
         }
+#endif
     }
     
     CGPoint location;

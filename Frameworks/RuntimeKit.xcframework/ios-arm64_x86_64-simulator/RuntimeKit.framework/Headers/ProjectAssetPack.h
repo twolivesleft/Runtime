@@ -16,8 +16,9 @@
 @property (nonatomic, readonly) Project *project;
 @property (nonatomic, readonly) NSString *projectName;
 @property (nonatomic, readonly) NSString *collectionName;
+@property (nonatomic, readonly) BOOL canDisplayIcon;
 
 - (id) initWithProject:(Project *)project;
-- (id) initWithProject:(Project *)project collectionName:(NSString*)collectionName allowImportAll:(BOOL)allowImportAll;
+- (id) initWithProject:(Project *)project collectionName:(NSString*)collectionName allowImportAll:(BOOL)allowImportAll canDisplayIcon:(BOOL)canDisplayIcon;
 
 @end

@@ -273,7 +273,9 @@ typedef std::map<GLuint, glm::vec4> ColorCache;
 @property (nonatomic, weak) ScreenCapture* capture;
 
 @property (nonatomic, strong, readonly) CameraTexture* cameraTexture;
+#if !TARGET_OS_TV
 @property (nonatomic, assign) UIInterfaceOrientation interfaceOrientation;
+#endif
 
 - (id) initWithCodeaContext:(id)codeaContext;
 - (void) reset;

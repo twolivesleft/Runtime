@@ -49,8 +49,10 @@ FOUNDATION_EXPORT const unsigned char ToolKitVersionString[];
 #import <Tools/SSImageCache.h>
 #import <Tools/TLLDocumentsDirectory.h>
 
+#if !TARGET_OS_TV
 #import <Tools/MBProgressHUD.h>
 #import <Tools/SVProgressHUD.h>
+#endif
 
 #import <Tools/GRMustacheAvailabilityMacros.h>
 #import <Tools/GRMustache.h>

@@ -123,14 +123,19 @@ extern "C" {
 
 - (void) saveProjectInfo;
 
+#if TARGET_OS_TV
+- (void) setupRenderGlobalsWithBounds:(CGRect)bounds;
+#else
 - (void) setupRenderGlobalsWithOrientation:(UIInterfaceOrientation)orientation andBounds:(CGRect)bounds;
+#endif
 - (void) setupRenderGlobals;
 - (void) setupPhysicsGlobals;
 - (void) setupAccelerometerValues;
 
 - (void) updateScriptScreenDimensions:(CGRect)bounds;
+#if !TARGET_OS_TV
 - (void) updateScriptOrientation:(UIInterfaceOrientation)interfaceOrientation;
-
+#endif
 - (void) start:(void(^)())completion;
 - (void) close:(void(^)())completion;
 - (void) restart;

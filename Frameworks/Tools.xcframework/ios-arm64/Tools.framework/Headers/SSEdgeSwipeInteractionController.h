@@ -16,7 +16,7 @@ typedef BOOL(^SSEdgeSwipeShouldDismiss)(UIViewController*);
 
 @property (nonatomic, assign) UIRectEdge edge;
 
-#if !TARGET_OS_VISION
+#if !TARGET_OS_VISION && !TARGET_OS_TV
 @property (nonatomic, readonly) UIScreenEdgePanGestureRecognizer *gesture;
 #endif
 
