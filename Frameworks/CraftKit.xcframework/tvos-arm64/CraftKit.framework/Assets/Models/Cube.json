@@ -1,0 +1,18 @@
+{
+    "elements" :
+    [
+        {
+            "from" : [0, 0, 0],
+            "to" : [255, 255, 255],
+            "faces" :
+            {
+                "east" : { "texture" : "$east", "color" : "$east", "cullface" : "east" },
+                "south" : { "texture" : "$south", "color" : "$south", "cullface" : "south"},
+                "west" : { "texture" : "$west", "color" : "$west", "cullface" : "west" },
+                "north" : { "texture" : "$north", "color" : "$north", "cullface" : "north"},
+                "up" : { "texture" : "$up", "color" : "$up", "cullface" : "up" },
+                "down" : { "texture" : "$down", "color" : "$down", "cullface" : "down" }
+            }
+        }
+    ]
+}
