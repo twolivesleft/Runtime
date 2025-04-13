@@ -1,0 +1,11 @@
+framework module Tools {
+  umbrella header "Tools.h"
+  export *
+
+  module * { export * }
+}
+
+module Tools.Swift {
+  header "Tools-Swift.h"
+  requires objc
+}

@@ -1,0 +1,56 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-tvos18.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Tools
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import DeveloperToolsSupport
+import Foundation
+import Swift
+@_exported import Tools
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class MulticastDelegate<T> {
+  public init()
+  public func add(_ delegate: T)
+  public func remove(_ delegateToRemove: T)
+  public func invoke(_ invocation: (T) -> Swift.Void)
+  @objc deinit
+}
+extension UIKit.UIColor {
+  @objc dynamic public var data: Foundation.Data? {
+    @objc get
+  }
+}
+extension Foundation.NSData {
+  @objc dynamic public var color: UIKit.UIColor? {
+    @objc get
+  }
+}
+extension Foundation.Data {
+  public var color: UIKit.UIColor? {
+    get
+  }
+}
+public struct RestorableProjectKey {
+  public static let sessionType: Swift.String
+  public static let fileURL: Swift.String
+  public static let bookmark: Swift.String
+  public static let useLegacyViewer: Swift.String
+  public static let useLegacyEditor: Swift.String
+}
+public protocol RestorableProject {
+  var url: Foundation.URL { get }
+  func viewerActivity(activityType: Swift.String, useLegacyViewer: Swift.Bool) -> Foundation.NSUserActivity
+  func editorActivity(activityType: Swift.String, useLegacyEditor: Swift.Bool) -> Foundation.NSUserActivity
+}
+extension Tools.RestorableProject {
+  public var userActivityTitle: Swift.String {
+    get
+  }
+  public var userActivityInfo: [Swift.AnyHashable : Any] {
+    get
+  }
+  public func viewerActivity(activityType: Swift.String, useLegacyViewer: Swift.Bool = false) -> Foundation.NSUserActivity
+  public func editorActivity(activityType: Swift.String, useLegacyEditor: Swift.Bool = false) -> Foundation.NSUserActivity
+}
