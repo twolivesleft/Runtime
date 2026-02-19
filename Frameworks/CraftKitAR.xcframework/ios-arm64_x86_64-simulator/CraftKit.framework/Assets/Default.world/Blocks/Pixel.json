@@ -1,0 +1,35 @@
+{
+   "index" : 12,
+   "name" : "Pixel",
+   "script_code" : "Pixel = class('Pixel', Block)\n\nfunction Pixel:created()\n    self:blockUpdate(0)\nend\n\nfunction Pixel:destroyed()\nend\n\n-- Called when an entity places this block\n-- details is a table containing information on the placement of this block\n-- details.entity = entity that placed this block\n-- details.facing = facing of the entity placing this block (NORTH, EAST, SOUTH...)\n-- details.adjacent = coordinates of the block this one is built on\n-- details.adjacentFace = the face this block was placed on (NORTH, EAST, SOUTH...)\nfunction Pixel:placed(details)\n    self:schedule(60)\nend\n\n-- Called when an entity removes this block\n-- details.entity = entity that removed this block\n-- details.facing = facing of the entity that removed this block\nfunction Pixel:removed(details)\nend\n\nfunction Pixel:blockUpdate(t)\n    self:set(\"red\", math.random(255))\n    self:set(\"blue\", math.random(255))\n    self:set(\"green\", math.random(255))\n    self:schedule(60)\nend\n\nfunction Pixel:buildMesh(builder)\n    local r = self:get(\"red\") / 255.0\n    local g = self:get(\"green\") / 255.0\n    local b = self:get(\"blue\") / 255.0\n    builder:setFaceTextures(\"Pixel\")\n    builder:setFaceColors(vec4(r,g,b))\nend\n\n",
+   "script_type" : "static",
+   "state" : {
+      "blue" : {
+         "default" : 0,
+         "range" : [ 0, 255 ]
+      },
+      "green" : {
+         "default" : 0,
+         "range" : [ 0, 255 ]
+      },
+      "red" : {
+         "default" : 0,
+         "range" : [ 0, 255 ]
+      }
+   },
+   "variants" : {
+      "normal" : {
+         "textures" : "glass",
+         "face_colors" : [
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ]
+         ],
+         "face_textures" : [ "glass" ],
+         "geo_type" : "solid"
+      }
+   }
+}

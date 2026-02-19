@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Materials used for 3D and 2D surfaces</string>
+	<key>Icon</key>
+	<string>Icon</string>
+	<key>ExcludeFromShaderLab</key>
+	<true/>
+	<key>Types</key>
+	<array>
+		<string>shaders</string>
+	</array>
+</dict>
+</plist>

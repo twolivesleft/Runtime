@@ -18,6 +18,8 @@ extern "C" {
 
 #import <UIKit/UIKit.h>
 
+#import "AirCode.h"
+
 #define LUA_OBJCLIBNAME   "objc"
     
 LUALIB_API int (luaopen_objc) (lua_State *L);
@@ -31,6 +33,8 @@ LUALIB_API int (luaopen_objc) (lua_State *L);
 @property (atomic, retain) NSMutableSet* activeClassNames;
 @property (atomic, retain) NSMutableArray* waitingSemaphores;
 @property (atomic, retain) dispatch_queue_t backgroundQueue;
+
+@property (nonatomic, weak) id<LuaDebugMessageInterface> debugMessageInterface;
 
 @property (copy) void (^warningHandler)(NSString*);
 @property (copy) void (^errorHandler)(NSString*);

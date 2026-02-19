@@ -336,7 +336,7 @@ local objc_mt = {
         if inKey == "_viewerContainer" then
             local viewer = objc.viewer
             if viewer ~= nil then
-                return viewer.parentViewController
+                return viewer.parentViewController.parentViewController
             end
             
             return nil

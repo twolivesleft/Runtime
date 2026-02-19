@@ -1,0 +1,21 @@
+{
+   "index" : 9,
+   "name" : "CaveSystem",
+   "script_code" : "CaveSystem = class('CaveSystem', Block)\n\nfunction CaveSystem:placed(details)\n    self.gx = noise.perlin()\n    self.gx.seed = self.x\n    self.gx.frequency = 0.5\n    self.gy = noise.perlin()\n    self.gy.seed = self.y\n    self.gy.frequency = 0.5\n    self.gz = noise.perlin()\n    self.gz.seed = self.z\n    self.gz.frequency = 0.5\n    self.gr = noise.perlin()\n    self.gr.seed = self.z\n    self.gr.frequency = 0.25\n    self.timer = 0.0\n    self.totalDist = 0\n    self.limit = 100\n    self.loc = {x = self.x, y = self.y, z = self.z, r = 2}\n    self.state = world:getBlock(self.x, self.y, self.z, BLOCK_STATE)\nend\n\nfunction CaveSystem:getValue(n)\n    local loc = self.loc\n    return n:getValue(loc.x/16, loc.y/16, loc.z/16)\nend\n\nfunction CaveSystem:dig()\n    local loc = self.loc\n    local dist = 2\n\n    local percent = self.totalDist / (self.limit+0.0)\n\n    if percent > 0.6 then\n        loc.r = math.floor(4-((percent-0.6)*40))\n    end\n\n    self:carve(math.floor(loc.x),\n               math.floor(loc.y),\n               math.floor(loc.z),\n               loc.r)\n\n    local dx = self:getValue(self.gx)\n    local dy = self:getValue(self.gy) * 0.25 - 0.05\n    local dz = self:getValue(self.gz)\n    local dr = self:getValue(self.gr)\n\n    local dir = vec3(dx,dy,dz)\n    dir = dir:normalized()\n\n    dx = dir.x * dist\n    dy = dir.y * dist\n    dz = dir.z * dist\n\n    self.totalDist = self.totalDist + dist\n\n    if self.totalDist > self.limit then\n        world:setBlock(self.x, self.y, self.z, \"air\")\n\n        if self.state == 0 then\n            local settings = {[BLOCK_NAME] = self.name, [BLOCK_STATE] = 1}\n            world:setBlock(math.floor(loc.x),\n               math.floor(loc.y),\n               math.floor(loc.z),\n               settings)\nworld:setBlock(math.floor(loc.x),\n               math.floor(loc.y+1),\n               math.floor(loc.z),\n               settings)\n        end\n    end\n\n    loc.x = loc.x + dx\n    loc.y = loc.y + dy\n    loc.z = loc.z + dz\n    loc.r = math.floor(((dr + 1) * 0.5) * 3 + 2)\nend\n\nfunction CaveSystem:removed()\nend\n\nfunction CaveSystem:update(dt)\n    self.timer = self.timer - dt\n    if self.timer < 0 then\n        self.timer = 0.1\n        self:dig()\n    end\nend\n\nfunction CaveSystem:carve(x,y,z,r)\n    local r2 = r*r\n\n    local x1 = x - r\n    local y1 = y - r\n    local z1 = z - r\n    local x2 = x + r\n    local y2 = y + r\n    local z2 = z + r\n\n    for i = x1,x2 do\n        for j = y1,y2 do\n            for k = z1,z2 do\n                local dx = i-x\n                local dy = j-y\n                local dz = k-z\n                local d = dx*dx + dy*dy + dz*dz\n                if d < r2 - math.random(math.floor(r2/10), math.floor(r2/8)) then\n                    local name = world:getBlock(i,j,k,BLOCK_NAME)\n                    if name ~= self.name then\nworld:setBlock(i,j,k,\"air\")\n                    end\n                end\n            end\n        end\n    end\nend",
+   "script_type" : "dynamic",
+   "state" : null,
+   "variants" : {
+      "normal" : {
+         "face_colors" : [
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 0 ],
+            [ 1, 1, 1, 1 ]
+         ],
+         "face_textures" : [ "Missing", "Missing", "Missing", "Missing", "Grass", "Missing" ],
+         "geo_type" : "solid"
+      }
+   }
+}

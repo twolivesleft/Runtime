@@ -16,6 +16,8 @@ FOUNDATION_EXPORT const unsigned char LuaKitVersionString[];
 #import <LuaKit/LuaBridgedFunctions.h>
 #import <LuaKit/LuaLibraries.h>
 #import <LuaKit/AirCode.h>
+#import <LuaKit/File.h>
+#import <LuaKit/Layout.h>
 #import <LuaKit/Assets.h>
 #import <LuaKit/AssetKey.hpp>
 #import <LuaKit/LuaRefContainer.h>

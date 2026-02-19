@@ -21,5 +21,7 @@
 +(CGRect) mediaRectForURL:(NSURL *)resourceURL atPage:(NSInteger)page;
 +(NSInteger) pageCountForURL:(NSURL *)resourceURL;
 +(NSURL *)resourceURLForName:(NSString *)resourceName;
-  
+
+- (UIImage *)snapshotImage;
+
 @end

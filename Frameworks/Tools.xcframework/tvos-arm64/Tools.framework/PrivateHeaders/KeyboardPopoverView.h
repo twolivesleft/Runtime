@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KeyboardPopoverView : UIView
+@interface KeyboardPopoverView: UIView
 
 @property (nonatomic, assign) UIKeyboardAppearance keyboardAppearance;
 

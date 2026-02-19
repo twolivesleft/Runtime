@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios16.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RuntimeKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AVKit
 import AssetKit
 import Foundation
@@ -14,8 +14,28 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
+public enum RuntimeOutputType {
+  case warning
+  case error
+  case message
+  public static func == (a: RuntimeKit.RuntimeOutputType, b: RuntimeKit.RuntimeOutputType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol RuntimeDelegate {
+  func runtime(_ runtime: RuntimeKit.CodeaViewController, didOutput message: Swift.String, ofType type: RuntimeKit.RuntimeOutputType)
+  func runtimeDidClearOutput(_ runtime: RuntimeKit.CodeaViewController)
+  func runtimeDidSetup(_ runtime: RuntimeKit.CodeaViewController)
+  func runtime(_ runtime: RuntimeKit.CodeaViewController, didSetPaused paused: Swift.Bool)
+  func runtimeDidRestart(_ runtime: RuntimeKit.CodeaViewController)
+  func runtimeWillStop(_ runtime: RuntimeKit.CodeaViewController)
+}
 extension RuntimeKit.ProjectManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func configureInfoPlist(wrapper: Foundation.FileWrapper, updatedDict: [Swift.String : Any?])
+  #endif
   public static func loadProjects(atPath path: Foundation.URL, userProjects: Swift.Bool) -> [RuntimeKit.Project]
 }
 @objc public class ExternalAssetPack : RuntimeKit.AssetPack {
@@ -32,10 +52,14 @@ extension RuntimeKit.ProjectManager {
   }
   @objc public var allowImportAll: Swift.Bool
   @objc public var path: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var bookmarkedUrl: Foundation.URL? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(path: Swift.String, validFileTypes: [Any]? = nil, allowImportAll: Swift.Bool = false)
+  #endif
   @objc override dynamic public func childAssetPack(atPath path: Swift.String) -> RuntimeKit.AssetPack
   @objc override dynamic public func createFolder(_ folderName: Swift.String)
   @objc override dynamic public func writeAsset(_ fileName: Swift.String, writer: @escaping RuntimeKit.AssetPackWriter)
@@ -53,20 +77,30 @@ extension Foundation.NSNotification.Name {
   public static let projectManagerDidCopyExamples: Foundation.Notification.Name
 }
 public struct CloudDirectoryHelper {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var iCloudURL: Foundation.URL? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func createCloudFolderIfNeeded() -> Foundation.URL?
+  #endif
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ProjectManager : ObjectiveC.NSObject {
   @objc public static let shared: RuntimeKit.ProjectManager
   @objc public static let defaultProjectCollectionName: Swift.String
   @objc final public let local: RuntimeKit.ProjectRepository
   @objc public var iCloud: RuntimeKit.ProjectRepository
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func project(withName name: Swift.String) -> RuntimeKit.Project?
+  #endif
   @objc public func hasProject(withName name: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func collection(withName name: Swift.String) -> RuntimeKit.ProjectCollection?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func collection(forProject project: RuntimeKit.Project) -> RuntimeKit.ProjectCollection?
+  #endif
   @objc public var defaultProjectTemplate: RuntimeKit.Project {
     @objc get
   }
@@ -98,6 +132,13 @@ extension RuntimeKit.Project {
   @objc dynamic public func allDependentProjects(forProject project: RuntimeKit.Project, shouldFix fix: Swift.Bool) -> Swift.Set<RuntimeKit.Project>
   @objc dynamic public func allDependentProjects(forProject project: RuntimeKit.Project, shouldFix fix: Swift.Bool, dependencies: Swift.Set<RuntimeKit.Project>) -> Swift.Set<RuntimeKit.Project>
 }
+extension RuntimeKit.AssetManager {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public var iCloudDocumentsPack: RuntimeKit.AssetPack? {
+    @objc get
+  }
+  #endif
+}
 @_inheritsConvenienceInitializers @objc public class RuntimeStyle : ObjectiveC.NSObject {
   @objc public static func codeFont(withSize size: CoreFoundation.CGFloat, weight: UIKit.UIFont.Weight) -> UIKit.UIFont
   @objc public static func codeFont(forTextStyle textStyle: UIKit.UIFont.TextStyle, weight: UIKit.UIFont.Weight) -> UIKit.UIFont
@@ -116,7 +157,9 @@ public struct ProjectRepositoryMetadata : Swift.Codable {
   public enum CollectionVisibility : Swift.Int, Swift.Codable {
     case visible
     case hidden
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -126,7 +169,9 @@ public struct ProjectRepositoryMetadata : Swift.Codable {
     case user
     case external
     case builtIn
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -140,7 +185,9 @@ public struct ProjectRepositoryMetadata : Swift.Codable {
   public func type(forCollection collection: RuntimeKit.ProjectCollection) -> RuntimeKit.ProjectRepositoryMetadata.CollectionType
   public func order(for name: Swift.String) -> Swift.Int
   public func order(forCollection collection: RuntimeKit.ProjectCollection) -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   public func localizedTitleKey(forCollection collection: RuntimeKit.ProjectCollection) -> Swift.String?
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -148,8 +195,12 @@ extension RuntimeKit.ProjectRepositoryMetadata {
   public func updateCollections(_ collections: [RuntimeKit.ProjectCollection]) -> RuntimeKit.ProjectRepositoryMetadata
   public func updateCollections(names: [Swift.String]) -> RuntimeKit.ProjectRepositoryMetadata
   public func updateOrders(_ orders: [(Swift.Int, Swift.String)]) -> RuntimeKit.ProjectRepositoryMetadata
+  #if compiler(>=5.3) && $NonescapableTypes
   public func updateVisibility(_ visibility: RuntimeKit.ProjectRepositoryMetadata.CollectionVisibility, forCollection collection: RuntimeKit.ProjectCollection) -> RuntimeKit.ProjectRepositoryMetadata?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func updateLocalizedTitleKey(_ localizedTitleKey: Swift.String?, forCollection collection: RuntimeKit.ProjectCollection) -> RuntimeKit.ProjectRepositoryMetadata?
+  #endif
 }
 @_inheritsConvenienceInitializers @objc public class OSCManager : ObjectiveC.NSObject {
   @objc public static let shared: RuntimeKit.OSCManager
@@ -159,7 +210,9 @@ extension RuntimeKit.ProjectRepositoryMetadata {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func startServer(port: Swift.Int = 9000, completion: (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
   @objc public func stopServer()
   @objc public func sendMessage(_ address: Swift.String, contents: [Any])
   @objc override dynamic public init()
@@ -177,9 +230,11 @@ extension RuntimeKit.ProjectRepositoryMetadata {
 @objc @_inheritsConvenienceInitializers public class ProjectRepository : AssetKit.DirectoryMonitor, RuntimeKit.ProjectCollectionDelegate {
   public var delegate: Tools.MulticastDelegate<any RuntimeKit.ProjectCollectionRepositoryDelegate>
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   public var rootCollection: RuntimeKit.ProjectCollection? {
     get
   }
+  #endif
   public var subCollections: [RuntimeKit.ProjectCollection] {
     get
   }
@@ -193,14 +248,22 @@ extension RuntimeKit.ProjectRepositoryMetadata {
   public func setCollectionVisible(_ collection: RuntimeKit.ProjectCollection, visible: Swift.Bool)
   public func isCollectionVisibleAtIndex(_ index: Swift.Int) -> Swift.Bool
   public func setCollectionVisible(atIndex index: Swift.Int, visible: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func localizedName(_ collection: RuntimeKit.ProjectCollection) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func localizedNameAtIndex(_ index: Swift.Int) -> Swift.String?
+  #endif
   public func applyLocalizationKeys(_ localizationKeys: [Swift.String : Swift.String])
   public func order(for name: Swift.String) -> Swift.Int
   public func order(for collection: RuntimeKit.ProjectCollection) -> Swift.Int
   public func updateOrders(_ orders: [(Swift.Int, Swift.String)])
+  #if compiler(>=5.3) && $NonescapableTypes
   public func createCollection(withName name: Swift.String, completion: @escaping (RuntimeKit.ProjectCollection?, (any Swift.Error)?) -> ())
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func deleteCollection(withName name: Swift.String, completion: @escaping ((any Swift.Error)?) -> ())
+  #endif
   override public func shouldManageUrl(_ url: Foundation.URL) -> Swift.Bool
   override public func urlCacheUpdated()
   override public func itemChanged(_ url: Foundation.URL, change: AssetKit.DirectoryMonitor.ChangeType)
@@ -209,23 +272,39 @@ extension RuntimeKit.ProjectRepositoryMetadata {
   @objc public func projectCollection(_ collection: RuntimeKit.ProjectCollection, insertedProject project: RuntimeKit.Project, at index: Swift.Int)
   @objc public func projectCollection(_ collection: RuntimeKit.ProjectCollection, modifiedProject project: RuntimeKit.Project, at index: Swift.Int)
   @objc public func reloadProjectCollection(_ collection: RuntimeKit.ProjectCollection)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func indexPath(for project: RuntimeKit.Project) -> Foundation.IndexPath?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func indexPath(for path: Swift.String) -> Foundation.IndexPath?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public init(url: Foundation.URL?, monitorForUpdates: Swift.Bool, skipHiddenFiles: Swift.Bool = super)
+  #endif
 }
 extension RuntimeKit.AssetManager {
   @objc dynamic public func addShaderBundleAssetPack(url: Foundation.URL)
 }
 @_inheritsConvenienceInitializers @objc public class WifiAddress : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var current: Swift.String? {
     @objc get
   }
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
+@objc extension RuntimeKit.Project {
+  @objc public static func assetPathsFromContent(_ content: Swift.String) -> Swift.Set<Swift.String>
+  @objc dynamic public func assetPaths() -> Swift.Set<Swift.String>
+}
 extension UIKit.UIApplication {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func findViewController(from controller: UIKit.UIViewController, for luaState: RuntimeKit.CodeaLuaState) -> UIKit.UIViewController?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func viewController(for luaState: RuntimeKit.CodeaLuaState) -> UIKit.UIViewController?
+  #endif
 }
 extension RuntimeKit.Project {
   public func dependentProjects(projectManager: RuntimeKit.ProjectManager) -> [RuntimeKit.Project]
@@ -233,11 +312,12 @@ extension RuntimeKit.Project {
 @objc @_Concurrency.MainActor @preconcurrency open class CodeaViewController : UIKit.UIViewController, RuntimeKit.ThreadedRuntimeViewControllerDelegate {
   @_Concurrency.MainActor @preconcurrency final public let activityType: Swift.String
   @objc nonisolated final public let runtime: RuntimeKit.ThreadedRuntimeViewController
-  @_Concurrency.MainActor @preconcurrency public var output: Tools.MulticastDelegate<any RuntimeKit.CodeaOutputDelegate>
-  @_Concurrency.MainActor @preconcurrency public var runtimeDelegate: Tools.MulticastDelegate<any RuntimeKit.CodeaRuntimeDelegate>
+  @_Concurrency.MainActor @preconcurrency public var delegate: Tools.MulticastDelegate<any RuntimeKit.RuntimeDelegate>
   @_Concurrency.MainActor @preconcurrency public var parameters: Tools.MulticastDelegate<any RuntimeKit.CodeaParameterDelegate>
   @_Concurrency.MainActor @preconcurrency public init(runtime: RuntimeKit.ThreadedRuntimeViewController, activityType: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc public func runtimeViewControllerDidFinishSetup(_ context: Any)
   @_Concurrency.MainActor @preconcurrency @objc public func runtimeViewController(_ context: Any, willPause pause: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc public func runtimeViewControllerDidRestart(_ context: Any)
@@ -259,28 +339,61 @@ extension RuntimeKit.CodeaViewController {
     set
   }
   @_Concurrency.MainActor @preconcurrency public func restart()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func captureScreenshot() async -> UIKit.UIImage?
+  #endif
   @_Concurrency.MainActor @preconcurrency public func updateProjectIcon(_ image: UIKit.UIImage)
-  @_Concurrency.MainActor @preconcurrency public func callWillClose() async
   @_Concurrency.MainActor @preconcurrency public func closeViewer() async
 }
 extension RuntimeKit.CodeaViewController : RuntimeKit.CodeaLuaStateDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaStateCreated(_ state: RuntimeKit.CodeaLuaState!, isValidating validating: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, printedText text: Swift.String!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, tracedText text: Swift.String!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, warningText text: Swift.String!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, errorOccured error: Swift.String!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func clearOutput(for state: RuntimeKit.CodeaLuaState!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func removeAllParameters(for state: RuntimeKit.CodeaLuaState!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerWatch expression: Swift.String!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerFloatParameter name: Swift.String!, initialValue value: CoreFoundation.CGFloat, withMin minVal: CoreFoundation.CGFloat, andMax maxVal: CoreFoundation.CGFloat, callback: Swift.Int32)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerIntegerParameter name: Swift.String!, initialValue value: Swift.Int, withMin minVal: Swift.Int, andMax maxVal: Swift.Int, callback: Swift.Int32)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerColorParameter name: Swift.String!, initialRed red: CoreFoundation.CGFloat, initialGreen green: CoreFoundation.CGFloat, initialBlue blue: CoreFoundation.CGFloat, initialAlpha alpha: CoreFoundation.CGFloat, callback: Swift.Int32)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerBoolParameter name: Swift.String!, initialValue initial: Swift.Bool, callback: Swift.Int32)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerTextParameter name: Swift.String!, initialValue initial: Swift.String!, callback: Swift.Int32)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaState(_ state: RuntimeKit.CodeaLuaState!, registerActionParameter name: Swift.String!, callback: Swift.Int32)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaStateUpdatedParameters(_ state: RuntimeKit.CodeaLuaState!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func luaStateWillClose(_ state: RuntimeKit.CodeaLuaState!)
+  #endif
 }
 extension RuntimeKit.Project : Tools.RestorableProject {
 }
@@ -292,11 +405,17 @@ extension RuntimeKit.CodeaViewController {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func configureUserActivity()
 }
 extension RuntimeKit.ProjectManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func createProject(withName name: Swift.String, withProjectString projectString: Swift.String, in collection: RuntimeKit.ProjectCollection, tintColor: UIKit.UIColor?, completion: @escaping (RuntimeKit.Project?, (any Swift.Error)?) -> ())
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func createProject(withName name: Swift.String, withTemplate template: RuntimeKit.Project, in collection: RuntimeKit.ProjectCollection, tintColor: UIKit.UIColor? = nil, completion: @escaping (RuntimeKit.Project?, (any Swift.Error)?) -> ())
+  #endif
 }
 extension RuntimeKit.ProjectManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func createCollection(withName name: Swift.String, completion: @escaping (RuntimeKit.ProjectCollection?, (any Swift.Error)?) -> ())
+  #endif
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AudioManager : ObjectiveC.NSObject {
   @objc public static let shared: RuntimeKit.AudioManager
@@ -310,16 +429,20 @@ extension RuntimeKit.ProjectManager {
   @objc public func startMicTracker()
   @objc public func stopMicTracker()
 }
-@objc @_inheritsConvenienceInitializers public class CodeaStandardLibrary : ObjectiveC.NSObject, RuntimeKit.CodeaAddon {
+@objc public class CodeaStandardLibrary : ObjectiveC.NSObject, RuntimeKit.CodeaAddon {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(debuggerBundle: Foundation.Bundle?)
+  #endif
   @objc public func codea(_ controller: RuntimeKit.ThreadedRuntimeViewController, didCreateLuaState L: Swift.OpaquePointer, isValidating validating: Swift.Bool)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum ProjectCollectionSorting : Swift.Int {
   case date
   case name
   case ordered
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -333,17 +456,26 @@ extension RuntimeKit.ProjectManager {
 }
 @objc public class ProjectCollection : AssetKit.DirectoryMonitor {
   @objc weak public var delegate: (any RuntimeKit.ProjectCollectionDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(url: Foundation.URL?, monitorForUpdates: Swift.Bool)
+  #endif
+  @objc deinit
   override public func urlCacheUpdated()
   @objc public var name: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func renameProject(withFileWrapper wrapper: Foundation.FileWrapper, project: RuntimeKit.Project, name: Swift.String, tintColor: UIKit.UIColor? = nil) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func createProject(withFileWrapper wrapper: Foundation.FileWrapper, named name: Swift.String, completion: @escaping (RuntimeKit.Project?, (any Swift.Error)?) -> ())
+  #endif
   @objc public func deleteProject(_ project: RuntimeKit.Project) -> Swift.Bool
   @objc public func hasProject(_ project: RuntimeKit.Project) -> Swift.Bool
   @objc public func hasProject(withName name: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func project(withName name: Swift.String) -> RuntimeKit.Project?
+  #endif
   @objc public var count: Swift.Int {
     @objc get
   }
@@ -361,8 +493,9 @@ extension RuntimeKit.ProjectManager {
   override public func shouldManageUrl(_ url: Foundation.URL) -> Swift.Bool
   override public func itemChanged(_ url: Foundation.URL, change: AssetKit.DirectoryMonitor.ChangeType)
   public static func == (lhs: RuntimeKit.ProjectCollection, rhs: RuntimeKit.ProjectCollection) -> Swift.Bool
-  @objc deinit
 }
+extension RuntimeKit.RuntimeOutputType : Swift.Equatable {}
+extension RuntimeKit.RuntimeOutputType : Swift.Hashable {}
 extension RuntimeKit.ProjectRepositoryMetadata.CollectionVisibility : Swift.Equatable {}
 extension RuntimeKit.ProjectRepositoryMetadata.CollectionVisibility : Swift.Hashable {}
 extension RuntimeKit.ProjectRepositoryMetadata.CollectionVisibility : Swift.RawRepresentable {}

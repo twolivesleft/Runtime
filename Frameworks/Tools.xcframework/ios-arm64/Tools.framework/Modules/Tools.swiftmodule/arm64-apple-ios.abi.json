@@ -3728,8 +3728,8 @@
           },
           {
             "kind": "Var",
-            "name": "fileURL",
-            "printedName": "fileURL",
+            "name": "filePath",
+            "printedName": "filePath",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3739,8 +3739,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5Tools20RestorableProjectKeyV7fileURLSSvpZ",
-            "mangledName": "$s5Tools20RestorableProjectKeyV7fileURLSSvpZ",
+            "usr": "s:5Tools20RestorableProjectKeyV8filePathSSvpZ",
+            "mangledName": "$s5Tools20RestorableProjectKeyV8filePathSSvpZ",
             "moduleName": "Tools",
             "static": true,
             "declAttributes": [
@@ -3764,8 +3764,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5Tools20RestorableProjectKeyV7fileURLSSvgZ",
-                "mangledName": "$s5Tools20RestorableProjectKeyV7fileURLSSvgZ",
+                "usr": "s:5Tools20RestorableProjectKeyV8filePathSSvgZ",
+                "mangledName": "$s5Tools20RestorableProjectKeyV8filePathSSvgZ",
                 "moduleName": "Tools",
                 "static": true,
                 "implicit": true,
@@ -4217,7 +4217,6 @@
                 "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
                 "usr": "s:Sb"
               }
             ],
@@ -4442,6 +4441,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -5005,6 +5011,7 @@
         "intro_tvOS": "9.0",
         "intro_watchOS": "2.0",
         "declAttributes": [
+          "AddressableForDependencies",
           "Frozen",
           "Available",
           "Available",
@@ -5370,6 +5377,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sequence",
             "printedName": "Sequence",
             "children": [
@@ -5660,42 +5674,35 @@
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
-      "offset": 293,
-      "length": 9,
-      "value": "\"fileURL\""
+      "offset": 294,
+      "length": 10,
+      "value": "\"filePath\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
-      "offset": 336,
+      "offset": 338,
       "length": 10,
       "value": "\"bookmark\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
-      "offset": 387,
+      "offset": 389,
       "length": 17,
       "value": "\"useLegacyViewer\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
-      "offset": 445,
+      "offset": 447,
       "length": 17,
       "value": "\"useLegacyEditor\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "BooleanLiteral",
-      "offset": 1460,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1751,
+      "offset": 1476,
       "length": 5,
       "value": "false"
     },

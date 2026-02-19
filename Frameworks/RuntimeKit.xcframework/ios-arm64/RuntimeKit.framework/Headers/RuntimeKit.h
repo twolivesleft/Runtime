@@ -59,9 +59,7 @@ FOUNDATION_EXPORT const unsigned char RuntimeKitVersionString[];
 #import <RuntimeKit/GLFilteredTexture.h>
 #import <RuntimeKit/CodeaAddon.h>
 #import <RuntimeKit/KeyboardInputView.h>
-#import <RuntimeKit/CodeaOutputDelegate.h>
 #import <RuntimeKit/CodeaParameterDelegate.h>
-#import <RuntimeKit/CodeaRuntimeDelegate.h>
 #import <RuntimeKit/OSCKit.h>
 #import <RuntimeKit/RendererDelegate.h>
 #import <RuntimeKit/ParameterData.h>
