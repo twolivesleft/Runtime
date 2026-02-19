@@ -335,9 +335,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AudioManager
 @class ThreadedRuntimeViewController;
 SWIFT_CLASS("_TtC10RuntimeKit20CodeaStandardLibrary")
 @interface CodeaStandardLibrary : NSObject <CodeaAddon>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)codea:(ThreadedRuntimeViewController * _Nonnull)controller didCreateLuaState:(void * _Nonnull)L isValidating:(BOOL)validating;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class NSCoder;

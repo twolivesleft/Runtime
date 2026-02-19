@@ -429,7 +429,8 @@ extension RuntimeKit.ProjectManager {
   @objc public func startMicTracker()
   @objc public func stopMicTracker()
 }
-@objc public class CodeaStandardLibrary : ObjectiveC.NSObject, RuntimeKit.CodeaAddon {
+@objc @_inheritsConvenienceInitializers public class CodeaStandardLibrary : ObjectiveC.NSObject, RuntimeKit.CodeaAddon {
+  @objc override dynamic public init()
   #if compiler(>=5.3) && $NonescapableTypes
   public init(debuggerBundle: Foundation.Bundle?)
   #endif

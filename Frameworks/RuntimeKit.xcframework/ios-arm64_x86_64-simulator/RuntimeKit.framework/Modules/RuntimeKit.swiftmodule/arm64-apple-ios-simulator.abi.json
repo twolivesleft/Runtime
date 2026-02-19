@@ -9354,6 +9354,32 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaStandardLibrary",
+                "printedName": "RuntimeKit.CodeaStandardLibrary",
+                "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary(im)init",
+            "mangledName": "$s10RuntimeKit20CodeaStandardLibraryCACycfc",
+            "moduleName": "RuntimeKit",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(debuggerBundle:)",
             "children": [
               {
@@ -9425,32 +9451,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CodeaStandardLibrary",
-                "printedName": "RuntimeKit.CodeaStandardLibrary",
-                "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary(im)init",
-            "mangledName": "$s10RuntimeKit20CodeaStandardLibraryCACycfc",
-            "moduleName": "RuntimeKit",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -9462,6 +9462,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
