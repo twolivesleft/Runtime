@@ -118,7 +118,7 @@
 		</data>
 		<key>Headers/CodeaGame.h</key>
 		<data>
-		ZbdGhXy8HB3l5cEaRFIKCNKfQ4g=
+		xqZ0z2iPJ3KWXMmzJdJ+ZgYoYz4=
 		</data>
 		<key>Headers/CodeaLuaError.h</key>
 		<data>
@@ -128,17 +128,9 @@
 		<data>
 		yjcDlKcFbhGTuyv3sknA2aFVcIU=
 		</data>
-		<key>Headers/CodeaOutputDelegate.h</key>
-		<data>
-		yvwcNnmFe5XwyJVi3gD+wLeFUJ0=
-		</data>
 		<key>Headers/CodeaParameterDelegate.h</key>
 		<data>
 		lG9W2NHUVLUobmGYBiKVFxvHf7A=
-		</data>
-		<key>Headers/CodeaRuntimeDelegate.h</key>
-		<data>
-		Bn9irXasNgs9f+hYjb5TpsACcUU=
 		</data>
 		<key>Headers/CodeaScriptExecute.h</key>
 		<data>
@@ -242,11 +234,11 @@
 		</data>
 		<key>Headers/RuntimeKit-Swift.h</key>
 		<data>
-		9mLVUjspTIzvNJjbCkSewqD3vgc=
+		7TPkTzIO5vmo3qnSiOJiZXNF4iA=
 		</data>
 		<key>Headers/RuntimeKit.h</key>
 		<data>
-		T1+dVP71aGczq4CbMTfzHCSy6Yc=
+		jhvbx5rh5KHRyCeq+vD8ScNFuQE=
 		</data>
 		<key>Headers/ShaderBundle.h</key>
 		<data>
@@ -322,7 +314,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CkAi/dvdzmOyF+Ppk7SERRfRZyk=
+		e2BeeCU0j14Nub2G6rQzT5zFoTM=
 		</data>
 		<key>LineRoundCapShader.fsh</key>
 		<data>
@@ -378,51 +370,51 @@
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		hLQXp3IR9Nuee1uTsXTBw35XsDQ=
+		RcCxM2+s/ak+FI5Qu5mpM7TE7Hg=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		2/rYBoyYVktVRAWgW+LFhkMUkfI=
+		xqaoSwpCU2aL8Y8LtypZ+NtUFUY=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		KpquCB3BmNWKf+ct3T5WNJgDnm0=
+		77OEu+P9gAgYEoTMYU9ZaVBHGGc=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4twQuSQMIa0VEvXqEgUHPtD1sgQ=
+		JRs0RS1mBPfzevsjsFqz9ORGePU=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LGD0V5/OS8hYBOaj9dWtosHE8zA=
+		1Zz9fpR79hH8YQDfSC0EEVNLAzU=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4twQuSQMIa0VEvXqEgUHPtD1sgQ=
+		JRs0RS1mBPfzevsjsFqz9ORGePU=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZE18WLSVyyezB5BiQBuVZMq/cn8=
+		Ws5JD5UnKMpcS/bhG3fygM98lZg=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		KpquCB3BmNWKf+ct3T5WNJgDnm0=
+		77OEu+P9gAgYEoTMYU9ZaVBHGGc=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vt0Nil0X8ACGMoTRZOrLRYcR6Ok=
+		ipWJb5cbzEZbXYqEJrRNTsHJgJY=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		NxkjjU269j1lW9IZ6FAHPb7eSUo=
+		5PpRMCvLecLpfzIeWJPIrDyCTBk=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vt0Nil0X8ACGMoTRZOrLRYcR6Ok=
+		ipWJb5cbzEZbXYqEJrRNTsHJgJY=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yCY07VlnhCawbMgQhnaYbz4bvf8=
+		qbY0hximf5P1sRT74JhJwLfu0JI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -631,6 +623,15 @@
 			<key>hash</key>
 			<data>
 			bMTYqR50KBWdg5ezlskXHH3m6rE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			50j8ZfIAZsO7Af2/AA3X2uAL88c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -873,7 +874,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7FAztGFHSoJm2v6a4sdJY7m7VlBmIKcSiboTYsLhTCg=
+			89a83Zcowvqfz0JglMa08w2RIOQFhl6SAdaOEboQd2o=
 			</data>
 		</dict>
 		<key>Headers/CodeaLuaError.h</key>
@@ -890,25 +891,11 @@
 			vt/k9tza9FN/I9fBFeMKgylCs150liKWBZvQ3LCO/jo=
 			</data>
 		</dict>
-		<key>Headers/CodeaOutputDelegate.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			exLilFK49NjKKAiTVgtxehE9iYDvhiQ9WYiwD3tUcd8=
-			</data>
-		</dict>
 		<key>Headers/CodeaParameterDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			YlkEzbUwEsO5MP4Ov+DM60ESlA77YEkWhe+EVBK8WTU=
-			</data>
-		</dict>
-		<key>Headers/CodeaRuntimeDelegate.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			grChBeesKskcHy+jhQina3NM79bhtwh34Wo8ae0dy7E=
 			</data>
 		</dict>
 		<key>Headers/CodeaScriptExecute.h</key>
@@ -1090,14 +1077,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vn9cairM0GWOhGk90rwuqbAQjMKFdDtOcc5jRnr/888=
+			eiFRThfBY1MI0ggSquD6MPVquL2qSOm9nskc/n6ODO8=
 			</data>
 		</dict>
 		<key>Headers/RuntimeKit.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k0aTUzzKXNJNbPOE8bkoTsGNqH9a8Ny1VZtZrQaxpyE=
+			I9uVRhITCkjFeuzuCWkiMveQB2hMRlLatggZCc31l7g=
 			</data>
 		</dict>
 		<key>Headers/ShaderBundle.h</key>
@@ -1321,84 +1308,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dUU60lvWkwS55+N/JvckwDY+dsfu8CGe6jGNG294Vb8=
+			G91T/uFQmaWtqlDBhUkWQxrYpyjEeLIWX+K8PwGwPsQ=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JHUYNMkOeb9M2aSNodp7rsEJprd/rYW33CM7cWEHaAg=
+			K2Iiam5Hpat6uKbPmmPDFEuEPXDEb75qFYtig+UYUGc=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k+U6cBI86ip8CGj1XXuMZ14Bfm8ice+1szg2YA7ehtc=
+			HtVXniJGG1OS97isQLtGDrzT6Ic4eDX782x5p9SHrxU=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DwyZMaQvpdc/JKZ5l1zf6JEQADBz2YOgxpRfuEdsaDI=
+			Ik4Ga8oFtAAFoX+e5QeFuAyFoN89H0MtaX0qdTrNjVs=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TTmkleGziYt5RSMKM2RZ0PrOZsPJH8fCIyNFiIoCT8M=
+			RigDHqET8q4cVFANdZ+E39vbbp05+WBiMRNy9fSYDvg=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DwyZMaQvpdc/JKZ5l1zf6JEQADBz2YOgxpRfuEdsaDI=
+			Ik4Ga8oFtAAFoX+e5QeFuAyFoN89H0MtaX0qdTrNjVs=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3BXQtD3FRnEPUUf6BnyLySGBqjcdUoimJpBa9PWVF/8=
+			44F65IiZphKC4QwoYaDHodL6C5/v4iYPapBOQ0eul+I=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k+U6cBI86ip8CGj1XXuMZ14Bfm8ice+1szg2YA7ehtc=
+			HtVXniJGG1OS97isQLtGDrzT6Ic4eDX782x5p9SHrxU=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ScP+g73jJ9imr/bMwqV728qMpuPVcpt4XdcRDZ0FKAc=
+			xHHaMLz8+zqtsu73q8vsPbOhQlDxLvu2AJzdud/MhT0=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uMo6sz1NX33B3CXKYeA/jurRAwfKE4+KFx4A4uPy05s=
+			kL8aDwxvItaVYBpNCzpt2shRIxzc1x16NoRCsUG/3xQ=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ScP+g73jJ9imr/bMwqV728qMpuPVcpt4XdcRDZ0FKAc=
+			xHHaMLz8+zqtsu73q8vsPbOhQlDxLvu2AJzdud/MhT0=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+wDG/0M9HbhKUmAI89n/3Is1hKFbu9v4Jc/eOLLwuqk=
+			71VcbqIW/R0Uq5dYvSJlPZTtFPc5Okqn2O9Le47+Muk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1719,6 +1706,15 @@
 			<key>hash2</key>
 			<data>
 			Ktsk3NrVLgEUiNFd6Uuo3x8r1JFtnvuTHKPHXvn7D64=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eiljqCuZTjT4M/w0mj+YXKGfnwsmMwhepPHRrDilF84=
 			</data>
 			<key>optional</key>
 			<true/>

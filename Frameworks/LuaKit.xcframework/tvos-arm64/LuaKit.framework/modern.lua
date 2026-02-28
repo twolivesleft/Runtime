@@ -2,6 +2,7 @@
 -- Needed so vscode-debuggee considers them as global variables, outside the project.
 
 require("typeof")
+storage = require("storage")
 
 WIDTH = 0
 HEIGHT = 0

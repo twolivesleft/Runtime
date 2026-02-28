@@ -256,8 +256,8 @@
           },
           {
             "kind": "Var",
-            "name": "fileURL",
-            "printedName": "fileURL",
+            "name": "filePath",
+            "printedName": "filePath",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -267,8 +267,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5Tools20RestorableProjectKeyV7fileURLSSvpZ",
-            "mangledName": "$s5Tools20RestorableProjectKeyV7fileURLSSvpZ",
+            "usr": "s:5Tools20RestorableProjectKeyV8filePathSSvpZ",
+            "mangledName": "$s5Tools20RestorableProjectKeyV8filePathSSvpZ",
             "moduleName": "Tools",
             "static": true,
             "declAttributes": [
@@ -292,8 +292,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5Tools20RestorableProjectKeyV7fileURLSSvgZ",
-                "mangledName": "$s5Tools20RestorableProjectKeyV7fileURLSSvgZ",
+                "usr": "s:5Tools20RestorableProjectKeyV8filePathSSvgZ",
+                "mangledName": "$s5Tools20RestorableProjectKeyV8filePathSSvgZ",
                 "moduleName": "Tools",
                 "static": true,
                 "implicit": true,
@@ -745,7 +745,6 @@
                 "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
                 "usr": "s:Sb"
               }
             ],
@@ -787,6 +786,20 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tools"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Tools"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "Tools"
       },
@@ -955,6 +968,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -1518,6 +1538,7 @@
         "intro_tvOS": "9.0",
         "intro_watchOS": "2.0",
         "declAttributes": [
+          "AddressableForDependencies",
           "Frozen",
           "Available",
           "Available",
@@ -1883,6 +1904,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sequence",
             "printedName": "Sequence",
             "children": [
@@ -2008,6 +2036,35 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       }
@@ -2046,56 +2103,49 @@
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
-      "offset": 293,
-      "length": 9,
-      "value": "\"fileURL\""
+      "offset": 294,
+      "length": 10,
+      "value": "\"filePath\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
-      "offset": 336,
+      "offset": 338,
       "length": 10,
       "value": "\"bookmark\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
-      "offset": 387,
+      "offset": 389,
       "length": 17,
       "value": "\"useLegacyViewer\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
-      "offset": 445,
+      "offset": 447,
       "length": 17,
       "value": "\"useLegacyEditor\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "BooleanLiteral",
-      "offset": 1460,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1751,
+      "offset": 1476,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Build\/Build\/Intermediates.noindex\/Tools.build\/Release-appletvsimulator\/Tools.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 693,
+      "offset": 729,
       "length": 10,
       "value": "\"backIcon\""
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Build\/Build\/Intermediates.noindex\/Tools.build\/Release-appletvsimulator\/Tools.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 857,
+      "offset": 871,
       "length": 13,
       "value": "\"forwardIcon\""
     }

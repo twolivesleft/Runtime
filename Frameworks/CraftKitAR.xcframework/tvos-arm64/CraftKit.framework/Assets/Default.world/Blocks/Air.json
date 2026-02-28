@@ -1,0 +1,13 @@
+{
+    "index" : 0,
+    "name" : "Air",
+    "locked" : true,
+    "obtainable" : false,
+    "variants" :
+    {
+        "normal" :
+        {
+            "geo_type" : "empty"
+        }
+    }
+}

@@ -5,6 +5,468 @@
     "printedName": "RuntimeKit",
     "children": [
       {
+        "kind": "TypeDecl",
+        "name": "RuntimeOutputType",
+        "printedName": "RuntimeOutputType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RuntimeKit.RuntimeOutputType.Type) -> RuntimeKit.RuntimeOutputType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RuntimeOutputType",
+                    "printedName": "RuntimeKit.RuntimeOutputType",
+                    "usr": "s:10RuntimeKit0A10OutputTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RuntimeKit.RuntimeOutputType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RuntimeOutputType",
+                        "printedName": "RuntimeKit.RuntimeOutputType",
+                        "usr": "s:10RuntimeKit0A10OutputTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10RuntimeKit0A10OutputTypeO7warningyA2CmF",
+            "mangledName": "$s10RuntimeKit0A10OutputTypeO7warningyA2CmF",
+            "moduleName": "RuntimeKit"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RuntimeKit.RuntimeOutputType.Type) -> RuntimeKit.RuntimeOutputType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RuntimeOutputType",
+                    "printedName": "RuntimeKit.RuntimeOutputType",
+                    "usr": "s:10RuntimeKit0A10OutputTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RuntimeKit.RuntimeOutputType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RuntimeOutputType",
+                        "printedName": "RuntimeKit.RuntimeOutputType",
+                        "usr": "s:10RuntimeKit0A10OutputTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10RuntimeKit0A10OutputTypeO5erroryA2CmF",
+            "mangledName": "$s10RuntimeKit0A10OutputTypeO5erroryA2CmF",
+            "moduleName": "RuntimeKit"
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RuntimeKit.RuntimeOutputType.Type) -> RuntimeKit.RuntimeOutputType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RuntimeOutputType",
+                    "printedName": "RuntimeKit.RuntimeOutputType",
+                    "usr": "s:10RuntimeKit0A10OutputTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RuntimeKit.RuntimeOutputType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RuntimeOutputType",
+                        "printedName": "RuntimeKit.RuntimeOutputType",
+                        "usr": "s:10RuntimeKit0A10OutputTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10RuntimeKit0A10OutputTypeO7messageyA2CmF",
+            "mangledName": "$s10RuntimeKit0A10OutputTypeO7messageyA2CmF",
+            "moduleName": "RuntimeKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RuntimeOutputType",
+                "printedName": "RuntimeKit.RuntimeOutputType",
+                "usr": "s:10RuntimeKit0A10OutputTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RuntimeOutputType",
+                "printedName": "RuntimeKit.RuntimeOutputType",
+                "usr": "s:10RuntimeKit0A10OutputTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RuntimeKit0A10OutputTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10RuntimeKit0A10OutputTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "RuntimeKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RuntimeKit0A10OutputTypeO9hashValueSivp",
+            "mangledName": "$s10RuntimeKit0A10OutputTypeO9hashValueSivp",
+            "moduleName": "RuntimeKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RuntimeKit0A10OutputTypeO9hashValueSivg",
+                "mangledName": "$s10RuntimeKit0A10OutputTypeO9hashValueSivg",
+                "moduleName": "RuntimeKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RuntimeKit0A10OutputTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10RuntimeKit0A10OutputTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "RuntimeKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10RuntimeKit0A10OutputTypeO",
+        "mangledName": "$s10RuntimeKit0A10OutputTypeO",
+        "moduleName": "RuntimeKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RuntimeDelegate",
+        "printedName": "RuntimeDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "runtime",
+            "printedName": "runtime(_:didOutput:ofType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaViewController",
+                "printedName": "RuntimeKit.CodeaViewController",
+                "usr": "c:@M@RuntimeKit@objc(cs)CodeaViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RuntimeOutputType",
+                "printedName": "RuntimeKit.RuntimeOutputType",
+                "usr": "s:10RuntimeKit0A10OutputTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RuntimeKit0A8DelegateP7runtime_9didOutput6ofTypeyAA19CodeaViewControllerC_SSAA0afH0OtF",
+            "mangledName": "$s10RuntimeKit0A8DelegateP7runtime_9didOutput6ofTypeyAA19CodeaViewControllerC_SSAA0afH0OtF",
+            "moduleName": "RuntimeKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : RuntimeKit.RuntimeDelegate>",
+            "sugared_genericSig": "<Self where Self : RuntimeKit.RuntimeDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "runtimeDidClearOutput",
+            "printedName": "runtimeDidClearOutput(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaViewController",
+                "printedName": "RuntimeKit.CodeaViewController",
+                "usr": "c:@M@RuntimeKit@objc(cs)CodeaViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RuntimeKit0A8DelegateP21runtimeDidClearOutputyyAA19CodeaViewControllerCF",
+            "mangledName": "$s10RuntimeKit0A8DelegateP21runtimeDidClearOutputyyAA19CodeaViewControllerCF",
+            "moduleName": "RuntimeKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : RuntimeKit.RuntimeDelegate>",
+            "sugared_genericSig": "<Self where Self : RuntimeKit.RuntimeDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "runtimeDidSetup",
+            "printedName": "runtimeDidSetup(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaViewController",
+                "printedName": "RuntimeKit.CodeaViewController",
+                "usr": "c:@M@RuntimeKit@objc(cs)CodeaViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RuntimeKit0A8DelegateP15runtimeDidSetupyyAA19CodeaViewControllerCF",
+            "mangledName": "$s10RuntimeKit0A8DelegateP15runtimeDidSetupyyAA19CodeaViewControllerCF",
+            "moduleName": "RuntimeKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : RuntimeKit.RuntimeDelegate>",
+            "sugared_genericSig": "<Self where Self : RuntimeKit.RuntimeDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "runtime",
+            "printedName": "runtime(_:didSetPaused:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaViewController",
+                "printedName": "RuntimeKit.CodeaViewController",
+                "usr": "c:@M@RuntimeKit@objc(cs)CodeaViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RuntimeKit0A8DelegateP7runtime_12didSetPausedyAA19CodeaViewControllerC_SbtF",
+            "mangledName": "$s10RuntimeKit0A8DelegateP7runtime_12didSetPausedyAA19CodeaViewControllerC_SbtF",
+            "moduleName": "RuntimeKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : RuntimeKit.RuntimeDelegate>",
+            "sugared_genericSig": "<Self where Self : RuntimeKit.RuntimeDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "runtimeDidRestart",
+            "printedName": "runtimeDidRestart(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaViewController",
+                "printedName": "RuntimeKit.CodeaViewController",
+                "usr": "c:@M@RuntimeKit@objc(cs)CodeaViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RuntimeKit0A8DelegateP17runtimeDidRestartyyAA19CodeaViewControllerCF",
+            "mangledName": "$s10RuntimeKit0A8DelegateP17runtimeDidRestartyyAA19CodeaViewControllerCF",
+            "moduleName": "RuntimeKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : RuntimeKit.RuntimeDelegate>",
+            "sugared_genericSig": "<Self where Self : RuntimeKit.RuntimeDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "runtimeWillStop",
+            "printedName": "runtimeWillStop(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaViewController",
+                "printedName": "RuntimeKit.CodeaViewController",
+                "usr": "c:@M@RuntimeKit@objc(cs)CodeaViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RuntimeKit0A8DelegateP15runtimeWillStopyyAA19CodeaViewControllerCF",
+            "mangledName": "$s10RuntimeKit0A8DelegateP15runtimeWillStopyyAA19CodeaViewControllerCF",
+            "moduleName": "RuntimeKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : RuntimeKit.RuntimeDelegate>",
+            "sugared_genericSig": "<Self where Self : RuntimeKit.RuntimeDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10RuntimeKit0A8DelegateP",
+        "mangledName": "$s10RuntimeKit0A8DelegateP",
+        "moduleName": "RuntimeKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -2335,6 +2797,16 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RuntimeKit",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -6459,6 +6931,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RuntimeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -6582,27 +7064,27 @@
           },
           {
             "kind": "Var",
-            "name": "output",
-            "printedName": "output",
+            "name": "delegate",
+            "printedName": "delegate",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "MulticastDelegate",
-                "printedName": "Tools.MulticastDelegate<any RuntimeKit.CodeaOutputDelegate>",
+                "printedName": "Tools.MulticastDelegate<any RuntimeKit.RuntimeDelegate>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CodeaOutputDelegate",
-                    "printedName": "any RuntimeKit.CodeaOutputDelegate",
-                    "usr": "c:objc(pl)CodeaOutputDelegate"
+                    "name": "RuntimeDelegate",
+                    "printedName": "any RuntimeKit.RuntimeDelegate",
+                    "usr": "s:10RuntimeKit0A8DelegateP"
                   }
                 ],
                 "usr": "s:5Tools17MulticastDelegateC"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10RuntimeKit19CodeaViewControllerC6output5Tools17MulticastDelegateCySo0c6OutputI0_pGvp",
-            "mangledName": "$s10RuntimeKit19CodeaViewControllerC6output5Tools17MulticastDelegateCySo0c6OutputI0_pGvp",
+            "usr": "s:10RuntimeKit19CodeaViewControllerC8delegate5Tools17MulticastDelegateCyAA0aI0_pGvp",
+            "mangledName": "$s10RuntimeKit19CodeaViewControllerC8delegate5Tools17MulticastDelegateCyAA0aI0_pGvp",
             "moduleName": "RuntimeKit",
             "declAttributes": [
               "HasInitialValue",
@@ -6621,21 +7103,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MulticastDelegate",
-                    "printedName": "Tools.MulticastDelegate<any RuntimeKit.CodeaOutputDelegate>",
+                    "printedName": "Tools.MulticastDelegate<any RuntimeKit.RuntimeDelegate>",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "CodeaOutputDelegate",
-                        "printedName": "any RuntimeKit.CodeaOutputDelegate",
-                        "usr": "c:objc(pl)CodeaOutputDelegate"
+                        "name": "RuntimeDelegate",
+                        "printedName": "any RuntimeKit.RuntimeDelegate",
+                        "usr": "s:10RuntimeKit0A8DelegateP"
                       }
                     ],
                     "usr": "s:5Tools17MulticastDelegateC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10RuntimeKit19CodeaViewControllerC6output5Tools17MulticastDelegateCySo0c6OutputI0_pGvg",
-                "mangledName": "$s10RuntimeKit19CodeaViewControllerC6output5Tools17MulticastDelegateCySo0c6OutputI0_pGvg",
+                "usr": "s:10RuntimeKit19CodeaViewControllerC8delegate5Tools17MulticastDelegateCyAA0aI0_pGvg",
+                "mangledName": "$s10RuntimeKit19CodeaViewControllerC8delegate5Tools17MulticastDelegateCyAA0aI0_pGvg",
                 "moduleName": "RuntimeKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6653,21 +7135,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "MulticastDelegate",
-                    "printedName": "Tools.MulticastDelegate<any RuntimeKit.CodeaOutputDelegate>",
+                    "printedName": "Tools.MulticastDelegate<any RuntimeKit.RuntimeDelegate>",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "CodeaOutputDelegate",
-                        "printedName": "any RuntimeKit.CodeaOutputDelegate",
-                        "usr": "c:objc(pl)CodeaOutputDelegate"
+                        "name": "RuntimeDelegate",
+                        "printedName": "any RuntimeKit.RuntimeDelegate",
+                        "usr": "s:10RuntimeKit0A8DelegateP"
                       }
                     ],
                     "usr": "s:5Tools17MulticastDelegateC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10RuntimeKit19CodeaViewControllerC6output5Tools17MulticastDelegateCySo0c6OutputI0_pGvs",
-                "mangledName": "$s10RuntimeKit19CodeaViewControllerC6output5Tools17MulticastDelegateCySo0c6OutputI0_pGvs",
+                "usr": "s:10RuntimeKit19CodeaViewControllerC8delegate5Tools17MulticastDelegateCyAA0aI0_pGvs",
+                "mangledName": "$s10RuntimeKit19CodeaViewControllerC8delegate5Tools17MulticastDelegateCyAA0aI0_pGvs",
                 "moduleName": "RuntimeKit",
                 "implicit": true,
                 "accessorKind": "set"
@@ -6684,120 +7166,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10RuntimeKit19CodeaViewControllerC6output5Tools17MulticastDelegateCySo0c6OutputI0_pGvM",
-                "mangledName": "$s10RuntimeKit19CodeaViewControllerC6output5Tools17MulticastDelegateCySo0c6OutputI0_pGvM",
-                "moduleName": "RuntimeKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "runtimeDelegate",
-            "printedName": "runtimeDelegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MulticastDelegate",
-                "printedName": "Tools.MulticastDelegate<any RuntimeKit.CodeaRuntimeDelegate>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CodeaRuntimeDelegate",
-                    "printedName": "any RuntimeKit.CodeaRuntimeDelegate",
-                    "usr": "c:objc(pl)CodeaRuntimeDelegate"
-                  }
-                ],
-                "usr": "s:5Tools17MulticastDelegateC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10RuntimeKit19CodeaViewControllerC15runtimeDelegate5Tools09MulticastG0CySo0caG0_pGvp",
-            "mangledName": "$s10RuntimeKit19CodeaViewControllerC15runtimeDelegate5Tools09MulticastG0CySo0caG0_pGvp",
-            "moduleName": "RuntimeKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MulticastDelegate",
-                    "printedName": "Tools.MulticastDelegate<any RuntimeKit.CodeaRuntimeDelegate>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodeaRuntimeDelegate",
-                        "printedName": "any RuntimeKit.CodeaRuntimeDelegate",
-                        "usr": "c:objc(pl)CodeaRuntimeDelegate"
-                      }
-                    ],
-                    "usr": "s:5Tools17MulticastDelegateC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10RuntimeKit19CodeaViewControllerC15runtimeDelegate5Tools09MulticastG0CySo0caG0_pGvg",
-                "mangledName": "$s10RuntimeKit19CodeaViewControllerC15runtimeDelegate5Tools09MulticastG0CySo0caG0_pGvg",
-                "moduleName": "RuntimeKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MulticastDelegate",
-                    "printedName": "Tools.MulticastDelegate<any RuntimeKit.CodeaRuntimeDelegate>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodeaRuntimeDelegate",
-                        "printedName": "any RuntimeKit.CodeaRuntimeDelegate",
-                        "usr": "c:objc(pl)CodeaRuntimeDelegate"
-                      }
-                    ],
-                    "usr": "s:5Tools17MulticastDelegateC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10RuntimeKit19CodeaViewControllerC15runtimeDelegate5Tools09MulticastG0CySo0caG0_pGvs",
-                "mangledName": "$s10RuntimeKit19CodeaViewControllerC15runtimeDelegate5Tools09MulticastG0CySo0caG0_pGvs",
-                "moduleName": "RuntimeKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10RuntimeKit19CodeaViewControllerC15runtimeDelegate5Tools09MulticastG0CySo0caG0_pGvM",
-                "mangledName": "$s10RuntimeKit19CodeaViewControllerC15runtimeDelegate5Tools09MulticastG0CySo0caG0_pGvM",
+                "usr": "s:10RuntimeKit19CodeaViewControllerC8delegate5Tools17MulticastDelegateCyAA0aI0_pGvM",
+                "mangledName": "$s10RuntimeKit19CodeaViewControllerC8delegate5Tools17MulticastDelegateCyAA0aI0_pGvM",
                 "moduleName": "RuntimeKit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7439,28 +7809,6 @@
             "declKind": "Func",
             "usr": "s:10RuntimeKit19CodeaViewControllerC17updateProjectIconyySo7UIImageCF",
             "mangledName": "$s10RuntimeKit19CodeaViewControllerC17updateProjectIconyySo7UIImageCF",
-            "moduleName": "RuntimeKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "callWillClose",
-            "printedName": "callWillClose()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10RuntimeKit19CodeaViewControllerC13callWillCloseyyYaF",
-            "mangledName": "$s10RuntimeKit19CodeaViewControllerC13callWillCloseyyYaF",
             "moduleName": "RuntimeKit",
             "declAttributes": [
               "Preconcurrency",
@@ -8924,6 +9272,67 @@
         "printedName": "CodeaStandardLibrary",
         "children": [
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaStandardLibrary",
+                "printedName": "RuntimeKit.CodeaStandardLibrary",
+                "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary(im)init",
+            "mangledName": "$s10RuntimeKit20CodeaStandardLibraryCACycfc",
+            "moduleName": "RuntimeKit",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(debuggerBundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaStandardLibrary",
+                "printedName": "RuntimeKit.CodeaStandardLibrary",
+                "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10RuntimeKit20CodeaStandardLibraryC14debuggerBundleACSo8NSBundleCSg_tcfc",
+            "mangledName": "$s10RuntimeKit20CodeaStandardLibraryC14debuggerBundleACSo8NSBundleCSg_tcfc",
+            "moduleName": "RuntimeKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "codea",
             "printedName": "codea(_:didCreateLuaState:isValidating:)",
@@ -8962,32 +9371,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CodeaStandardLibrary",
-                "printedName": "RuntimeKit.CodeaStandardLibrary",
-                "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RuntimeKit@objc(cs)CodeaStandardLibrary(im)init",
-            "mangledName": "$s10RuntimeKit20CodeaStandardLibraryCACycfc",
-            "moduleName": "RuntimeKit",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -10867,6 +11250,13 @@
             "printedName": "_HasCustomAnyHashableRepresentation",
             "usr": "s:s35_HasCustomAnyHashableRepresentationP",
             "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -11049,6 +11439,76 @@
           },
           {
             "kind": "Function",
+            "name": "assetPathsFromContent",
+            "printedName": "assetPathsFromContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RuntimeKit@@objc(cs)Project(cm)assetPathsFromContent:",
+            "mangledName": "$sSo7ProjectC10RuntimeKitE21assetPathsFromContentyShySSGSSFZ",
+            "moduleName": "RuntimeKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "assetPaths",
+            "printedName": "assetPaths()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RuntimeKit@@objc(cs)Project(im)assetPaths",
+            "mangledName": "$sSo7ProjectC10RuntimeKitE10assetPathsShySSGyF",
+            "moduleName": "RuntimeKit",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "dependentProjects",
             "printedName": "dependentProjects(projectManager:)",
             "children": [
@@ -11175,6 +11635,69 @@
         "name": "AssetManager",
         "printedName": "AssetManager",
         "children": [
+          {
+            "kind": "Var",
+            "name": "iCloudDocumentsPack",
+            "printedName": "iCloudDocumentsPack",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RuntimeKit.AssetPack?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AssetPack",
+                    "printedName": "RuntimeKit.AssetPack",
+                    "usr": "c:objc(cs)AssetPack"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RuntimeKit@@objc(cs)AssetManager(py)iCloudDocumentsPack",
+            "mangledName": "$sSo12AssetManagerC10RuntimeKitE19iCloudDocumentsPackSo0aG0CSgvp",
+            "moduleName": "RuntimeKit",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RuntimeKit.AssetPack?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AssetPack",
+                        "printedName": "RuntimeKit.AssetPack",
+                        "usr": "c:objc(cs)AssetPack"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RuntimeKit@@objc(cs)AssetManager(im)iCloudDocumentsPack",
+                "mangledName": "$sSo12AssetManagerC10RuntimeKitE19iCloudDocumentsPackSo0aG0CSgvg",
+                "moduleName": "RuntimeKit",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Function",
             "name": "addShaderBundleAssetPack",
@@ -11515,6 +12038,55 @@
       "value": "\"default\""
     },
     {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "kind": "BooleanLiteral",
+      "offset": 430,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "kind": "StringLiteral",
+      "offset": 548,
+      "length": 6,
+      "value": "\"Name\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "kind": "StringLiteral",
+      "offset": 592,
+      "length": 30,
+      "value": "\"ASSET_PACKS_ICLOUD_DOCUMENTS\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "kind": "StringLiteral",
+      "offset": 681,
+      "length": 8,
+      "value": "\"Author\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "kind": "StringLiteral",
+      "offset": 721,
+      "length": 31,
+      "value": "\"SPRITE_PACKS_DOCUMENTS_AUTHOR\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "kind": "StringLiteral",
+      "offset": 763,
+      "length": 13,
+      "value": "\"Your Assets\""
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "kind": "StringLiteral",
+      "offset": 878,
+      "length": 7,
+      "value": "\"Types\""
+    },
+    {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Common\/RuntimeStyle.swift",
       "kind": "IntegerLiteral",
       "offset": 3990,
@@ -11573,9 +12145,16 @@
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepository.swift",
       "kind": "Array",
-      "offset": 2726,
+      "offset": 3026,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepository.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13084,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
@@ -11608,7 +12187,14 @@
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/CodeaViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 649,
+      "offset": 431,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/CodeaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 620,
       "length": 5,
       "value": "false"
     },
@@ -11649,15 +12235,22 @@
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
+      "kind": "Dictionary",
+      "offset": 1005,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
       "kind": "Array",
-      "offset": 1789,
+      "offset": 2322,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
       "kind": "StringLiteral",
-      "offset": 2467,
+      "offset": 3000,
       "length": 9,
       "value": "\"Unknown\""
     }

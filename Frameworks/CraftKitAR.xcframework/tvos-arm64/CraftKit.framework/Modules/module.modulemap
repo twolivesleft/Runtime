@@ -1,0 +1,6 @@
+framework module CraftKit {
+  umbrella header "CraftKit.h"
+  export *
+
+  module * { export * }
+}

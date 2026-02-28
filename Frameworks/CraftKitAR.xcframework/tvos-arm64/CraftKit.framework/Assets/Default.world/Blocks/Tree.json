@@ -1,0 +1,23 @@
+{
+   "index" : 13,
+   "name" : "Tree",
+   "preview_show_ground" : false,
+   "preview_size" : "medium",
+   "script_code" : "Tree = class('Tree', Block)\n\nfunction Tree:created()\n    local x,y,z = self:xyz()\n    world:sphere(x,y+5,z, 3, \"Leaves\")\n    world:line(x,y,z,x,y+5,z, \"Wood\")\nend\n\nfunction Tree:destroyed()\nend\n\n-- Called when an entity places this block\n-- details is a table containing information on the placement of this block\n-- details.entity = entity that placed this block\n-- details.facing = facing of the entity placing this block (NORTH, EAST, SOUTH...)\n-- details.adjacent = coordinates of the block this one is built on\n-- details.adjacentFace = the face this block was placed on (NORTH, EAST, SOUTH...)\nfunction Tree:placed(details)\nend\n\n-- Called when an entity removes this block\n-- details.entity = entity that removed this block\n-- details.facing = facing of the entity that removed this block\nfunction Tree:removed(details)\nend\n\n",
+   "script_type" : "static",
+   "state" : null,
+   "variants" : {
+      "normal" : {
+         "face_colors" : [
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ],
+            [ 1, 1, 1, 1 ]
+         ],
+         "face_textures" : [ "missing", "missing", "missing", "missing", "missing", "missing" ],
+         "geo_type" : "solid"
+      }
+   }
+}

@@ -1,0 +1,72 @@
+{
+    "index" : 6,
+    "name" : "Code",
+    "variants" :
+    {
+        "normal" :
+        {
+            "geo_type" : "solid",
+            "textures" : "code",
+            "face_colors" : [[1,1,1]],
+            "face_textures" : ["code"]
+        }
+    },
+    "script_type" : "dynamic",
+    "script_code" :
+    "
+        Code = class('Code')
+        
+        function Code:placed(details)
+            print(BLOCK_NAME)
+            print(self.x, self.y, self.z, self.name)
+            local scriptName = self.name..'_'..self.x..'_'..self.y..'_'..self.z..'.lua'
+            self.asset = world:scriptAsset(scriptName)
+
+            if self.asset.text == '' then
+                self.asset.text = '-- block code goes here'
+            end
+
+            self.asset:registerCallback(self, Code.updateCode)
+            self:updateCode(self.asset.text)
+            self:call('placed', owner)
+        end
+
+        function Code:call(name, ...)
+            if self.instance then
+                local func = self.instance[name]
+                if func and type(func) == 'function' then
+                    func(self.instance, ...)
+                end
+            end
+        end
+                
+        function Code:removed()
+            self:call('removed')
+        end
+    
+        function Code:update(dt)
+            self:call('update', dt)
+        end
+    
+        function Code:updateCode(code)
+            print('Update code called: '..code)
+                    
+            local func, err = load(code)
+
+            if func then
+                local status, result = xpcall(func, debug.traceback)
+                if status then
+                    self.instance = result
+                elseif not status then
+                    error(result)
+                end
+            else
+                error(err)
+            end
+        end
+    
+        function Code:interact()
+            openEditor(self.asset)
+        end
+    "
+}

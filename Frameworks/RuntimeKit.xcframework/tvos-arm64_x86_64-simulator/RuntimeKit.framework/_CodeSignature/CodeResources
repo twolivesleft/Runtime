@@ -118,7 +118,7 @@
 		</data>
 		<key>Headers/CodeaGame.h</key>
 		<data>
-		ZbdGhXy8HB3l5cEaRFIKCNKfQ4g=
+		xqZ0z2iPJ3KWXMmzJdJ+ZgYoYz4=
 		</data>
 		<key>Headers/CodeaLuaError.h</key>
 		<data>
@@ -128,17 +128,9 @@
 		<data>
 		yjcDlKcFbhGTuyv3sknA2aFVcIU=
 		</data>
-		<key>Headers/CodeaOutputDelegate.h</key>
-		<data>
-		yvwcNnmFe5XwyJVi3gD+wLeFUJ0=
-		</data>
 		<key>Headers/CodeaParameterDelegate.h</key>
 		<data>
 		lG9W2NHUVLUobmGYBiKVFxvHf7A=
-		</data>
-		<key>Headers/CodeaRuntimeDelegate.h</key>
-		<data>
-		Bn9irXasNgs9f+hYjb5TpsACcUU=
 		</data>
 		<key>Headers/CodeaScriptExecute.h</key>
 		<data>
@@ -242,11 +234,11 @@
 		</data>
 		<key>Headers/RuntimeKit-Swift.h</key>
 		<data>
-		f7eW5QLOn82tQIz5tFgYMHwlvZI=
+		3w4nij+D8A3lnBPnaQk+VJwE7LQ=
 		</data>
 		<key>Headers/RuntimeKit.h</key>
 		<data>
-		T1+dVP71aGczq4CbMTfzHCSy6Yc=
+		jhvbx5rh5KHRyCeq+vD8ScNFuQE=
 		</data>
 		<key>Headers/ShaderBundle.h</key>
 		<data>
@@ -322,7 +314,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bvw23bd0V6SyR6byOSU/UBkL2wk=
+		jt6OV9jLot0XsrsqYCURRUmej0A=
 		</data>
 		<key>LineRoundCapShader.fsh</key>
 		<data>
@@ -378,51 +370,51 @@
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
 		<data>
-		f3Ydj21OTO21IBEQzegR0v9Wono=
+		B3AhyDuGG/g6RYu+T4tuvApaeg8=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
 		<data>
-		Dz4C81H7VOXpUTtWl1a8LOIQSws=
+		qipGf6NbUs2H0CZMof95NDglf+E=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		Jn4ItL2SUdOSr0shYc2CpwNuHbA=
+		+Rbx/XteV+3rVBNj9m4KWZeDlps=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		U+cbmJBNso3sQ5C36fsh1cZO0sA=
+		+R7R/GMMnt9DBXtLqZE1IOK/al8=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		dOw+f4Wkr8SsNNaP4IgW4+HKWL8=
+		l0YlyCP4vONRhULpERkUrPJGH34=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		U+cbmJBNso3sQ5C36fsh1cZO0sA=
+		+R7R/GMMnt9DBXtLqZE1IOK/al8=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		DqMHyf1SxK0bt9G2e/eLoZpNl8w=
+		5t1Rc/SuDSa4CjcttA5uYIpQgzY=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		Jn4ItL2SUdOSr0shYc2CpwNuHbA=
+		+Rbx/XteV+3rVBNj9m4KWZeDlps=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		WZ4JMFcm5pCJhX+AXNsuB7A8Gaw=
+		SqsSwqdRfN60h1AfYXrzCYOow8w=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		RUBqkuYMZ9KdnWptC9hmWr4AHzw=
+		mEfrknE/BeUuzYJLDhfMqHYM27s=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		WZ4JMFcm5pCJhX+AXNsuB7A8Gaw=
+		SqsSwqdRfN60h1AfYXrzCYOow8w=
 		</data>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		tS4NUOPPtvgVqgNKTfXgc6/o1Pg=
+		cCfYDumNqDUuYClza2/8DgOVetE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -631,6 +623,15 @@
 			<key>hash</key>
 			<data>
 			bMTYqR50KBWdg5ezlskXHH3m6rE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			50j8ZfIAZsO7Af2/AA3X2uAL88c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -873,7 +874,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7FAztGFHSoJm2v6a4sdJY7m7VlBmIKcSiboTYsLhTCg=
+			89a83Zcowvqfz0JglMa08w2RIOQFhl6SAdaOEboQd2o=
 			</data>
 		</dict>
 		<key>Headers/CodeaLuaError.h</key>
@@ -890,25 +891,11 @@
 			vt/k9tza9FN/I9fBFeMKgylCs150liKWBZvQ3LCO/jo=
 			</data>
 		</dict>
-		<key>Headers/CodeaOutputDelegate.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			exLilFK49NjKKAiTVgtxehE9iYDvhiQ9WYiwD3tUcd8=
-			</data>
-		</dict>
 		<key>Headers/CodeaParameterDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			YlkEzbUwEsO5MP4Ov+DM60ESlA77YEkWhe+EVBK8WTU=
-			</data>
-		</dict>
-		<key>Headers/CodeaRuntimeDelegate.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			grChBeesKskcHy+jhQina3NM79bhtwh34Wo8ae0dy7E=
 			</data>
 		</dict>
 		<key>Headers/CodeaScriptExecute.h</key>
@@ -1090,14 +1077,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l1RpoAU1ArLYwzOTJep/eox4tC/ZqsCZBr3nIv2cinE=
+			z9E7Fx+vMdTgf92jVTLIllKqZTTiLoaHUhGoflyRJK8=
 			</data>
 		</dict>
 		<key>Headers/RuntimeKit.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k0aTUzzKXNJNbPOE8bkoTsGNqH9a8Ny1VZtZrQaxpyE=
+			I9uVRhITCkjFeuzuCWkiMveQB2hMRlLatggZCc31l7g=
 			</data>
 		</dict>
 		<key>Headers/ShaderBundle.h</key>
@@ -1321,84 +1308,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VZGWrB2Yh8GNVresjkuqpPoaHBQmfPLK0Yh9tuPoj3Q=
+			3BCWg4ZUripknFmOKSBdug+xUXGM4wTg4ZNDsdSWufA=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vqLq7yVJ2XMngW47G0856N9VwJF+ZlumwWvHDt1qukQ=
+			JGgPGo8VZTakJi1+ec/A43TQcQ5JRAlOkEHPMt+d3cI=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VAsdFw6p0E9N9+2sEK15CCXC1cEtbxK/Ajlv/+aOtV0=
+			Hxe3zYoMZ10QnxQysDtd3V2/YJwpWFFDjZFZU0iP4DI=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OcAE0tPPQUNabmPJFu0nF6lZohYHCnE+n6gWyu87dyo=
+			dyqmXpoWEUuVJ0XcgmYTuvOtCPCE9NakDNIzyCBObBQ=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1BXRi0E+cmLfbbBNOTWqhSICJGfqJUvk1uTdRrn7tBo=
+			qQThmCWbDN6eAYzsORbjwkimbN5xAi2IbVkbu4PlbVc=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OcAE0tPPQUNabmPJFu0nF6lZohYHCnE+n6gWyu87dyo=
+			dyqmXpoWEUuVJ0XcgmYTuvOtCPCE9NakDNIzyCBObBQ=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H0ukPuNL98sfsoSbr1YctGke0PEyuj0MSaOXOu205uM=
+			o36UMd4PUdcwFkiFd5kHOgMC95O8NbEEpqgVt1OVvIs=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VAsdFw6p0E9N9+2sEK15CCXC1cEtbxK/Ajlv/+aOtV0=
+			Hxe3zYoMZ10QnxQysDtd3V2/YJwpWFFDjZFZU0iP4DI=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQkMFYupQqicvQ9A4e/tmWJ3kTgBMX/tYs5F4ZUuHpg=
+			akPSCfmANYEWXFp/lS8L//vRVAgKSkZyxLPy5g8uDHg=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			26/ga7Wv1muSO55BhUO6vE1mr6gOhAlOGssvDPR+SaU=
+			VjL/abgiQF5U0gvDhxCVUP1M0X/gTIOA0q1q1gUyoYY=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQkMFYupQqicvQ9A4e/tmWJ3kTgBMX/tYs5F4ZUuHpg=
+			akPSCfmANYEWXFp/lS8L//vRVAgKSkZyxLPy5g8uDHg=
 			</data>
 		</dict>
 		<key>Modules/RuntimeKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7CrCGnJpG0yYTlM7wD1rCwqn50hiex4K15uB5cixyz8=
+			inXIAaVXho67BILUHXxUIiI2b70KHdz+LinnZeqASZo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1719,6 +1706,15 @@
 			<key>hash2</key>
 			<data>
 			Ktsk3NrVLgEUiNFd6Uuo3x8r1JFtnvuTHKPHXvn7D64=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eiljqCuZTjT4M/w0mj+YXKGfnwsmMwhepPHRrDilF84=
 			</data>
 			<key>optional</key>
 			<true/>

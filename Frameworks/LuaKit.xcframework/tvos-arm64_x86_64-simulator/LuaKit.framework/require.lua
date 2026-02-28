@@ -1,9 +1,11 @@
 local _defaultRequire = require
 
 local _baseAsset = {
+    current = asset.current,
     builtin = asset.builtin,
     documents = asset.documents,
-    icloud = asset.icloud
+    icloud = asset.icloud,
+    Dependencies = asset.Dependencies,
 }
 local _requireEnvStack = { _ENV }
 
@@ -38,8 +40,8 @@ local _coordinatedRequire = function(directory, filename)
             if objError == nil then
                 status, result = pcall(_defaultRequire, "assetKey/" .. readingIntent.URL.path)
                 if status == false then
-                    warning("\n\tError loading " .. filename)
-                    result = "\n\tError loading " .. filename
+                    warning("\n\tError loading " .. filename .. " error: " .. result)
+                    result = "\n\tError loading " .. filename .. " error: " .. result
                 end
                 semaphore:signal()
             else
@@ -190,21 +192,29 @@ _require_mt = {
             
             -- Test if it's a directory
             local fileManager = objc.NSFileManager.defaultManager
-            local files = fileManager:contentsOfDirectoryAtPath_error_(name.path, nil)
-            if files ~= nil then
+            local enumerator = fileManager:enumeratorAtPath_(name.path)
+            local files = enumerator.allObjects
+            if files ~= nil and #files > 0 then
                 
                 local bufferOrder = {}
+                local version
                 for i = 1, #files do
                     if files[i] == "Info.plist" then
                         local plist = objc.NSDictionary:dictionaryWithContentsOfFile_(name.path .. "/Info.plist")
                         bufferOrder = plist["Buffer Order"]
+                        version = plist["Version"]
                     end
                 end
-                
+
                 if #bufferOrder > 0 then
                     local orderMap = {}
+                    local oldVersion = version == nil
                     for i, name in ipairs(bufferOrder) do
-                        orderMap[name .. ".lua"] = i
+                        if oldVersion then
+                            orderMap[name .. ".lua"] = i
+                        else
+                            orderMap[name] = i
+                        end
                     end
 
                     table.sort(files, function(a, b)
@@ -225,9 +235,9 @@ _require_mt = {
                     --- file: objc.NSString
                     local file = files[i]
 
-                    if string.match(file, ".*%.lua") and (loadMain or file ~= "Main.lua") then
-                        -- Extract the filename without extenssion from name.path
-                        local filename = string.match(file, "(.*)%..*")
+                    if string.match(file, "%.lua$") and (loadMain or file ~= "Main.lua") then
+                        -- Extract the filename without extension from name.path
+                        local filename = string.gsub(file, "%.lua$", "")
                         _coordinatedRequire(name.path, filename)
                     end
                 end

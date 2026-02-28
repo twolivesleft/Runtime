@@ -47,6 +47,12 @@ extern "C" {
 ///   - index: Stack index
 AssetLibrary* _Nullable assetLibrary(lua_State* _Nonnull L, int index);
 
+/// Returns true if the value at the given index is an AssetLibrary
+/// - Parameters:
+///   - L: The Lua state
+///   - index: Stack index
+bool lua_isassetlibrary(struct lua_State* _Nonnull L, int index);
+
 #endif //__cplusplus
 
 #endif // __Codea_assets_h

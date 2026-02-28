@@ -32,6 +32,8 @@ extern "C" {
 
 #include <RuntimeKit/gesture.h>
 
+#import <LuaKit/AirCode.h>
+
 @class Project;
 @class CodeaScriptExecute;
 @class Renderer;
@@ -81,6 +83,7 @@ extern "C" {
 
 @property (nonatomic, strong) Project *project;
 @property (nonatomic, weak) id<ThreadedRuntimeViewControllerDelegate> delegate;
+@property (nonatomic, strong) id<LuaDebugMessageInterface> debugMessageInterface;
 
 @property (nonatomic, readonly) NSString *currentPrefix;
 @property (nonatomic, readonly) NSMutableDictionary *currentLocalStore;

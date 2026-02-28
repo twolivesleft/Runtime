@@ -1,0 +1,23 @@
+{
+    "index" : 4,
+    "name" : "Grass",
+    "variants" :
+     {
+     "normal" :
+         {
+            "geo_type" : "solid",
+            "model" : "Cube",
+            "textures" :
+            {
+                "$east" : "dirt_grass",
+                "$south" : "dirt_grass",
+                "$west" : "dirt_grass",
+                "$north" : "dirt_grass",
+                "$up" : "grass_top",
+                "$down" : "dirt"
+            },
+            "face_colors" : [[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1]],
+            "face_textures" : ["dirt_grass", "dirt_grass", "dirt_grass", "dirt_grass", "grass_top", "dirt"]
+        }
+     }
+}

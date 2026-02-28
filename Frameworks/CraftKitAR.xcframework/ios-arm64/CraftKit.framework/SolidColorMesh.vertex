@@ -1,0 +1,13 @@
+precision mediump float;
+
+attribute vec3 position;
+attribute vec4 color;
+
+uniform highp mat4 mvpMatrix;
+varying lowp vec4 diffuseColor;
+
+void main()
+{
+    gl_Position = mvpMatrix * vec4(position, 1);
+    diffuseColor = color;
+}

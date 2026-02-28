@@ -1,0 +1,16 @@
+{
+    "index" : 1,
+    "name" : "Missing",
+    "variants" :
+    {
+        "normal" :
+        {
+            "geo_type" : "solid",
+            "textures" : "missing",
+            "face_colors" : [[1,1,1]],
+            "face_textures" : ["missing"]
+        }
+    },
+    "locked" : true,
+    "obtainable" : false
+}

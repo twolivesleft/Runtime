@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target x86_64-apple-tvos18.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AssetKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-tvos16.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AssetKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 @_exported import AssetKit
 import Combine
 import Foundation
@@ -40,7 +40,9 @@ import _SwiftConcurrencyShims
   @objc public var itemDidChange: (Foundation.URL) -> ()
   override public func itemChanged(_ url: Foundation.URL, change: AssetKit.DirectoryMonitor.ChangeType)
   override public func shouldManageUrl(_ url: Foundation.URL) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public init(url: Foundation.URL?, monitorForUpdates: Swift.Bool, skipHiddenFiles: Swift.Bool = super)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class ExternalAssets : ObjectiveC.NSObject {
@@ -49,7 +51,9 @@ import _SwiftConcurrencyShims
   @objc public static var bookmarks: [Foundation.URL] {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func resolveBookmark(url: Foundation.URL) -> Foundation.URL?
+  #endif
   @objc public static func removeBookmark(url: Foundation.URL)
   @objc override dynamic public init()
   @objc deinit
@@ -59,9 +63,14 @@ import _SwiftConcurrencyShims
   public var urls: Swift.Set<Foundation.URL> {
     get
   }
-  public var metadataItems: [AssetKit.MetadataMonitor.MetadataItem]
+  public var metadataItems: [Swift.String : AssetKit.MetadataMonitor.MetadataItem]
   @objc open var presentedItemOperationQueue: Foundation.OperationQueue
+  public var shouldUpdateUrlCacheOnInit: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(url: Foundation.URL?, monitorForUpdates: Swift.Bool, skipHiddenFiles: Swift.Bool = true)
+  #endif
   @objc open func startMonitoring()
   @objc open func stopMonitoring()
   open func shouldManageUrl(_ url: Foundation.URL) -> Swift.Bool
@@ -79,8 +88,12 @@ import _SwiftConcurrencyShims
     }
   }
   open func updateUrlCache(completion: @escaping () -> Swift.Void = {})
+  #if compiler(>=5.3) && $NonescapableTypes
   open func createItem(at url: Foundation.URL, writer: (Foundation.URL) throws -> (), completion: @escaping ((any Swift.Error)?) -> ())
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   open func renameItem(at url: Foundation.URL, name: Swift.String) -> Foundation.URL?
+  #endif
   open func deleteItem(at url: Foundation.URL) -> Swift.Bool
   @objc open func presentedSubitem(at oldURL: Foundation.URL, didMoveTo newURL: Foundation.URL)
   @objc open func presentedSubitemDidChange(at url: Foundation.URL)
@@ -112,7 +125,9 @@ extension Foundation.URL {
 @objc public enum AssetContentType : Swift.Int {
   case library
   case media
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -121,7 +136,9 @@ extension Foundation.URL {
 @objc public class AssetContent : ObjectiveC.NSObject {
   @objc public var type: AssetKit.AssetContentType
   @objc public init(library: AssetKit.AssetLibrary)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(media: Swift.String, rootUrl: Foundation.URL?)
+  #endif
   @objc public var library: AssetKit.AssetLibrary?
   @objc public var media: Swift.String?
   @objc public var rootUrl: Foundation.URL?
@@ -129,16 +146,24 @@ extension Foundation.URL {
 }
 @objc public class AssetLibrary : AssetKit.DirectoryMonitor {
   @objc open var rootURL: Foundation.URL?
+  override public var shouldUpdateUrlCacheOnInit: Swift.Bool {
+    get
+  }
   @objc public var cacheInvalidated: (() -> Swift.Void)?
   @objc public var libraryName: Swift.String {
     @objc get
   }
+  @objc public func invalidateContentCache()
   @objc public var contents: AssetKit.AssetContentStorage {
     @objc get
   }
   @objc public init(url: Foundation.URL, rootUrl: Foundation.URL)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func coordinateRead(_ reader: @escaping (Foundation.URL?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func safeName(fileName: Swift.String) -> Swift.String?
+  #endif
   override public func shouldManageUrl(_ url: Foundation.URL) -> Swift.Bool
   override public func itemChanged(_ url: Foundation.URL, change: AssetKit.DirectoryMonitor.ChangeType)
   override public func urlCacheUpdated()
@@ -155,7 +180,9 @@ public enum AssetType : Swift.String, Swift.CaseIterable {
   case text
   case model
   case other
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [AssetKit.AssetType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [AssetKit.AssetType] {
