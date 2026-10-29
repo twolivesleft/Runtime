@@ -109,6 +109,8 @@ extern "C" {
 @property (atomic, assign) UIEdgeInsets safeAreaInsets;
 @property (atomic, assign) UIUserInterfaceSizeClass horizontalSizeClass;
 @property (atomic, assign) UIUserInterfaceSizeClass verticalSizeClass;
+/// UIInterfaceOrientation as last read on the main thread; 0 when unknown
+@property (atomic, readonly) NSInteger interfaceOrientation;
 
 // Viewer properties
 

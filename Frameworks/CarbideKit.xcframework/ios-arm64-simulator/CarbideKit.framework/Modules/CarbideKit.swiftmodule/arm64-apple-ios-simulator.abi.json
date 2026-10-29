@@ -1,0 +1,2945 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "CarbideKit",
+    "printedName": "CarbideKit",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "CarbideOutputType",
+        "printedName": "CarbideOutputType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CarbideKit.CarbideOutputType.Type) -> CarbideKit.CarbideOutputType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarbideOutputType",
+                    "printedName": "CarbideKit.CarbideOutputType",
+                    "usr": "s:10CarbideKit0A10OutputTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CarbideKit.CarbideOutputType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CarbideOutputType",
+                        "printedName": "CarbideKit.CarbideOutputType",
+                        "usr": "s:10CarbideKit0A10OutputTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10CarbideKit0A10OutputTypeO7warningyA2CmF",
+            "mangledName": "$s10CarbideKit0A10OutputTypeO7warningyA2CmF",
+            "moduleName": "CarbideKit"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CarbideKit.CarbideOutputType.Type) -> CarbideKit.CarbideOutputType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarbideOutputType",
+                    "printedName": "CarbideKit.CarbideOutputType",
+                    "usr": "s:10CarbideKit0A10OutputTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CarbideKit.CarbideOutputType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CarbideOutputType",
+                        "printedName": "CarbideKit.CarbideOutputType",
+                        "usr": "s:10CarbideKit0A10OutputTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10CarbideKit0A10OutputTypeO5erroryA2CmF",
+            "mangledName": "$s10CarbideKit0A10OutputTypeO5erroryA2CmF",
+            "moduleName": "CarbideKit"
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CarbideKit.CarbideOutputType.Type) -> CarbideKit.CarbideOutputType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarbideOutputType",
+                    "printedName": "CarbideKit.CarbideOutputType",
+                    "usr": "s:10CarbideKit0A10OutputTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CarbideKit.CarbideOutputType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CarbideOutputType",
+                        "printedName": "CarbideKit.CarbideOutputType",
+                        "usr": "s:10CarbideKit0A10OutputTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10CarbideKit0A10OutputTypeO7messageyA2CmF",
+            "mangledName": "$s10CarbideKit0A10OutputTypeO7messageyA2CmF",
+            "moduleName": "CarbideKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideOutputType",
+                "printedName": "CarbideKit.CarbideOutputType",
+                "usr": "s:10CarbideKit0A10OutputTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideOutputType",
+                "printedName": "CarbideKit.CarbideOutputType",
+                "usr": "s:10CarbideKit0A10OutputTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A10OutputTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10CarbideKit0A10OutputTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "CarbideKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A10OutputTypeO9hashValueSivp",
+            "mangledName": "$s10CarbideKit0A10OutputTypeO9hashValueSivp",
+            "moduleName": "CarbideKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A10OutputTypeO9hashValueSivg",
+                "mangledName": "$s10CarbideKit0A10OutputTypeO9hashValueSivg",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A10OutputTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10CarbideKit0A10OutputTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "CarbideKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10CarbideKit0A10OutputTypeO",
+        "mangledName": "$s10CarbideKit0A10OutputTypeO",
+        "moduleName": "CarbideKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CarbideDelegate",
+        "printedName": "CarbideDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "carbide",
+            "printedName": "carbide(_:didOutput:ofType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideViewController",
+                "printedName": "CarbideKit.CarbideViewController",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideOutputType",
+                "printedName": "CarbideKit.CarbideOutputType",
+                "usr": "s:10CarbideKit0A10OutputTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A8DelegateP7carbide_9didOutput6ofTypeyAA0A14ViewControllerC_SSAA0afH0OtF",
+            "mangledName": "$s10CarbideKit0A8DelegateP7carbide_9didOutput6ofTypeyAA0A14ViewControllerC_SSAA0afH0OtF",
+            "moduleName": "CarbideKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CarbideKit.CarbideDelegate>",
+            "sugared_genericSig": "<Self where Self : CarbideKit.CarbideDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "carbideDidClearOutput",
+            "printedName": "carbideDidClearOutput(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideViewController",
+                "printedName": "CarbideKit.CarbideViewController",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A8DelegateP21carbideDidClearOutputyyAA0A14ViewControllerCF",
+            "mangledName": "$s10CarbideKit0A8DelegateP21carbideDidClearOutputyyAA0A14ViewControllerCF",
+            "moduleName": "CarbideKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CarbideKit.CarbideDelegate>",
+            "sugared_genericSig": "<Self where Self : CarbideKit.CarbideDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "carbideDidSetup",
+            "printedName": "carbideDidSetup(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideViewController",
+                "printedName": "CarbideKit.CarbideViewController",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A8DelegateP15carbideDidSetupyyAA0A14ViewControllerCF",
+            "mangledName": "$s10CarbideKit0A8DelegateP15carbideDidSetupyyAA0A14ViewControllerCF",
+            "moduleName": "CarbideKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CarbideKit.CarbideDelegate>",
+            "sugared_genericSig": "<Self where Self : CarbideKit.CarbideDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "carbide",
+            "printedName": "carbide(_:didSetPaused:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideViewController",
+                "printedName": "CarbideKit.CarbideViewController",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A8DelegateP7carbide_12didSetPausedyAA0A14ViewControllerC_SbtF",
+            "mangledName": "$s10CarbideKit0A8DelegateP7carbide_12didSetPausedyAA0A14ViewControllerC_SbtF",
+            "moduleName": "CarbideKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CarbideKit.CarbideDelegate>",
+            "sugared_genericSig": "<Self where Self : CarbideKit.CarbideDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "carbideDidRestart",
+            "printedName": "carbideDidRestart(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideViewController",
+                "printedName": "CarbideKit.CarbideViewController",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A8DelegateP17carbideDidRestartyyAA0A14ViewControllerCF",
+            "mangledName": "$s10CarbideKit0A8DelegateP17carbideDidRestartyyAA0A14ViewControllerCF",
+            "moduleName": "CarbideKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CarbideKit.CarbideDelegate>",
+            "sugared_genericSig": "<Self where Self : CarbideKit.CarbideDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "carbideWillStop",
+            "printedName": "carbideWillStop(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideViewController",
+                "printedName": "CarbideKit.CarbideViewController",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A8DelegateP15carbideWillStopyyAA0A14ViewControllerCF",
+            "mangledName": "$s10CarbideKit0A8DelegateP15carbideWillStopyyAA0A14ViewControllerCF",
+            "moduleName": "CarbideKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CarbideKit.CarbideDelegate>",
+            "sugared_genericSig": "<Self where Self : CarbideKit.CarbideDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10CarbideKit0A8DelegateP",
+        "mangledName": "$s10CarbideKit0A8DelegateP",
+        "moduleName": "CarbideKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CarbideKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFAudio",
+        "printedName": "AVFAudio",
+        "declKind": "Import",
+        "moduleName": "CarbideKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CarbideViewController",
+        "printedName": "CarbideViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "retainInLua",
+            "printedName": "retainInLua",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController(py)retainInLua",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC11retainInLuaSbvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController(im)retainInLua",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC11retainInLuaSbvg",
+                "moduleName": "CarbideKit",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "projectLoaded",
+            "printedName": "projectLoaded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A14ViewControllerC13projectLoadedSbvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC13projectLoadedSbvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC13projectLoadedSbvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC13projectLoadedSbvg",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC13projectLoadedSbvs",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC13projectLoadedSbvs",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC13projectLoadedSbvM",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC13projectLoadedSbvM",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeButtonPressed",
+            "printedName": "closeButtonPressed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A14ViewControllerC18closeButtonPressedyycvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC18closeButtonPressedyycvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC18closeButtonPressedyycvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC18closeButtonPressedyycvg",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC18closeButtonPressedyycvs",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC18closeButtonPressedyycvs",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC18closeButtonPressedyycvM",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC18closeButtonPressedyycvM",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loadAndPlay",
+            "printedName": "loadAndPlay",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() throws -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() throws -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvg",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() throws -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvs",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvs",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvM",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvM",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activityType",
+            "printedName": "activityType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A14ViewControllerC12activityTypeSSvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC12activityTypeSSvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC12activityTypeSSvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC12activityTypeSSvg",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A14ViewControllerC3url10Foundation3URLVSgvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC3url10Foundation3URLVSgvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC3url10Foundation3URLVSgvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC3url10Foundation3URLVSgvg",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "carbideView",
+            "printedName": "carbideView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideView",
+                "printedName": "CarbideKit.CarbideView",
+                "usr": "c:objc(cs)CarbideView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A14ViewControllerC07carbideC0So0aC0Cvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC07carbideC0So0aC0Cvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarbideView",
+                    "printedName": "CarbideKit.CarbideView",
+                    "usr": "c:objc(cs)CarbideView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC07carbideC0So0aC0Cvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC07carbideC0So0aC0Cvg",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MulticastDelegate",
+                "printedName": "CarbideKit.MulticastDelegate<any CarbideKit.CarbideDelegate>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarbideDelegate",
+                    "printedName": "any CarbideKit.CarbideDelegate",
+                    "usr": "s:10CarbideKit0A8DelegateP"
+                  }
+                ],
+                "usr": "s:10CarbideKit17MulticastDelegateC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A14ViewControllerC8delegateAA17MulticastDelegateCyAA0aG0_pGvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC8delegateAA17MulticastDelegateCyAA0aG0_pGvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MulticastDelegate",
+                    "printedName": "CarbideKit.MulticastDelegate<any CarbideKit.CarbideDelegate>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CarbideDelegate",
+                        "printedName": "any CarbideKit.CarbideDelegate",
+                        "usr": "s:10CarbideKit0A8DelegateP"
+                      }
+                    ],
+                    "usr": "s:10CarbideKit17MulticastDelegateC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC8delegateAA17MulticastDelegateCyAA0aG0_pGvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC8delegateAA17MulticastDelegateCyAA0aG0_pGvg",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MulticastDelegate",
+                    "printedName": "CarbideKit.MulticastDelegate<any CarbideKit.CarbideDelegate>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CarbideDelegate",
+                        "printedName": "any CarbideKit.CarbideDelegate",
+                        "usr": "s:10CarbideKit0A8DelegateP"
+                      }
+                    ],
+                    "usr": "s:10CarbideKit17MulticastDelegateC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC8delegateAA17MulticastDelegateCyAA0aG0_pGvs",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC8delegateAA17MulticastDelegateCyAA0aG0_pGvs",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC8delegateAA17MulticastDelegateCyAA0aG0_pGvM",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC8delegateAA17MulticastDelegateCyAA0aG0_pGvM",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:activityType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideViewController",
+                "printedName": "CarbideKit.CarbideViewController",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10CarbideKit0A14ViewControllerC3url12activityTypeAC10Foundation3URLV_SStcfc",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC3url12activityTypeAC10Foundation3URLV_SStcfc",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CarbideKit.CarbideViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarbideViewController",
+                    "printedName": "CarbideKit.CarbideViewController",
+                    "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController(im)initWithCoder:",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "CarbideKit",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController(im)viewDidLoad",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC11viewDidLoadyyF",
+            "moduleName": "CarbideKit",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "prefersStatusBarHidden",
+            "printedName": "prefersStatusBarHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController(py)prefersStatusBarHidden",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC22prefersStatusBarHiddenSbvp",
+            "moduleName": "CarbideKit",
+            "overriding": true,
+            "objc_name": "prefersStatusBarHidden",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController(im)prefersStatusBarHidden",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC22prefersStatusBarHiddenSbvg",
+                "moduleName": "CarbideKit",
+                "overriding": true,
+                "objc_name": "prefersStatusBarHidden",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "prefersPointerLocked",
+            "printedName": "prefersPointerLocked",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController(py)prefersPointerLocked",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC20prefersPointerLockedSbvp",
+            "moduleName": "CarbideKit",
+            "overriding": true,
+            "objc_name": "prefersPointerLocked",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController(im)prefersPointerLocked",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC20prefersPointerLockedSbvg",
+                "moduleName": "CarbideKit",
+                "overriding": true,
+                "objc_name": "prefersPointerLocked",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController(im)setPrefersPointerLocked:",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC20prefersPointerLockedSbvs",
+                "moduleName": "CarbideKit",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "safeArea",
+            "printedName": "safeArea",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsets",
+                "printedName": "UIKit.UIEdgeInsets",
+                "usr": "c:@S@UIEdgeInsets"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A14ViewControllerC8safeAreaSo12UIEdgeInsetsVvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC8safeAreaSo12UIEdgeInsetsVvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC8safeAreaSo12UIEdgeInsetsVvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC8safeAreaSo12UIEdgeInsetsVvg",
+                "moduleName": "CarbideKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paused",
+            "printedName": "paused",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A14ViewControllerC6pausedSbvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC6pausedSbvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC6pausedSbvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC6pausedSbvg",
+                "moduleName": "CarbideKit",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC6pausedSbvs",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC6pausedSbvs",
+                "moduleName": "CarbideKit",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC6pausedSbvM",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC6pausedSbvM",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "restart",
+            "printedName": "restart()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A14ViewControllerC7restartyyYaF",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC7restartyyYaF",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closeViewer",
+            "printedName": "closeViewer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A14ViewControllerC11closeVieweryyYaF",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC11closeVieweryyYaF",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resize",
+            "printedName": "resize(width:height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A14ViewControllerC6resize5width6heightySi_SitF",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC6resize5width6heightySi_SitF",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "uniformResizing",
+            "printedName": "uniformResizing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CarbideKit0A14ViewControllerC15uniformResizingSbvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC15uniformResizingSbvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC15uniformResizingSbvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC15uniformResizingSbvg",
+                "moduleName": "CarbideKit",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC15uniformResizingSbvs",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC15uniformResizingSbvs",
+                "moduleName": "CarbideKit",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CarbideKit0A14ViewControllerC15uniformResizingSbvM",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC15uniformResizingSbvM",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CarbideViewController",
+                "printedName": "CarbideKit.CarbideViewController",
+                "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "CarbideKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "loadProject",
+            "printedName": "loadProject(shouldContinue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit0A14ViewControllerC11loadProject14shouldContinueySbyXE_tYaKF",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC11loadProject14shouldContinueySbyXE_tYaKF",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CarbideKit@objc(cs)CarbideViewController",
+        "mangledName": "$s10CarbideKit0A14ViewControllerC",
+        "moduleName": "CarbideKit",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CarbideKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CarbideKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ImagePlayground",
+        "printedName": "ImagePlayground",
+        "declKind": "Import",
+        "moduleName": "CarbideKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CodeaImagePlayground",
+        "printedName": "CodeaImagePlayground",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "available",
+            "printedName": "available",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground(cpy)available",
+            "mangledName": "$s10CarbideKit20CodeaImagePlaygroundC9availableSbvpZ",
+            "moduleName": "CarbideKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Nonisolated",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground(cm)available",
+                "mangledName": "$s10CarbideKit20CodeaImagePlaygroundC9availableSbvgZ",
+                "moduleName": "CarbideKit",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "heicPath",
+            "printedName": "heicPath(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSAdaptiveImageGlyph",
+                "printedName": "UIKit.NSAdaptiveImageGlyph",
+                "usr": "c:objc(cs)NSAdaptiveImageGlyph"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground(cm)heicPathForAdaptiveImageGlyph:",
+            "mangledName": "$s10CarbideKit20CodeaImagePlaygroundC8heicPath3forSSSgSo010NSAdaptiveD5GlyphC_tFZ",
+            "moduleName": "CarbideKit",
+            "static": true,
+            "intro_iOS": "18.0",
+            "objc_name": "heicPathForAdaptiveImageGlyph:",
+            "declAttributes": [
+              "Final",
+              "Nonisolated",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "controller",
+            "printedName": "controller",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground(py)controller",
+            "mangledName": "$s10CarbideKit20CodeaImagePlaygroundC10controllerSo16UIViewControllerCSgvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIViewController",
+                        "printedName": "UIKit.UIViewController",
+                        "usr": "c:objc(cs)UIViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground(im)controller",
+                "mangledName": "$s10CarbideKit20CodeaImagePlaygroundC10controllerSo16UIViewControllerCSgvg",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unsupported",
+            "printedName": "unsupported",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground(py)unsupported",
+            "mangledName": "$s10CarbideKit20CodeaImagePlaygroundC11unsupportedSDyS2SGvp",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground(im)unsupported",
+                "mangledName": "$s10CarbideKit20CodeaImagePlaygroundC11unsupportedSDyS2SGvg",
+                "moduleName": "CarbideKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaImagePlayground",
+                "printedName": "CarbideKit.CodeaImagePlayground",
+                "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground(im)initWithConfiguration:",
+            "mangledName": "$s10CarbideKit20CodeaImagePlaygroundC13configurationACyp_tcfc",
+            "moduleName": "CarbideKit",
+            "objc_name": "initWithConfiguration:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CodeaImagePlayground",
+                "printedName": "CarbideKit.CodeaImagePlayground",
+                "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground(im)init",
+            "mangledName": "$s10CarbideKit20CodeaImagePlaygroundCACycfc",
+            "moduleName": "CarbideKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CarbideKit@objc(cs)CodeaImagePlayground",
+        "mangledName": "$s10CarbideKit20CodeaImagePlaygroundC",
+        "moduleName": "CarbideKit",
+        "objc_name": "CodeaImagePlayground",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CarbideKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "CarbideKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MulticastDelegate",
+        "printedName": "MulticastDelegate",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MulticastDelegate",
+                "printedName": "CarbideKit.MulticastDelegate<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:10CarbideKit17MulticastDelegateC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10CarbideKit17MulticastDelegateCACyxGycfc",
+            "mangledName": "$s10CarbideKit17MulticastDelegateCACyxGycfc",
+            "moduleName": "CarbideKit",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "add",
+            "printedName": "add(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit17MulticastDelegateC3addyyxF",
+            "mangledName": "$s10CarbideKit17MulticastDelegateC3addyyxF",
+            "moduleName": "CarbideKit",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remove",
+            "printedName": "remove(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit17MulticastDelegateC6removeyyxF",
+            "mangledName": "$s10CarbideKit17MulticastDelegateC6removeyyxF",
+            "moduleName": "CarbideKit",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invoke",
+            "printedName": "invoke(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CarbideKit17MulticastDelegateC6invokeyyyxXEF",
+            "mangledName": "$s10CarbideKit17MulticastDelegateC6invokeyyyxXEF",
+            "moduleName": "CarbideKit",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10CarbideKit17MulticastDelegateC",
+        "mangledName": "$s10CarbideKit17MulticastDelegateC",
+        "moduleName": "CarbideKit",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CarbideKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CarbideKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CarbideKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CarbideKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NSString",
+        "printedName": "NSString",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "asImage",
+            "printedName": "asImage(withAttributes:bounds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.NSAttributedString.Key : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Foundation.NSAttributedString.Key : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Key",
+                        "printedName": "Foundation.NSAttributedString.Key",
+                        "usr": "c:@T@NSAttributedStringKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@CarbideKit@@objc(cs)NSString(im)asImageWithAttributes:bounds:",
+            "mangledName": "$sSo8NSStringC10CarbideKitE7asImage14withAttributes6boundsSo7UIImageCSgSDySo21NSAttributedStringKeyaypGSg_So6CGRectVtF",
+            "moduleName": "CarbideKit",
+            "objc_name": "asImageWithAttributes:bounds:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSString",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "objc_name": "NSString",
+        "declAttributes": [
+          "ObjC",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StaticString",
+                    "printedName": "Swift.StaticString",
+                    "usr": "s:s12StaticStringV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StaticString",
+                    "printedName": "Swift.StaticString",
+                    "usr": "s:s12StaticStringV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StaticString",
+                    "printedName": "Swift.StaticString",
+                    "usr": "s:s12StaticStringV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIImage",
+        "printedName": "UIImage",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "pixelData",
+            "printedName": "pixelData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.UInt8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafeMutablePointer",
+                    "printedName": "Swift.UnsafeMutablePointer<Swift.UInt8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UInt8",
+                        "printedName": "Swift.UInt8",
+                        "usr": "s:s5UInt8V"
+                      }
+                    ],
+                    "usr": "s:Sp"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@CarbideKit@@objc(cs)UIImage(im)pixelData",
+            "mangledName": "$sSo7UIImageC10CarbideKitE9pixelDataSpys5UInt8VGSgyF",
+            "moduleName": "CarbideKit",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIImage",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIImage",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByImageLiteral",
+            "printedName": "_ExpressibleByImageLiteral",
+            "usr": "s:s26_ExpressibleByImageLiteralP",
+            "mangledName": "$ss26_ExpressibleByImageLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 285,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 329,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 673,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 710,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 744,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3480,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController+Project.swift",
+      "kind": "BooleanLiteral",
+      "offset": 174,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CodeaImagePlayground.swift",
+      "kind": "BooleanLiteral",
+      "offset": 731,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CodeaImagePlayground.swift",
+      "kind": "Dictionary",
+      "offset": 1644,
+      "length": 3,
+      "value": "[]"
+    }
+  ]
+}

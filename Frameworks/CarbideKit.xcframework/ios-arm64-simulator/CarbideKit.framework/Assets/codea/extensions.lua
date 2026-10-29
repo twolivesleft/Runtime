@@ -1,0 +1,8 @@
+require("codea.entity")
+require("codea.component")
+require("codea.camera")
+require("codea.touch")
+require("codea.ui")
+require("codea.string")
+require("codea.physics3d")
+require("codea.shader")

@@ -7,5 +7,4 @@ framework module AssetKit {
 
 module AssetKit.Swift {
   header "AssetKit-Swift.h"
-  requires objc
 }

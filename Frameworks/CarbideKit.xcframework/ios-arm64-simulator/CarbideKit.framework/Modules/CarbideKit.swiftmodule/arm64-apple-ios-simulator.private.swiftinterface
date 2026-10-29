@@ -1,0 +1,103 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios16.6-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CarbideKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
+import AVFAudio
+@_exported import CarbideKit
+import Foundation
+import ImagePlayground
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+public enum CarbideOutputType {
+  case warning
+  case error
+  case message
+  public static func == (a: CarbideKit::CarbideOutputType, b: CarbideKit::CarbideOutputType) -> Swift::Bool
+  public func hash(into hasher: inout Swift::Hasher)
+  public var hashValue: Swift::Int {
+    get
+  }
+}
+public protocol CarbideDelegate {
+  func carbide(_ carbide: CarbideKit::CarbideViewController, didOutput message: Swift::String, ofType type: CarbideKit::CarbideOutputType)
+  func carbideDidClearOutput(_ carbide: CarbideKit::CarbideViewController)
+  func carbideDidSetup(_ carbide: CarbideKit::CarbideViewController)
+  func carbide(_ carbide: CarbideKit::CarbideViewController, didSetPaused paused: Swift::Bool)
+  func carbideDidRestart(_ carbide: CarbideKit::CarbideViewController)
+  func carbideWillStop(_ carbide: CarbideKit::CarbideViewController)
+}
+@objc @_Concurrency::MainActor @preconcurrency public class CarbideViewController : UIKit::UIViewController {
+  @objc @_Concurrency::MainActor @preconcurrency public var retainInLua: Swift::Bool {
+    @objc get
+  }
+  @_Concurrency::MainActor @preconcurrency public var projectLoaded: Swift::Bool
+  @_Concurrency::MainActor @preconcurrency public var closeButtonPressed: () -> Swift::Void
+  @_Concurrency::MainActor @preconcurrency public var loadAndPlay: () throws -> Swift::Void
+  @_Concurrency::MainActor @preconcurrency final public let activityType: Swift::String
+  @_Concurrency::MainActor @preconcurrency final public let url: Foundation::URL?
+  @_Concurrency::MainActor @preconcurrency final public let carbideView: CarbideKit::CarbideView
+  @_Concurrency::MainActor @preconcurrency public var delegate: CarbideKit::MulticastDelegate<any CarbideKit::CarbideDelegate>
+  @_Concurrency::MainActor @preconcurrency public init(url: Foundation::URL, activityType: Swift::String)
+  @objc deinit
+  @_Concurrency::MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation::NSCoder)
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public var prefersStatusBarHidden: Swift::Bool {
+    @objc get
+  }
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public var prefersPointerLocked: Swift::Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency::MainActor @preconcurrency public var safeArea: UIKit::UIEdgeInsets {
+    get
+  }
+  @_Concurrency::MainActor @preconcurrency public var paused: Swift::Bool {
+    get
+    set
+  }
+  @_Concurrency::MainActor @preconcurrency public func restart() async
+  @_Concurrency::MainActor @preconcurrency public func closeViewer() async
+  @_Concurrency::MainActor @preconcurrency public func resize(width: Swift::Int, height: Swift::Int)
+  @_Concurrency::MainActor @preconcurrency public var uniformResizing: Swift::Bool {
+    get
+    set
+  }
+}
+extension CarbideKit::CarbideViewController {
+  @_Concurrency::MainActor @preconcurrency public func loadProject(shouldContinue: () -> Swift::Bool = { true }) async throws
+}
+@objc(CodeaImagePlayground) @_Concurrency::MainActor final public class CodeaImagePlayground : ObjectiveC::NSObject {
+  @objc nonisolated public static var available: Swift::Bool {
+    @objc get
+  }
+  @available(iOS 18.0, *)
+  @objc(heicPathForAdaptiveImageGlyph:) nonisolated public static func heicPath(for glyph: UIKit::NSAdaptiveImageGlyph) -> Swift::String?
+  @objc @_Concurrency::MainActor final public var controller: UIKit::UIViewController? {
+    get
+  }
+  @objc @_Concurrency::MainActor final public var unsupported: [Swift::String : Swift::String] {
+    get
+  }
+  @objc @_Concurrency::MainActor public init(configuration: Any)
+  @objc deinit
+}
+public class MulticastDelegate<T> {
+  public init()
+  public func add(_ delegate: T)
+  public func remove(_ delegateToRemove: T)
+  public func invoke(_ invocation: (T) -> Swift::Void)
+  @objc deinit
+}
+extension Foundation::NSString {
+  @objc dynamic public func asImage(withAttributes attributes: [Foundation::NSAttributedString.Foundation::Key : Any]? = nil, bounds: CoreFoundation::CGRect) -> UIKit::UIImage?
+}
+extension UIKit::UIImage {
+  @objc dynamic public func pixelData() -> Swift::UnsafeMutablePointer<Swift::UInt8>?
+}
+extension CarbideKit::CarbideOutputType : Swift::Equatable {}
+extension CarbideKit::CarbideOutputType : Swift::Hashable {}
+extension CarbideKit::CodeaImagePlayground : Swift::Sendable {}

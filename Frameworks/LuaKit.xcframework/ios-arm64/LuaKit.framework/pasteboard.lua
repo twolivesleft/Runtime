@@ -1,61 +1,61 @@
-function _initPasteboard(objcPasteboard)
+function _initPasteboard(backend)
     local pasteboard = {
-        objcPasteboard = objcPasteboard
+        backend = backend
     }
     local metatable = {}
 
     metatable.__index = function(self, key)
         if key == "name" then
-            return self.objcPasteboard.name
+            return self.backend.name
         elseif key == "numberOfItems" then
-            return math.floor(self.objcPasteboard.numberOfItems)
+            return math.floor(self.backend.numberOfItems)
         elseif key == "hasStrings" then
-            return self.objcPasteboard.hasStrings
+            return self.backend.hasStrings
         elseif key == "string" then
-            return self.objcPasteboard.string
+            return self.backend.string
         elseif key == "strings" then
-            return self.objcPasteboard.strings
+            return self.backend.strings
         elseif key == "hasImages" then
-            return self.objcPasteboard.hasImages
+            return self.backend.hasImages
         elseif key == "image" then
-            return self.objcPasteboard.image
+            return self.backend.image
         elseif key == "images" then
-            return self.objcPasteboard.images
+            return self.backend.images
         elseif key == "hasURLs" then
-            return self.objcPasteboard.hasURLs
+            return self.backend.hasURLs
         elseif key == "url" then
-            return self.objcPasteboard.url
+            return self.backend.url
         elseif key == "urls" then
-            return self.objcPasteboard.urls
+            return self.backend.urls
         elseif key == "hasColors" then
-            return self.objcPasteboard.hasColors
+            return self.backend.hasColors
         elseif key == "color" then
-            return self.objcPasteboard.color
+            return self.backend.color
         elseif key == "colors" then
-            return self.objcPasteboard.colors
+            return self.backend.colors
         elseif viewer.runtime == LEGACY and key == "text" then
-            return self.objcPasteboard.string
+            return self.backend.string
         end
         return nil
     end
 
     metatable.__newindex = function(self, key, value)
         if key == "string" then
-            self.objcPasteboard.string = value
+            self.backend.string = value
         elseif key == "strings" then
-            self.objcPasteboard.strings = value
+            self.backend.strings = value
         elseif key == "image" then
-            self.objcPasteboard.image = value
+            self.backend.image = value
         elseif key == "images" then
-            self.objcPasteboard.images = value
+            self.backend.images = value
         elseif key == "url" then
-            self.objcPasteboard.url = value
+            self.backend.url = value
         elseif key == "urls" then
-            self.objcPasteboard.urls = value
+            self.backend.urls = value
         elseif key == "color" then
-            self.objcPasteboard.color = value
+            self.backend.color = value
         elseif key == "colors" then
-            self.objcPasteboard.colors = value
+            self.backend.colors = value
         elseif key == "name" then
             error("Cannot change the name of a pasteboard")
         elseif key == "numberOfItems" then
@@ -69,7 +69,7 @@ function _initPasteboard(objcPasteboard)
         elseif key == "hasColors" then
             error("Cannot change the hasColors property of a pasteboard")
         elseif viewer.runtime == LEGACY and key == "text" then
-            self.objcPasteboard.string = value
+            self.backend.string = value
         else
             rawset(self, key, value)
         end
@@ -84,9 +84,58 @@ function _initPasteboard(objcPasteboard)
     return pasteboard
 end
 
-pasteboard = _initPasteboard(objc.UIPasteboard.generalPasteboard)
-pasteboard.initWithName = function(name)
-    return _initPasteboard(objc.UIPasteboard:pasteboardWithName_create_(name, true))
+if device and device.platform == "android" then
+    -- Android: bridge object matching backend's interface,
+    -- backed by _android_clipboard JNI calls
+    local bridge = {}
+    local bridge_mt = {}
+    bridge_mt.__index = function(self, key)
+        if key == "name" then return "general"
+        elseif key == "string" then return _android_clipboard.getString()
+        elseif key == "strings" then
+            local s = _android_clipboard.getString()
+            return s and {s} or {}
+        elseif key == "hasStrings" then return _android_clipboard.hasString()
+        elseif key == "image" then return _android_clipboard.getImage()
+        elseif key == "images" then
+            local img = _android_clipboard.getImage()
+            return img and {img} or {}
+        elseif key == "hasImages" then return _android_clipboard.hasImage()
+        elseif key == "url" then return _android_clipboard.getUrl()
+        elseif key == "urls" then
+            local u = _android_clipboard.getUrl()
+            return u and {u} or {}
+        elseif key == "hasURLs" then return _android_clipboard.hasUrl()
+        elseif key == "color" then return _android_clipboard.getColor()
+        elseif key == "colors" then
+            local c = _android_clipboard.getColor()
+            return c and {c} or {}
+        elseif key == "hasColors" then return _android_clipboard.hasColor()
+        elseif key == "numberOfItems" then
+            if _android_clipboard.hasString() or _android_clipboard.hasImage() or _android_clipboard.hasUrl() then
+                return 1
+            end
+            return 0
+        end
+    end
+    bridge_mt.__newindex = function(self, key, value)
+        if key == "string" then _android_clipboard.setString(tostring(value))
+        elseif key == "image" then _android_clipboard.setImage(value)
+        elseif key == "url" then _android_clipboard.setUrl(tostring(value))
+        elseif key == "color" then _android_clipboard.setColor(value)
+        end
+    end
+    setmetatable(bridge, bridge_mt)
+
+    pasteboard = _initPasteboard(bridge)
+    pasteboard.initWithName = function(name)
+        return pasteboard
+    end
+else
+    pasteboard = _initPasteboard(objc.UIPasteboard.generalPasteboard)
+    pasteboard.initWithName = function(name)
+        return _initPasteboard(objc.UIPasteboard:pasteboardWithName_create_(name, true))
+    end
 end
 
 if viewer.runtime == LEGACY then

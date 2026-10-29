@@ -1,0 +1,10 @@
+framework module CarbideKit {
+  umbrella header "CarbideKit.h"
+  export *
+
+  module * { export * }
+}
+
+module CarbideKit.Swift {
+  header "CarbideKit-Swift.h"
+}

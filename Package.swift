@@ -12,6 +12,9 @@ let package = Package(
         .library(
             name: "RuntimeAR",
             targets: ["AssetKit", "LuaKit", "Tools", "RuntimeKit", "CraftKitAR"]),
+        .library(
+            name: "Carbide",
+            targets: ["AssetKit", "LuaKit", "CarbideKit"]),
     ],
     targets: [
         .binaryTarget(
@@ -32,5 +35,8 @@ let package = Package(
         .binaryTarget(
             name: "CraftKitAR",
             path: "./Frameworks/CraftKitAR.xcframework"),
+        .binaryTarget(
+            name: "CarbideKit",
+            path: "./Frameworks/CarbideKit.xcframework"),
     ]
 )

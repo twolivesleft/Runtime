@@ -1,0 +1,408 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "LuaKit",
+    "printedName": "LuaKit",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LuaKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "LuaKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "LuaKit"
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "LuaKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Microphone",
+        "printedName": "Microphone",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Microphone",
+                "printedName": "LuaKit.Microphone",
+                "usr": "c:@M@LuaKit@objc(cs)Microphone"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@LuaKit@objc(cs)Microphone(cpy)shared",
+            "mangledName": "$s6LuaKit10MicrophoneC6sharedACvpZ",
+            "moduleName": "LuaKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Microphone",
+                    "printedName": "LuaKit.Microphone",
+                    "usr": "c:@M@LuaKit@objc(cs)Microphone"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@LuaKit@objc(cs)Microphone(cm)shared",
+                "mangledName": "$s6LuaKit10MicrophoneC6sharedACvgZ",
+                "moduleName": "LuaKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "amplitude",
+            "printedName": "amplitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@LuaKit@objc(cs)Microphone(py)amplitude",
+            "mangledName": "$s6LuaKit10MicrophoneC9amplitudeSdvp",
+            "moduleName": "LuaKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@LuaKit@objc(cs)Microphone(im)amplitude",
+                "mangledName": "$s6LuaKit10MicrophoneC9amplitudeSdvg",
+                "moduleName": "LuaKit",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "frequency",
+            "printedName": "frequency",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@LuaKit@objc(cs)Microphone(py)frequency",
+            "mangledName": "$s6LuaKit10MicrophoneC9frequencySdvp",
+            "moduleName": "LuaKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@LuaKit@objc(cs)Microphone(im)frequency",
+                "mangledName": "$s6LuaKit10MicrophoneC9frequencySdvg",
+                "moduleName": "LuaKit",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LuaKit@objc(cs)Microphone(im)start",
+            "mangledName": "$s6LuaKit10MicrophoneC5startyyF",
+            "moduleName": "LuaKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LuaKit@objc(cs)Microphone(im)stop",
+            "mangledName": "$s6LuaKit10MicrophoneC4stopyyF",
+            "moduleName": "LuaKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Microphone",
+                "printedName": "LuaKit.Microphone",
+                "usr": "c:@M@LuaKit@objc(cs)Microphone"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@LuaKit@objc(cs)Microphone(im)init",
+            "mangledName": "$s6LuaKit10MicrophoneCACycfc",
+            "moduleName": "LuaKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@LuaKit@objc(cs)Microphone",
+        "mangledName": "$s6LuaKit10MicrophoneC",
+        "moduleName": "LuaKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Lua\/Mic\/Microphone.swift",
+      "kind": "FloatLiteral",
+      "offset": 517,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Lua\/Mic\/Microphone.swift",
+      "kind": "FloatLiteral",
+      "offset": 599,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Lua\/Mic\/Microphone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4111,
+      "length": 4,
+      "value": "4096"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Lua\/Mic\/Microphone.swift",
+      "kind": "FloatLiteral",
+      "offset": 4160,
+      "length": 5,
+      "value": "0.001"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Lua\/Mic\/Microphone.swift",
+      "kind": "FloatLiteral",
+      "offset": 4213,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Lua\/Mic\/Microphone.swift",
+      "kind": "FloatLiteral",
+      "offset": 4256,
+      "length": 6,
+      "value": "4000.0"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Lua\/Mic\/Microphone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4343,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Lua\/Mic\/Microphone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4413,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Lua\/Mic\/Microphone.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4436,
+      "length": 1,
+      "value": "2"
+    }
+  ]
+}

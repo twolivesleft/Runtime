@@ -7,5 +7,4 @@ framework module RuntimeKit {
 
 module RuntimeKit.Swift {
   header "RuntimeKit-Swift.h"
-  requires objc
 }

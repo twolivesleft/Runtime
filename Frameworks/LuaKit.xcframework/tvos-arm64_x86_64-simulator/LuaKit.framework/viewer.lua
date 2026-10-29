@@ -57,15 +57,34 @@ local props = {
     uniformResizing = propertyAccess("uniformResizing"),
     paused = propertyAccess("paused"),
     isPresenting = function(obj)
-        return obj.presentedViewController ~= nil
+        if device and device.platform == "android" then
+            return false -- TODO: wire up dialog tracking via JNI
+        else
+            return obj.presentedViewController ~= nil
+        end
     end
 }
+
+-- Resolve the platform backend on every access. On iOS, `objc._viewerContainer`
+-- is a dynamic accessor that walks the live UIKit hierarchy (see LuaBridge.lua),
+-- so it returns nil while this module is being required during Runtime init and
+-- only becomes valid once the view controller is attached. Caching the result
+-- once at load time would capture nil permanently. Android's `_android_viewer`
+-- is a plain global registered before Lua loads, so re-resolving is a no-op.
+local function getBackend()
+    if device and device.platform == "android" then
+        return _android_viewer
+    elseif objc then
+        return objc._viewerContainer
+    end
+end
 
 local mt = {
     __newindex = function(self, key, value)
         if props[key] then
-            if objc._viewerContainer ~= nil then
-                props[key](objc._viewerContainer, value)
+            local backend = getBackend()
+            if backend then
+                props[key](backend, value)
             end
         else
             rawset(self, key, value)
@@ -73,8 +92,9 @@ local mt = {
     end,
     __index = function(self, key)
         if props[key] then
-            if objc._viewerContainer ~= nil then
-                return props[key](objc._viewerContainer)
+            local backend = getBackend()
+            if backend then
+                return props[key](backend)
             end
         else
             return rawget(self, key)
@@ -85,49 +105,61 @@ local mt = {
 setmetatable(viewer, mt)
 
 function viewer.close()
-    objc._viewerContainer:close()
+    getBackend():close()
 end
 
 function viewer.restart()
-    objc._viewerContainer:restart()
+    getBackend():restart()
 end
 
 function viewer.snapshot()
-    return objc._viewerContainer.snapshot
+    return getBackend().snapshot
 end
 
 function viewer.alert(message, title)
-    --- alert: objc.UIAlertController
-    local alert = objc.UIAlertController:alertControllerWithTitle_message_preferredStyle_(title or "Alert", message or "No Message", objc.enum.UIAlertControllerStyle.alert)
-    
-    --- action: objc.UIAlertAction
-    local action = objc.UIAlertAction:actionWithTitle_style_handler_("OK", objc.enum.UIAlertActionStyle.default, nil)
-    
-    alert:addAction_(action)
-    
-    objc._viewerContainer:presentModalViewController_animated_(alert, true)
+    if device and device.platform == "android" then
+        getBackend().alert(title or "Alert", message or "No Message")
+    elseif objc then
+        --- alert: objc.UIAlertController
+        local alert = objc.UIAlertController:alertControllerWithTitle_message_preferredStyle_(title or "Alert", message or "No Message", objc.enum.UIAlertControllerStyle.alert)
+
+        --- action: objc.UIAlertAction
+        local action = objc.UIAlertAction:actionWithTitle_style_handler_("OK", objc.enum.UIAlertActionStyle.default, nil)
+
+        alert:addAction_(action)
+
+        objc._viewerContainer:presentModalViewController_animated_(alert, true)
+    end
 end
 
 function viewer.share(data)
-    if type(data) ~= "table" then
-        data = {data}
+    if device and device.platform == "android" then
+        getBackend().share(data)
+    elseif objc then
+        if type(data) ~= "table" then
+            data = {data}
+        end
+
+        --- bounds: objc.rect
+        local bounds = objc._viewerContainer.view.bounds
+
+        --- activity: objc.UIActivityViewController
+        local activity = objc.UIActivityViewController:alloc():initWithActivityItems_applicationActivities_(data, nil)
+
+        activity.popoverPresentationController.sourceView = objc._viewerContainer.view
+        activity.popoverPresentationController.sourceRect = objc.rect(bounds.size.width/2.0, bounds.size.height/2.0, 50, 20)
+        activity.modalPresentationStyle = objc.enum.UIModalPresentationStyle.UIModalPresentationPopover
+
+        objc._viewerContainer:presentModalViewController_animated_(activity, true)
     end
-    
-    --- bounds: objc.rect
-    local bounds = objc._viewerContainer.view.bounds
-    
-    --- activity: objc.UIActivityViewController
-    local activity = objc.UIActivityViewController:alloc():initWithActivityItems_applicationActivities_(data, nil)
-    
-    activity.popoverPresentationController.sourceView = objc._viewerContainer.view
-    activity.popoverPresentationController.sourceRect = objc.rect(bounds.size.width/2.0, bounds.size.height/2.0, 50, 20)
-    activity.modalPresentationStyle = objc.enum.UIModalPresentationStyle.UIModalPresentationPopover
-    
-    objc._viewerContainer:presentModalViewController_animated_(activity, true)
 end
 
 function viewer.resize(width, height)
-    objc._viewerContainer:resizeWithWidth_height_(width, height)
+    if device and device.platform == "android" then
+        warning("viewer.resize() is not supported on Android")
+    elseif objc and objc._viewerContainer then
+        objc._viewerContainer:resizeWithWidth_height_(width, height)
+    end
 end
 
 return viewer
