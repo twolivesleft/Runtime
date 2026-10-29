@@ -34,6 +34,10 @@ typedef struct {
     NSInteger interfaceOrientation; // UIInterfaceOrientation; 0 when unknown or unavailable
 } LuaLayoutTraits;
 
+/// Adopted by the view controller that implements the Lua `viewer` API for the runtime it hosts.
+@protocol LuaViewerContainer
+@end
+
 #pragma mark - Lua State Configuration
 @interface LuaStateConfiguration: NSObject
 

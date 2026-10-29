@@ -338,12 +338,7 @@ local objc_mt = {
         end
 
         if inKey == "_viewerContainer" then
-            local viewer = objc.viewer
-            if viewer ~= nil then
-                return viewer.parentViewController.parentViewController
-            end
-            
-            return nil
+            return objc.getviewercontainer()
         end
         
         return objc._getClass(inKey)
