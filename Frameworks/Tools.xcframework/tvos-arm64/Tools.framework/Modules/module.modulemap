@@ -7,5 +7,4 @@ framework module Tools {
 
 module Tools.Swift {
   header "Tools-Swift.h"
-  requires objc
 }

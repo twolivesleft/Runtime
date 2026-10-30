@@ -4,3 +4,7 @@ framework module LuaKit {
 
   module * { export * }
 }
+
+module LuaKit.Swift {
+  header "LuaKit-Swift.h"
+}

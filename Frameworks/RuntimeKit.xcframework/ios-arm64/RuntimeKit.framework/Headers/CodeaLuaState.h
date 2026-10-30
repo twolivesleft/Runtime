@@ -113,6 +113,7 @@ struct lua_State;
 - (NSString*) globalString:(NSString*)name;
 
 - (void) pcallAndReportErrors:(int)argCount;
+- (void) pcallAndReportErrors:(int)argCount onState:(struct lua_State*)state;
 - (void) printWarning:(NSString*)warning;
 - (void) printTrace:(NSString*)trace;
 - (void) printStackTrace;

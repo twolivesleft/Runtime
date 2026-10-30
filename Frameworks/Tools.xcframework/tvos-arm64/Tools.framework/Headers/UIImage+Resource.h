@@ -12,4 +12,8 @@
 
 + (UIImage*) imageWithResourceNamed:(NSString*)res width:(CGFloat)width height:(CGFloat)height page:(NSUInteger)page;
 
+/// Bakes an image's EXIF rotation into its pixels, returning it unchanged when
+/// there is nothing to do.
++ (UIImage*) imageWithUprightOrientation:(UIImage*)image;
+
 @end

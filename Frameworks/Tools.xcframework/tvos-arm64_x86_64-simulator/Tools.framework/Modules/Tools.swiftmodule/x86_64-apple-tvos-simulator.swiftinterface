@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target x86_64-apple-tvos16.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Tools
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target x86_64-apple-tvos16.6-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Tools
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import DeveloperToolsSupport
 import Foundation
 import Swift
@@ -11,53 +11,48 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os
 public class MulticastDelegate<T> {
   public init()
   public func add(_ delegate: T)
   public func remove(_ delegateToRemove: T)
-  public func invoke(_ invocation: (T) -> Swift.Void)
+  public func invoke(_ invocation: (T) -> Swift::Void)
   @objc deinit
 }
-extension UIKit.UIColor {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public var data: Foundation.Data? {
+extension UIKit::UIColor {
+  @objc dynamic public var data: Foundation::Data? {
     @objc get
   }
-  #endif
 }
-extension Foundation.NSData {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc dynamic public var color: UIKit.UIColor? {
+extension Foundation::NSData {
+  @objc dynamic public var color: UIKit::UIColor? {
     @objc get
   }
-  #endif
 }
-extension Foundation.Data {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var color: UIKit.UIColor? {
+extension Foundation::Data {
+  public var color: UIKit::UIColor? {
     get
   }
-  #endif
 }
 public struct RestorableProjectKey {
-  public static let sessionType: Swift.String
-  public static let filePath: Swift.String
-  public static let bookmark: Swift.String
-  public static let useLegacyViewer: Swift.String
-  public static let useLegacyEditor: Swift.String
+  public static let sessionType: Swift::String
+  public static let filePath: Swift::String
+  public static let bookmark: Swift::String
+  public static let useLegacyViewer: Swift::String
+  public static let useLegacyEditor: Swift::String
 }
 public protocol RestorableProject {
-  var url: Foundation.URL { get }
-  func viewerActivity(activityType: Swift.String, useLegacyViewer: Swift.Bool) -> Foundation.NSUserActivity
-  func editorActivity(activityType: Swift.String, useLegacyEditor: Swift.Bool) -> Foundation.NSUserActivity
+  var url: Foundation::URL { get }
+  func viewerActivity(activityType: Swift::String, useLegacyViewer: Swift::Bool) -> Foundation::NSUserActivity
+  func editorActivity(activityType: Swift::String, useLegacyEditor: Swift::Bool) -> Foundation::NSUserActivity
 }
-extension Tools.RestorableProject {
-  public var userActivityTitle: Swift.String {
+extension Tools::RestorableProject {
+  public var userActivityTitle: Swift::String {
     get
   }
-  public var userActivityInfo: [Swift.AnyHashable : Any] {
+  public var userActivityInfo: [Swift::AnyHashable : Any] {
     get
   }
-  public func viewerActivity(activityType: Swift.String, useLegacyViewer: Swift.Bool = false) -> Foundation.NSUserActivity
-  public func editorActivity(activityType: Swift.String, useLegacyEditor: Swift.Bool) -> Foundation.NSUserActivity
+  public func viewerActivity(activityType: Swift::String, useLegacyViewer: Swift::Bool = false) -> Foundation::NSUserActivity
+  public func editorActivity(activityType: Swift::String, useLegacyEditor: Swift::Bool) -> Foundation::NSUserActivity
 }

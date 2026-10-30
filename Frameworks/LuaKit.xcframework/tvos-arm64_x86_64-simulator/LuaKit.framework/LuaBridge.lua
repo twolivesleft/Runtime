@@ -333,20 +333,58 @@ local objc_mt = {
             return objc.getviewer()
         end
 
+        if inKey == "automaticBridging" then
+            return objc.getautomaticbridging()
+        end
+
         if inKey == "_viewerContainer" then
-            local viewer = objc.viewer
-            if viewer ~= nil then
-                return viewer.parentViewController.parentViewController
-            end
-            
-            return nil
+            return objc.getviewercontainer()
         end
         
         return objc._getClass(inKey)
+   end,
+
+   -- automaticBridging is state held on the Lua state's configuration in
+   -- LuaKit, not a field on this table, so assignment has to be routed. Every
+   -- other key is a plain table write -- note this metatable is installed
+   -- before objc.app and friends are assigned below.
+   __newindex = function(inObject, inKey, inValue)
+        if inKey == "automaticBridging" then
+            objc.setautomaticbridging(inValue and true or false)
+            return
+        end
+
+        rawset(inObject, inKey, inValue)
    end
 }
 
 setmetatable(objc, objc_mt)
+
+--- Runs `body` with automatic bridging disabled, restoring the previous
+--- setting afterwards -- including when `body` raises an error, which a bare
+--- `objc.automaticBridging = false` would leave switched off for the rest of
+--- the session.
+---
+---     local tinted = objc.withoutBridging(function()
+---         local native = objc.UIImage:systemImageNamed_("globe")
+---         native.tintColor = color(255, 0, 0)
+---         return native
+---     end)
+objc.withoutBridging = function(body)
+    local previous = objc.automaticBridging
+
+    objc.automaticBridging = false
+
+    local results = table.pack(pcall(body))
+
+    objc.automaticBridging = previous
+
+    if not results[1] then
+        error(results[2], 0)
+    end
+
+    return table.unpack(results, 2, results.n)
+end
 
 --- objc.app: objc.UIApplication
 objc.app = objc.UIApplication.sharedApplication

@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/AssetKit-Swift.h</key>
 		<data>
-		TnyOeyqwIbhQiaOcR+na/qg+Kyo=
+		mxdtuaCa5ykpy4sCWEmeKA+nnd0=
 		</data>
 		<key>Headers/AssetKit.h</key>
 		<data>
@@ -22,35 +22,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LturXmuAElZv9FODVjeU0VFtz3c=
+		8o6anyhG1WSpPRR8JEL8yNB3+yk=
 		</data>
 		<key>Modules/AssetKit.swiftmodule/Project/arm64-apple-tvos.swiftsourceinfo</key>
 		<data>
-		c77H2vnU63ZGgU5NDYnMDYsPrWk=
+		FnfEm+EdQUUM4V1aY5nrJTVP/Ic=
 		</data>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		0jYZ+G9dEfo2WJh5SbOQ+zrfcfg=
+		9zeBuXWK68i/t5AP9u6nDpisRgY=
 		</data>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		kb1aC1xFSYuwB84xnP00SzHbMHs=
+		yt/9reAzY+Il6dm7tbMjOL0hCvg=
 		</data>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		8rBe6GBQSZW+Hgio/XTm7AhaWyY=
+		knWHXGAqJ61mLNCudL27yHWEPUM=
 		</data>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		kb1aC1xFSYuwB84xnP00SzHbMHs=
+		yt/9reAzY+Il6dm7tbMjOL0hCvg=
 		</data>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		l7BaZV0SyoNusEzt7tm5r2tzyIY=
+		xiO8ibTODZYrErY2rdA9K0Vqqx4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ls6TGge3uCEIaGQj8ArWw3ownAI=
+		yT+RgMvGG9+7B36k6R0fXBF1iM8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VSy67GF6Yq6O9fjV+Io5IdFlGhyU+wmoDcHKfIb82MY=
+			yYxq4MtoXAotjJV3UaNi9q1LC4rIx7Y0NYZYol4FCe0=
 			</data>
 		</dict>
 		<key>Headers/AssetKit.h</key>
@@ -87,49 +87,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tb5stmVhppMiTYp9do9/Yuffo+ftPkjhXIdZlndbqP4=
+			wvD/mZSEBioNFgipKtjeePBfM4YuT0gQw4IT9lpVGvE=
 			</data>
 		</dict>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K7fd4FMLMAl2jCwil9b2HCQjE2hdk3Z2lBRDyXfZccU=
+			de9JfqIu59p8ZgTlgn/gx5/7OA4umDy2UUvM0fw7VUE=
 			</data>
 		</dict>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q5LFDGG6NF6Y22nKc8WjvG4jR03v4rHmEpu5oL1ahcs=
+			KVwfjGZQ/NAN/SmNZXHvjgy0zC6ISs4ADSiFpBL60og=
 			</data>
 		</dict>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jmlIWhKETZ2S+zGqoqlatqPcBUOuPUJJWwp6cGwKx0M=
+			ftjpq0UbNSmwDG+rxzj+ocYqmkAvoLaY4CzgzyyWwPg=
 			</data>
 		</dict>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q5LFDGG6NF6Y22nKc8WjvG4jR03v4rHmEpu5oL1ahcs=
+			KVwfjGZQ/NAN/SmNZXHvjgy0zC6ISs4ADSiFpBL60og=
 			</data>
 		</dict>
 		<key>Modules/AssetKit.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yT/2QB7d353n++h93k8/GpFHFfpSE85Tiqy87vYAB4U=
+			xRwiFwZqkc1tJEYyluXcN4VgMC5ohP3xMDsr4mmQU6U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dpNVXviKJlJKQgdbGhznO3D40OkR3oEDya3NYqMq+Jo=
+			U74mXvWvkuH8RvHtDGcBEbpTpDi5KCybfRTgVi6k0Jg=
 			</data>
 		</dict>
 	</dict>

@@ -61,7 +61,7 @@ function addUserdataVar(var, addVar)
     if userDataType == "image" then
         addVars(var, addVar, {
             "width", "height", "rawWidth", "rawHeight", "premultiplied", "scale",
-            "depth", "numLayers", "hasMips", "cubeMap", "volume", "numMips", "format"
+            "depth", "numLayers", "hasMips", "type", "numMips", "format"
         })
     end
 end
