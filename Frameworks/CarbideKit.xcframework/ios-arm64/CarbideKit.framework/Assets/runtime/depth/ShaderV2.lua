@@ -5,6 +5,12 @@
     {
     },
 
+    properties =
+    {
+        -- Pushes depths back by their slope (x) and a number of the smallest depth steps (y)
+        {"polygonOffset", "vec4", {2.0, 0.5, 0.0, 0.0}}
+    },
+
     passes =
     {
         {
@@ -37,10 +43,23 @@
                 #version 430
                 #include <codea/common.glsl>
 
+                #if defined(SPIRV)
+                layout(std140, binding = 0) uniform FragUniforms {
+                    vec4 polygonOffset;
+                };
+                #else
+                uniform vec4 polygonOffset;
+                #endif
+
                 layout (location = 0) out vec4 FragColor;
 
+                // Stands in for a depth bias, which bgfx doesn't have, so that surfaces don't
+                // shadow themselves where they slope away from the light
                 void main()
                 {
+                    float depth = gl_FragCoord.z;
+                    float slope = max(abs(dFdx(depth)), abs(dFdy(depth)));
+                    gl_FragDepth = depth + slope * polygonOffset.x + polygonOffset.y / 16777216.0;
                 }
             ]],
         }

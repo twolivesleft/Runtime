@@ -5,6 +5,7 @@
     {
         HAS_DIRECTIONAL_LIGHTING = {false},
         HAS_SHADOWING = {false},
+        HAS_DYNAMIC_LIGHTING = {false},
 
         SHADING_MODEL_STANDARD = {false},
         SHADING_MODEL_UNLIT = {false},
@@ -109,7 +110,7 @@
             uniform vec4 u_filamentParams[15];
             #define frameUniforms_sun u_filamentParams[3]
             #define frameUniforms_lightDirection u_filamentParams[4].xyz
-            #define frameUniforms_shadowBias u_filamentParams[5].xyz
+            #define frameUniforms_normalBias u_filamentParams[5]
             #define frameUniforms_iblRoughnessOneLevel u_filamentParams[9].x
             #define frameUniforms_lightColorIntensity u_filamentParams[2]
             #define frameUniforms_iblLuminance u_filamentParams[8].y
@@ -322,6 +323,10 @@
                 #endif
                 #include <codea/shaders/light_indirect.fs>
                 #include <codea/shaders/light_directional.fs>
+                #if defined(HAS_DYNAMIC_LIGHTING)
+                uniform highp sampler2D light_froxels;
+                #include <codea/shaders/light_punctual.fs>
+                #endif
                 #include <codea/shaders/shading_lit.fs>
                 #endif
 

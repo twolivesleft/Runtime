@@ -186,7 +186,7 @@
 		</data>
 		<key>Assets/codea/shaders/getters.fs</key>
 		<data>
-		d9vj5Ui7UdgNMK5kI9wWlWv19qo=
+		6YXIfGy0fE8UZIkyhlOFEfQu/mY=
 		</data>
 		<key>Assets/codea/shaders/getters.vs</key>
 		<data>
@@ -194,11 +194,11 @@
 		</data>
 		<key>Assets/codea/shaders/inputs.fs</key>
 		<data>
-		JFMVmvJmYKhpSm23M1pf6lNAEy8=
+		t4HqqSFmWuGabsaNWvHbl+jZuXI=
 		</data>
 		<key>Assets/codea/shaders/inputs.vs</key>
 		<data>
-		+u5nHqfVLsQgSAQohB3pBuKQgik=
+		dOItpxWKKYPXa3bTNIF6diHnRw0=
 		</data>
 		<key>Assets/codea/shaders/light_directional.fs</key>
 		<data>
@@ -210,7 +210,7 @@
 		</data>
 		<key>Assets/codea/shaders/light_punctual.fs</key>
 		<data>
-		6zUOFor1pLPnnXwm0QczEpCnU2E=
+		PTul95mWlwNzNC+dPcuW5kWI4lc=
 		</data>
 		<key>Assets/codea/shaders/main.fs</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>Assets/codea/shaders/main.vs</key>
 		<data>
-		7DBa/VleuGhe5Sy5363r7Dxa1yk=
+		xylfjT5tZ2nsA6+HPI9tJTyjPCQ=
 		</data>
 		<key>Assets/codea/shaders/material_inputs.fs</key>
 		<data>
@@ -308,9 +308,29 @@
 		<data>
 		mLzH0m7Qkq6bnNJ8RpBnZ7G1ojI=
 		</data>
+		<key>Assets/runtime/cameraEffects/blur.fs</key>
+		<data>
+		HKyfde1p8+bcdmOZlpU91PRwx6Y=
+		</data>
+		<key>Assets/runtime/cameraEffects/bright.fs</key>
+		<data>
+		oKHVQZkeV9veCxtgtnb4EsQNCH8=
+		</data>
+		<key>Assets/runtime/cameraEffects/finish.fs</key>
+		<data>
+		h5dGwDlMT6GLsHPDkamQOeP1OEM=
+		</data>
+		<key>Assets/runtime/cameraEffects/fullscreen.vs</key>
+		<data>
+		gOl+s53j3JAmVZvxWckzM6KhmNY=
+		</data>
+		<key>Assets/runtime/cameraEffects/tiltShift.fs</key>
+		<data>
+		A1EFsxCmKPShVS0STNXUT+sFZxQ=
+		</data>
 		<key>Assets/runtime/depth/ShaderV2.lua</key>
 		<data>
-		6ZhRKvkPAw4Ijna5dftKLBluipg=
+		rDyLx6G5By2fKS9CzdaMrMzqvX0=
 		</data>
 		<key>Assets/runtime/entityID/ShaderV2.lua</key>
 		<data>
@@ -378,7 +398,7 @@
 		</data>
 		<key>Assets/runtime/surface/ShaderV2.lua</key>
 		<data>
-		9fl3Pk8/uZZY/MSq/osWXq2kcLo=
+		baTGWB/LFhxIExpL+IpNlTXyDBQ=
 		</data>
 		<key>Assets/runtime/voxel/ShaderV2.lua</key>
 		<data>
@@ -446,7 +466,7 @@
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		65LJt2U7jBFYzLNPNpxGP34i+Uo=
+		UGixu6Tf8k0OrNI/BeOo1c65a1k=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -986,7 +1006,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Y4dDrjQIZUVy7trMRKc+1xLDBDLqIJv6uw72kyVnPw=
+			SIP6WvipiQplPRc9Wr3hGOv+nh7ejrpcqkCLMvcsWUY=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/getters.vs</key>
@@ -1000,14 +1020,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CRk50vdHPFhvC9mXxXq0cIo8S94+kJEf2Ik23yBN/Lk=
+			50F+M0uW7aR9J0H2I04wMASXlwMZ4pFD7OW3GVHcEqc=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/inputs.vs</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5xGIvK9krXgZlwKXWDuz5f20FWJ3raPKQ6OeB4Pc708=
+			2OGrDLRZS702FfXgaSSfzBrADRCk7EBK5ZmEXhBM4Gc=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/light_directional.fs</key>
@@ -1028,7 +1048,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WROYfMIcuIFwZs9R1VmF1Crr4CY5D/2QmfA9K7zpeho=
+			Zz9T0ZU1wRUhMS+owtlwClWMGqVUpsDtxbyLFlMDC4U=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/main.fs</key>
@@ -1042,7 +1062,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1m8z8bDlPWIEwZ3Y8LyO+cCDxs54VfpBEXiJ7BwU/xE=
+			miePH5S24EvXJi+TrtszMXR2exX+r6GnNhdFRILQJ5I=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/material_inputs.fs</key>
@@ -1199,11 +1219,46 @@
 			nMH4lIPdcFRssA+j1u/B114wKkdpAUd71Z+gK7sN1HA=
 			</data>
 		</dict>
+		<key>Assets/runtime/cameraEffects/blur.fs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DOxfNYv2M9+8A18hhBjCDf7L9Q+2GskslMRKjaUy1Qc=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/bright.fs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vHGpAxfF2UZs/KHYaIl8tX2bb5FRir4KYGJBWnhRcIQ=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/finish.fs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EikZ97WlXCMF9ibZgYzNsDMPCZgM8sjGciVdgzA9J98=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/fullscreen.vs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			shrEmDh3jcCVFELoiymkp93RAMXu8NUfGsHMhuCMdeM=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/tiltShift.fs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BLAUfpllCbFcuWqH68AJAZA5a5nts1WJdgp27nD5Uc4=
+			</data>
+		</dict>
 		<key>Assets/runtime/depth/ShaderV2.lua</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d1XkOOEciphbKbx78YvsUDxXAaNe5R1G8LEa65rIbhQ=
+			gUUr83KmjfG2darXBLwhkocaccginZ+nY/3Nb1WIsw8=
 			</data>
 		</dict>
 		<key>Assets/runtime/entityID/ShaderV2.lua</key>
@@ -1322,7 +1377,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XD/MpstpetPJ8ba2U46Spno3pLWf7ktY4Zhx5ZKIBX8=
+			rrCyQTNIbGwZHwg9tT0Qm4RP5sfWXzNEyy/WNeP+PwA=
 			</data>
 		</dict>
 		<key>Assets/runtime/voxel/ShaderV2.lua</key>
@@ -1434,7 +1489,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6YlAn5x3Xb98JSzKFdsXWmkbaO3ZZnUVjGPzEoOfRo0=
+			cbMtYOkeKsfF5duniP2jU792pmSf00uxxxoXNOa5fj0=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
