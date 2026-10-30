@@ -81,6 +81,8 @@ LAYOUT_LOCATION(10) out highp vec4 vertex_uv01;
 LAYOUT_LOCATION(11) out highp vec4 vertex_lightSpacePosition;
 #endif
 
-#if defined(HAS_SHADOWING) && defined(HAS_DYNAMIC_LIGHTING)
+// Spot light shadows aren't drawn yet. These need locations clear of the material's
+// own variables (from 13, see Shader.cpp) before they can be
+#if defined(HAS_SHADOWING) && defined(HAS_SPOT_SHADOWS)
 LAYOUT_LOCATION(12) out highp vec4 vertex_spotLightSpacePosition[MAX_SHADOW_CASTING_SPOTS];
 #endif

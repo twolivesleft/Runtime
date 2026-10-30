@@ -96,7 +96,7 @@ highp vec3 getNormalizedViewportCoord() {
     return vec3(shading_normalizedViewportCoord, gl_FragCoord.z);
 }
 
-#if defined(HAS_SHADOWING) && defined(HAS_DYNAMIC_LIGHTING)
+#if defined(HAS_SHADOWING) && defined(HAS_SPOT_SHADOWS)
 highp vec3 getSpotLightSpacePosition(uint index) {
     highp vec4 position = vertex_spotLightSpacePosition[index];
     return position.xyz * (1.0 / position.w);
@@ -132,7 +132,7 @@ highp vec3 getCascadeLightSpacePosition(uint cascade) {
     }
 
     highp vec4 pos = computeLightSpacePosition(getWorldPosition(), getWorldNormalVector(),
-                                               frameUniforms_lightDirection, frameUniforms_shadowBias.y,
+                                               frameUniforms_lightDirection, frameUniforms_normalBias[cascade],
                                                frameUniforms_lightFromWorldMatrix[cascade]);
     
     return pos.xyz * (1.0 / pos.w);
