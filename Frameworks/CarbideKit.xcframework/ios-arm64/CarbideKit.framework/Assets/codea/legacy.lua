@@ -153,40 +153,15 @@ function legacy.textAlign(...)
 end
 
 -- image:set() → image:setPixel() migration
-local image_mt = getmetatable(image(1,1))
-if image_mt and image_mt.__index then
-    local original_index = image_mt.__index
-    image_mt.__index = function(self, key)
-        if key == "set" then
-            return self.setPixel
-        end
-        if type(original_index) == "function" then
-            return original_index(self, key)
-        else
-            return original_index[key]
-        end
-    end
-end
+image.set = image.setPixel
 
 -- mesh:setColors(color) → set all vertices to a single color
-local _mesh_mt = getmetatable(mesh())
-if _mesh_mt and _mesh_mt.__index then
-    local _mesh_original_index = _mesh_mt.__index
-    _mesh_mt.__index = function(self, key)
-        if key == "setColors" then
-            return function(m, c)
-                local colors = {}
-                for i = 1, (m.count or 0) do
-                    colors[i] = c
-                end
-                m.colors = colors
-            end
-        end
-        if type(_mesh_original_index) == "function" then
-            return _mesh_original_index(self, key)
-        end
-        return _mesh_original_index[key]
+function mesh:setColors(c)
+    local colors = {}
+    for i = 1, (self.count or 0) do
+        colors[i] = c
     end
+    self.colors = colors
 end
 
 -- Asset functions
@@ -1287,11 +1262,20 @@ end
 
 legacy.physics = physics
 
+local _cameraPlaceholder = nil
+local function _ensureCameraPlaceholder()
+    if not _cameraPlaceholder then
+        _cameraPlaceholder = image(1, 1)
+    end
+    return _cameraPlaceholder
+end
+
 -- Camera source (getter/setter)
 function legacy.cameraSource(source)
     if source == nil then
         return sensor.cameraSource
     end
+    _ensureCameraPlaceholder()
     sensor.cameraSource = source
 end
 
@@ -1300,6 +1284,18 @@ function legacy.init()
     CurrentTouch = touch.current
     DeltaTime = 0
     ElapsedTime = 0
+    if not getmetatable(_G) then
+        setmetatable(_G, {
+            __index = function(t, k)
+                if k == "CAMERA" or k == "CAMERA_DEPTH" then
+                    local img = _ensureCameraPlaceholder()
+                    rawset(t, k, img)
+                    return img
+                end
+                return nil
+            end
+        })
+    end
 end
 
 -- Called before each fixedUpdate() in the fixed timestep loop.
@@ -1309,13 +1305,14 @@ function legacy.fixedUpdate()
 end
 
 -- Called each frame before draw(). Updates legacy globals that track live state.
-local _cameraPlaceholder = image(1, 1)
 function legacy.willDraw()
     CurrentTouch = touch.current
     DeltaTime = time.delta
     ElapsedTime = time.elapsed
-    CAMERA = sensor.cameraColor or _cameraPlaceholder
-    CAMERA_DEPTH = sensor.cameraDepth or _cameraPlaceholder
+    if _cameraPlaceholder or sensor.cameraColor then
+        CAMERA = sensor.cameraColor or _ensureCameraPlaceholder()
+        CAMERA_DEPTH = sensor.cameraDepth or _ensureCameraPlaceholder()
+    end
 end
 
 -- Context functions

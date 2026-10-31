@@ -6782,154 +6782,154 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
       "kind": "StringLiteral",
       "offset": 2126,
       "length": 7,
       "value": "\"codea\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
       "kind": "BooleanLiteral",
       "offset": 2552,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
       "kind": "FloatLiteral",
       "offset": 2604,
       "length": 3,
       "value": "5.0"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
       "kind": "StringLiteral",
       "offset": 2658,
       "length": 6,
       "value": "\"*.%@\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/MetadataMonitor.swift",
       "kind": "StringLiteral",
       "offset": 2747,
       "length": 12,
       "value": "\"%K LIKE %@\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Asset\/ExternalAssets.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Asset\/ExternalAssets.swift",
       "kind": "Array",
       "offset": 1582,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 36,
       "value": "\"io.codea.AssetKit.DirectoryMonitor\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
       "kind": "BooleanLiteral",
       "offset": 444,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
       "kind": "Array",
       "offset": 490,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
       "kind": "Dictionary",
       "offset": 856,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
       "kind": "BooleanLiteral",
       "offset": 1005,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
       "kind": "BooleanLiteral",
       "offset": 1035,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Directory\/DirectoryMonitor.swift",
       "kind": "Dictionary",
       "offset": 11386,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
       "kind": "IntegerLiteral",
       "offset": 1996,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
       "kind": "StringLiteral",
       "offset": 2587,
       "length": 45,
       "value": "\"io.codea.AssetKit.AssetLibrary.contentCache\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
       "kind": "StringLiteral",
       "offset": 3155,
       "length": 9,
       "value": "\"_______\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
       "kind": "StringLiteral",
       "offset": 3239,
       "length": 8,
       "value": "\".Trash\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
       "kind": "BooleanLiteral",
       "offset": 3262,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
       "kind": "StringLiteral",
       "offset": 3394,
       "length": 9,
       "value": "\"_______\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
       "kind": "StringLiteral",
       "offset": 3478,
       "length": 7,
       "value": "\"Inbox\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
       "kind": "BooleanLiteral",
       "offset": 3500,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/AssetKit\/AssetKit\/Asset\/AssetLibrary.swift",
       "kind": "StringLiteral",
       "offset": 3928,
       "length": 9,

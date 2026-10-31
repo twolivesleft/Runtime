@@ -95,6 +95,7 @@ typedef enum : NSUInteger {
 - (BOOL)loadLuaString:(NSString*)string error:(NSError **)error;
 - (BOOL)loadLuaString:(NSString*)string chunkName:(NSString*)chunkName error:(NSError **)error;
 - (void)loadLuaString:(NSString*)string chunkName:(NSString*)chunkName completion:(void(^)(NSError* _Nullable))completion;
+- (void)loadLuaStrings:(NSArray<NSString*>*)strings chunkNames:(NSArray<NSString*>*)chunkNames completion:(void(^)(NSError* _Nullable))completion;
 
 - (void)logMessage:(NSString *)message;
 - (void)logError:(NSString *)message;

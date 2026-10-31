@@ -201,6 +201,7 @@ namespace Carbide
         void setupLua();
         void shutdownLua();
         void drawStatsOverlay();
+        void pollDebuggee();
         
         std::vector<std::unique_ptr<Module>> m_modules;
                 
@@ -208,6 +209,7 @@ namespace Carbide
         int m_frameCount {0};
             
         sol::state m_luaState;
+        sol::protected_function m_legacyWillDraw;
     };
     
 }
