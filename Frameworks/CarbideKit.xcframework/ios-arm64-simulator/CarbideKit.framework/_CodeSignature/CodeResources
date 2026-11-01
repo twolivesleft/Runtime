@@ -462,15 +462,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		L5/VCnVrYaiKQm492k02pXjiBgo=
+		oVibgTEVG8yZIYU0W4Ct0OBU0xo=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		boxO3cGFLPOpcswkCijchLW6O/w=
+		V+WcX56MgwoG70TdI8l0PFdkyQ0=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		cyRLEn5zWXfb+zZK/nGq1Jm0TsI=
+		z3L6VACb3uoPHCVA0wc+Ol4OpNE=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -486,7 +486,7 @@
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bHTss5vJ4u16JsiIJSQmUmHnuaY=
+		CtdlyhiAyFMx5qwIjwUqTLQlVT8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1489,14 +1489,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1HsSALAZkURjUFyT4rA7ewU+r/S3GeGITCD7DlzzDdg=
+			rnwF5kp39CvRR18BHly/j8QGgrDGmD7fCxiDzYUzQL8=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8eXVBobxGr2XtQgasDAwsNRAtw2Nw3KIurXVqO2RoYM=
+			uBv+Ty7oxQ/Z/XK2cRkoidd/cFJ2Z+WcnCbCdpuO3/o=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1524,7 +1524,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+IF5A/o1R6YK5oFikl7RqMdZYJRESLrZbEDFkar44QY=
+			ROYEyDVUz7yU1VUY8DcLxO8wLMi4cfsBUH2F/8pKvac=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

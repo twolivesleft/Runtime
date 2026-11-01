@@ -244,6 +244,11 @@ local function systemSymbol(name, ...)
 
     local options = _processSymbolArguments({...})
 
+    -- SF Symbols exist only on Apple platforms; elsewhere no name is a symbol
+    if objc == nil then
+        return nil
+    end
+
     local native = objc.withoutBridging(function()
         local configuration = _configuration(options)
 

@@ -22,14 +22,14 @@ struct AssetKey {
     using ReadSaveCoordinator = std::function<void(const std::string&)>;
 
     std::string _path;
-    mutable void* _rootUrl;
-    mutable void* _bookmarkData;
+    mutable void* _Nullable _rootUrl;
+    mutable void* _Nullable _bookmarkData;
     
     AssetKey(): _path(""), _rootUrl(nullptr), _bookmarkData(nullptr) {}
     ~AssetKey();
     
     explicit AssetKey(const std::string& path);
-    explicit AssetKey(const std::string& path, void* rootUrl);
+    explicit AssetKey(const std::string& path, void* _Nullable rootUrl);
     explicit AssetKey(const std::string& path, bool withBookmarkData);
     explicit AssetKey(void* _Nonnull bookmarkData);
     AssetKey(AssetKey&& other) noexcept;
@@ -96,9 +96,9 @@ bool lua_isassetkey(struct lua_State* _Nonnull L, int index);
 ///  - key: The AssetKey to push
 void lua_pushassetkey(lua_State* _Nonnull L, const AssetKey& key);
 #else
-AssetKey lua_assetkey(struct lua_State* L, int index);
-bool lua_isassetkey(struct lua_State* L, int index);
-void lua_pushassetkey(lua_State* L, const AssetKey& key);
+AssetKey lua_assetkey(struct lua_State* _Nonnull L, int index);
+bool lua_isassetkey(struct lua_State* _Nonnull L, int index);
+void lua_pushassetkey(lua_State* _Nonnull L, const AssetKey& key);
 #endif
 
 #endif /* __cplusplus */
