@@ -751,7 +751,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "() throws -> ()",
+                "printedName": "() async throws -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -767,8 +767,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvp",
-            "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvp",
+            "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyYaKcvp",
+            "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyYaKcvp",
             "moduleName": "CarbideKit",
             "declAttributes": [
               "HasInitialValue",
@@ -787,7 +787,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "() throws -> ()",
+                    "printedName": "() async throws -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -803,8 +803,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvg",
-                "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvg",
+                "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyYaKcvg",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyYaKcvg",
                 "moduleName": "CarbideKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -822,7 +822,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "() throws -> ()",
+                    "printedName": "() async throws -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -838,8 +838,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvs",
-                "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvs",
+                "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyYaKcvs",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyYaKcvs",
                 "moduleName": "CarbideKit",
                 "implicit": true,
                 "accessorKind": "set"
@@ -856,8 +856,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvM",
-                "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyKcvM",
+                "usr": "s:10CarbideKit0A14ViewControllerC11loadAndPlayyyYaKcvM",
+                "mangledName": "$s10CarbideKit0A14ViewControllerC11loadAndPlayyyYaKcvM",
                 "moduleName": "CarbideKit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2879,63 +2879,63 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 285,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 329,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 673,
+      "offset": 679,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 710,
+      "offset": 716,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 744,
+      "offset": 750,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3480,
+      "offset": 3486,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController+Project.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Carbide\/CarbideKit\/Platform\/iOS\/CarbideViewController+Project.swift",
       "kind": "BooleanLiteral",
       "offset": 174,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CodeaImagePlayground.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Carbide\/CarbideKit\/Platform\/iOS\/CodeaImagePlayground.swift",
       "kind": "BooleanLiteral",
       "offset": 731,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Carbide\/CarbideKit\/Platform\/iOS\/CodeaImagePlayground.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Carbide\/CarbideKit\/Platform\/iOS\/CodeaImagePlayground.swift",
       "kind": "Dictionary",
       "offset": 1644,
       "length": 3,

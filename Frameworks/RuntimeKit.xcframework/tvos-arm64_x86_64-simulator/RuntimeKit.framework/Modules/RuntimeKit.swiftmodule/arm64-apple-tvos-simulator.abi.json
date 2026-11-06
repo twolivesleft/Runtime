@@ -11722,259 +11722,259 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ExternalAssetPack.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ExternalAssetPack.swift",
       "kind": "BooleanLiteral",
       "offset": 860,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ExternalAssetPack.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ExternalAssetPack.swift",
       "kind": "BooleanLiteral",
       "offset": 1466,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectManager.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectManager.swift",
       "kind": "StringLiteral",
       "offset": 324,
       "length": 31,
       "value": "\"ProjectManagerDidCopyExamples\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectManager.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectManager.swift",
       "kind": "StringLiteral",
       "offset": 1437,
       "length": 11,
       "value": "\"documents\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectManager.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectManager.swift",
       "kind": "Array",
       "offset": 1607,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectManager.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectManager.swift",
       "kind": "Array",
       "offset": 1645,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectManager.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectManager.swift",
       "kind": "StringLiteral",
       "offset": 4761,
       "length": 9,
       "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
       "kind": "BooleanLiteral",
       "offset": 430,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
       "kind": "StringLiteral",
       "offset": 548,
       "length": 6,
       "value": "\"Name\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
       "kind": "StringLiteral",
       "offset": 592,
       "length": 30,
       "value": "\"ASSET_PACKS_ICLOUD_DOCUMENTS\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
       "kind": "StringLiteral",
       "offset": 681,
       "length": 8,
       "value": "\"Author\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
       "kind": "StringLiteral",
       "offset": 721,
       "length": 31,
       "value": "\"SPRITE_PACKS_DOCUMENTS_AUTHOR\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
       "kind": "StringLiteral",
       "offset": 763,
       "length": 13,
       "value": "\"Your Assets\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/AssetManager+Pack.swift",
       "kind": "StringLiteral",
       "offset": 878,
       "length": 7,
       "value": "\"Types\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Common\/RuntimeStyle.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Common\/RuntimeStyle.swift",
       "kind": "IntegerLiteral",
       "offset": 3990,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
       "kind": "IntegerLiteral",
       "offset": 329,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
       "kind": "IntegerLiteral",
       "offset": 425,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
       "kind": "IntegerLiteral",
       "offset": 447,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepositoryMetadata.swift",
       "kind": "StringLiteral",
       "offset": 693,
       "length": 13,
       "value": "\".codea_repo\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Sound\/OSCManager.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/OSCManager.swift",
       "kind": "StringLiteral",
       "offset": 698,
       "length": 11,
       "value": "\"localhost\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Sound\/OSCManager.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/OSCManager.swift",
       "kind": "IntegerLiteral",
       "offset": 738,
       "length": 4,
       "value": "9000"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Sound\/OSCManager.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/OSCManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1003,
       "length": 4,
       "value": "9000"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectRepository.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepository.swift",
       "kind": "Array",
       "offset": 3026,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectRepository.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectRepository.swift",
       "kind": "BooleanLiteral",
       "offset": 14310,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
       "kind": "IntegerLiteral",
       "offset": 517,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
       "kind": "StringLiteral",
       "offset": 1085,
       "length": 5,
       "value": "\"en0\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
       "kind": "IntegerLiteral",
       "offset": 1245,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Sound\/WifiAddress.swift",
       "kind": "IntegerLiteral",
       "offset": 1487,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/CodeaViewController.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/CodeaViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 431,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/CodeaViewController.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/CodeaViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 620,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/CodeaViewController+Scene.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/CodeaViewController+Scene.swift",
       "kind": "StringLiteral",
       "offset": 338,
       "length": 17,
       "value": "\"io.codea.viewer\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 290,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 304,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
       "kind": "Dictionary",
       "offset": 1005,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
       "kind": "BooleanLiteral",
       "offset": 1378,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
       "kind": "Array",
       "offset": 2386,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Runtime\/Runtime\/Data\/ProjectCollection.swift",
       "kind": "StringLiteral",
       "offset": 3064,
       "length": 9,

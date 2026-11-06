@@ -426,7 +426,7 @@
 		</data>
 		<key>Headers/CarbideView.h</key>
 		<data>
-		YRffyf7jaMK3uawoiZsCnmFSWbM=
+		G7OTpuISYC+7vS+mCkAMSZLtJQY=
 		</data>
 		<key>Headers/Color.hpp</key>
 		<data>
@@ -462,19 +462,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oVibgTEVG8yZIYU0W4Ct0OBU0xo=
+		L5/VCnVrYaiKQm492k02pXjiBgo=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		V+WcX56MgwoG70TdI8l0PFdkyQ0=
+		evRktbFEdrAM4AcR7/cz1gNAjPg=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		z3L6VACb3uoPHCVA0wc+Ol4OpNE=
+		tsHZ3CyR4vecrblE0s/rUS65Fdc=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		mcwfII/rvNyWuaCqDroneKdJTQQ=
+		OWwdAzcwY4mOcLQaCEnyY7B0FG8=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -482,11 +482,11 @@
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mcwfII/rvNyWuaCqDroneKdJTQQ=
+		OWwdAzcwY4mOcLQaCEnyY7B0FG8=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CtdlyhiAyFMx5qwIjwUqTLQlVT8=
+		SpOC4UDva8f7WstvDpOs/ZZvWP8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1426,7 +1426,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			laDRBKQXQZNYh5DAkjcBUoPFRuQJRQGFq6KelymrP1c=
+			USs6rJER9uNLdlTzebtW/IVUj7sIBB8Yx6l6hTh4MtY=
 			</data>
 		</dict>
 		<key>Headers/Color.hpp</key>
@@ -1489,21 +1489,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rnwF5kp39CvRR18BHly/j8QGgrDGmD7fCxiDzYUzQL8=
+			dIWiGlGLhurQ74xSigvX/0Em9O+6v0L+xTk8UNToa/s=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uBv+Ty7oxQ/Z/XK2cRkoidd/cFJ2Z+WcnCbCdpuO3/o=
+			YYGxL8n3l4CA/0WB4v6UY4XH0rG27Vkr43RtFpZGV2I=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kzl8nkQPPwo70UonveAK7b0P2SjDNd4hnQEYBR/dUFI=
+			mgBTVXTagDL8I1Clw6CNLLS8dpO7c5yw6TTUQ8Q2X0I=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1517,14 +1517,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kzl8nkQPPwo70UonveAK7b0P2SjDNd4hnQEYBR/dUFI=
+			mgBTVXTagDL8I1Clw6CNLLS8dpO7c5yw6TTUQ8Q2X0I=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROYEyDVUz7yU1VUY8DcLxO8wLMi4cfsBUH2F/8pKvac=
+			5pbLWpFiCqWlzpf/ZcV5sYEB05IuuSCIYrX1dP4LkBY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

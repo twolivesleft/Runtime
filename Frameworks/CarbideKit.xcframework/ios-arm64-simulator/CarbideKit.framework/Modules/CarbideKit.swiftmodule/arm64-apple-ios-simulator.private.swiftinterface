@@ -36,7 +36,7 @@ public protocol CarbideDelegate {
   }
   @_Concurrency::MainActor @preconcurrency public var projectLoaded: Swift::Bool
   @_Concurrency::MainActor @preconcurrency public var closeButtonPressed: () -> Swift::Void
-  @_Concurrency::MainActor @preconcurrency public var loadAndPlay: () throws -> Swift::Void
+  @_Concurrency::MainActor @preconcurrency public var loadAndPlay: () async throws -> Swift::Void
   @_Concurrency::MainActor @preconcurrency final public let activityType: Swift::String
   @_Concurrency::MainActor @preconcurrency final public let url: Foundation::URL?
   @_Concurrency::MainActor @preconcurrency final public let carbideView: CarbideKit::CarbideView

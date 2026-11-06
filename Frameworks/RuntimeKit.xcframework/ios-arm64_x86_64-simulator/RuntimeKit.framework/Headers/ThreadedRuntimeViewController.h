@@ -121,6 +121,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) screenshot:(void(^)(UIImage* capture))capture;
 - (void) screenshotAtScaleFactor:(CGFloat)scaleFactor completion:(void(^)(UIImage* capture))capture;
 
+/// Gives the running project a touch from outside UIKit, such as from a preview of the device.
+/// Locations are in the view's points from its top left, as a UITouch gives them.
+- (void) sendTouchWithIdentifier:(long)identifier phase:(UITouchPhase)phase location:(CGPoint)location previousLocation:(CGPoint)previousLocation;
+
 @property (nonatomic, assign) BOOL paused;
 
 - (void) start:(void(^)())completion;

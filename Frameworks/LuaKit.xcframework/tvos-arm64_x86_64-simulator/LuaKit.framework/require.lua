@@ -36,13 +36,23 @@ if _isApple then
     _getChunkNameForPath = function(path)
         local pathString = objc.string(path)
 
-        local bufferName = pathString:lastPathComponent_()
-
+        -- A file in a folder inside the project keeps that folder in its name
+        local bufferName = tostring(pathString:lastPathComponent_())
         local withoutFilename = objc.string(pathString:stringByDeletingLastPathComponent_())
-        local projectFolder = objc.string(withoutFilename:lastPathComponent_())
+        local folder = withoutFilename
+        while not tostring(folder:lastPathComponent_()):match("%.codea$") and tostring(folder) ~= "/" do
+            bufferName = tostring(folder:lastPathComponent_()) .. "/" .. bufferName
+            folder = objc.string(folder:stringByDeletingLastPathComponent_())
+        end
+        if tostring(folder) == "/" then
+            folder = withoutFilename
+            bufferName = tostring(pathString:lastPathComponent_())
+        end
+
+        local projectFolder = objc.string(folder:lastPathComponent_())
         local projectName = projectFolder:stringByReplacingOccurrencesOfString_withString_(".codea", "")
 
-        local withoutProject = objc.string(withoutFilename:stringByDeletingLastPathComponent_())
+        local withoutProject = objc.string(folder:stringByDeletingLastPathComponent_())
         local collectionName = withoutProject:lastPathComponent_()
 
         local chunkName = "@" .. collectionName .. "/" .. projectName .. "/" .. bufferName

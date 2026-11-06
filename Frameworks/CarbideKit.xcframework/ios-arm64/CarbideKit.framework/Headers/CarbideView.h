@@ -114,6 +114,12 @@ typedef enum : NSUInteger {
 
 - (nullable CarbideProxyView*)proxyWithhandle:(NSUInteger)handle;
 
+- (void)captureScreenshot:(void (^)(UIImage * _Nullable image))completion;
+
+/// Gives the running project a touch from outside UIKit, such as from a preview of the device.
+/// Locations are in the view's points from its top left, as a UITouch gives them.
+- (void)sendTouchWithIdentifier:(long)identifier phase:(UITouchPhase)phase location:(CGPoint)location previousLocation:(CGPoint)previousLocation;
+
 @end
 
 NS_ASSUME_NONNULL_END

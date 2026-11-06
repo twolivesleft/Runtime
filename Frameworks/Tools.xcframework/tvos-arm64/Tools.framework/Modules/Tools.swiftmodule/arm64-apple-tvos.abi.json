@@ -2085,77 +2085,77 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Tools\/Tools\/WebBrowser\/NavigationBarAppearance.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/NavigationBarAppearance.swift",
       "kind": "BooleanLiteral",
       "offset": 228,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Tools\/Tools\/WebBrowser\/NavigationBarAppearance.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/WebBrowser\/NavigationBarAppearance.swift",
       "kind": "BooleanLiteral",
       "offset": 322,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Tools\/Tools\/Common\/Color+Data.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/Color+Data.swift",
       "kind": "BooleanLiteral",
       "offset": 330,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 13,
       "value": "\"sessionType\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 10,
       "value": "\"filePath\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
       "offset": 338,
       "length": 10,
       "value": "\"bookmark\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
       "offset": 389,
       "length": 17,
       "value": "\"useLegacyViewer\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "StringLiteral",
       "offset": 447,
       "length": 17,
       "value": "\"useLegacyEditor\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Tools\/Tools\/Common\/RestorableProject.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Tools\/Tools\/Common\/RestorableProject.swift",
       "kind": "BooleanLiteral",
       "offset": 1476,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Build\/Build\/Intermediates.noindex\/Tools.build\/Release-appletvos\/Tools.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Build\/Build\/Intermediates.noindex\/Tools.build\/Release-appletvos\/Tools.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 729,
       "length": 10,
       "value": "\"backIcon\""
     },
     {
-      "filePath": "\/Users\/jfperusse\/Git\/codea-super\/Build\/Build\/Intermediates.noindex\/Tools.build\/Release-appletvos\/Tools.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/sim\/Developer\/Codea\/Build\/Build\/Intermediates.noindex\/Tools.build\/Release-appletvos\/Tools.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 871,
       "length": 13,

@@ -134,6 +134,9 @@ local object_mt = {
     end
   end,
   __call = function(inObject, target, ...)
+    if objc.isblock(unwrap(inObject)) then
+      return sendMesg(unwrap(inObject), "invoke", target, ...)
+    end
     if objc.hasmethod(unwrap(inObject), "new") then
       return sendMesg(unwrap(inObject), "new", ...)
     end
