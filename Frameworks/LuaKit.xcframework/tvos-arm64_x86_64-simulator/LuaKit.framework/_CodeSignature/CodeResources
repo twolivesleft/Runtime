@@ -162,7 +162,7 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		zEZyHlcshtAf7iNZhYt3Q2aP35k=
+		tuy78MRVxHChJ7IJkS+Z1/YJsgE=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		HvF429XA7e1ZiOK6LhQtOzPxKzE=
+		11zny345loaoeZRxwpsXFG2DiH4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -557,7 +557,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Im+KsQZE2ASgKRmwpA7jcOe5dy6buidg29GwWDFg1wM=
+			xDwyHX9zotNw16clS+dTmbiNGRy8Q63ELQP5nYDwGb0=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
@@ -592,7 +592,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zH3tNOZB8WpPtcGRP/G8rzjaOzCZrzqn2C+mgO5JysM=
+			tdNMpbDR6ZET8tC4b3/5iul2gxc5T5PhHLD2BCWcgmY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
