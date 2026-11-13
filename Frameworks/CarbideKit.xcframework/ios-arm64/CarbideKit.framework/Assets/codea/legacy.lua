@@ -61,6 +61,10 @@ function legacy.spriteSize(first, ...)
     return img.width, img.height
 end
 
+function legacy.shapeMode(...)
+    return style.shapeMode(...)
+end
+
 function legacy.rectMode(...)
     return style.rectMode(...)
 end
@@ -131,7 +135,7 @@ end
 
 -- Text functions
 function legacy.textMode(...)
-    return style.textMode(...)
+    return style.shapeMode(...)
 end
 
 function legacy.fontSize(...)
@@ -149,7 +153,7 @@ function legacy.textWrapWidth(...)
 end
 
 function legacy.textAlign(...)
-    return style._legacyTextAlign(...)
+    return style.textAlign(...)
 end
 
 -- image:set() → image:setPixel() migration

@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/LuaKit-Swift.h</key>
 		<data>
-		6kJHkbDVSc2rnpmbWWIgMMKLeUQ=
+		JNYbHMYlbU6WnGxnjClOn+ZdBCM=
 		</data>
 		<key>Headers/LuaKit.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7322dTDcA3jhbvcqV0g+DgGLav4=
+		UBBqX/skNe6UKBb8cT4ubzqf53U=
 		</data>
 		<key>LuaBridge.lua</key>
 		<data>
@@ -138,11 +138,11 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		xTT557XPNtgkByBqlVOt7VdvD0c=
+		HQVvjoeF5dXcCkjL/Cfg2WeF6WQ=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		2nOSAvXCM+gcQ2BJSSyoG1aPVyg=
+		roQrwfNHhsvJETyix8BCMM/5vF0=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -150,19 +150,19 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vJubFJemc6pE29GDBc2Kl7L97HM=
+		hvNmh7TNR9YTzM5/t4vsmN4TC6Q=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		/hRK/pOQiW+w0pH5d6rCUO+kDis=
+		XA1M78NM+koxvF+4VSg25ZymJ/c=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vJubFJemc6pE29GDBc2Kl7L97HM=
+		hvNmh7TNR9YTzM5/t4vsmN4TC6Q=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mRPiwpc8DcDFuaupY171T5P5J3U=
+		p6A9t0WTJzaID6oKj30EObJ4LAw=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -170,19 +170,19 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jjCq44oyGL+ALYIECKV6DMq/g/E=
+		V17uPxhvVlHOWwwSByO7f8oF8NI=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		CY0SesHHXga650Qkobu/DWlRiLA=
+		WNarUJBZ9oHs3K8IWLNFjIzeuuw=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jjCq44oyGL+ALYIECKV6DMq/g/E=
+		V17uPxhvVlHOWwwSByO7f8oF8NI=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tpR+VX8xDd3XPp7jRsC1U7s2Y9w=
+		AjWkOyUGkTeLBBUSLrEyQLPRJ1Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -340,7 +340,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ss0Cpa098f7lHAzjwPg7+GERO1L0+FFPV9m6QL8/P20=
+			1YaPU6VJPIrR5bD4IPg3mc5teOj2yGKeJTvHenozJTM=
 			</data>
 		</dict>
 		<key>Headers/LuaKit.h</key>
@@ -515,14 +515,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xoIoQ2OKJlm/eFmXamXeXVvpjeD6zhL+ipBL21ggmng=
+			v3+TYKsIKrxY8yYOBiGTCuIFK0mN+xu8ZigxoYgVEac=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			997Y0+vKVqDEUhwB/f94r1unsyPgeYNwsLI1+4Klaco=
+			X45YCLzNkz0tZF3rLmVPBY7Y+fKmR7SBvxzv6FNRK14=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -536,28 +536,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TlsGLKSEyNNoVlicPReBzEQTu81L9ltjKTMYsKEhX9U=
+			JSumQ6o9Q97HWHMv2X1k3cHu6jj9RgyfTzLeTfKPsNY=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RjViFiFoxAUGDrVKjPFfepSSeUgTl3HHoBzcZX512f8=
+			u+OCp53Oi2Vi7oyLnED3+Uglm8bUrNYkT7yF3t4LhAU=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TlsGLKSEyNNoVlicPReBzEQTu81L9ltjKTMYsKEhX9U=
+			JSumQ6o9Q97HWHMv2X1k3cHu6jj9RgyfTzLeTfKPsNY=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lTerYB4dbdI/9isdV6FG8uzeVt3UkyXi4BkPgE1nNbU=
+			k47nJ23HJ2trDrM+CMwyzIRyLp9rT5umaWioyzhUegA=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -571,28 +571,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aHWEh+jn4re6ZwHWWXEJrUdN1qrldpb0rQpJ0bSTaK4=
+			kQ3GbEqCPB4kqzBCiEAlkXsQnwKt07LkwKht0U8FeEA=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gPoSLT5c0aIB+BYjdiMlXXdzXUkFfeE4u2a1lfH5fys=
+			dSCJ20UpzsVSNCPjxjy7w5pbXmoiYoCty4SNwOEOvJ4=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aHWEh+jn4re6ZwHWWXEJrUdN1qrldpb0rQpJ0bSTaK4=
+			kQ3GbEqCPB4kqzBCiEAlkXsQnwKt07LkwKht0U8FeEA=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0DuVqDJTauhhXvLNg4hPM2kwPnIP7M9gVPhp5oq/sy8=
+			NjY+x0OjW4Rn3ZhwJkz/VjZqcWekp8mNFHZIZlWOS2Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

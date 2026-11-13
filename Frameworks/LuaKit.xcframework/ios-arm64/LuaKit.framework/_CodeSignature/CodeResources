@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/LuaKit-Swift.h</key>
 		<data>
-		S3My8b6xLAfSIr32zFVSqCal200=
+		R6ytnCK8J+/ufXceiHp7m1Dn3HE=
 		</data>
 		<key>Headers/LuaKit.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DfEkEz1du2LxK3i8d6THIBJ0NsE=
+		imxnSOw50NG0imMn0l385d0WHCk=
 		</data>
 		<key>LuaBridge.lua</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		+KzTqk59cQaNOJZgIKAeWATtqz4=
+		8zEPhhzq5KEb83DVZYfL700Xr4o=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -146,19 +146,19 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		RrvC88PExgFVVj7B0woyedzk89Y=
+		V2BNaYEbNsGv52kz4ZTTeksvNGE=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		OLXgf3XXdoX+Z/TRVb4bTs8Fx2w=
+		FVWKrWAU3zpbnzVqt6+R6Nrir5w=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RrvC88PExgFVVj7B0woyedzk89Y=
+		V2BNaYEbNsGv52kz4ZTTeksvNGE=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ZMZ5PpI1XFa8K9WSPKGcMIFlzjA=
+		T584cj8tHMOvPMpX0HjmEKXSTE8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -316,7 +316,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VRldyJB23m059fRqOE5VgeAeA2fMMlh/dncnKWpOTD8=
+			maAnD5wmtPHx+qNiHjco5ux7iXoUU4FiWb9r3kkYX08=
 			</data>
 		</dict>
 		<key>Headers/LuaKit.h</key>
@@ -491,7 +491,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hjWono/zeQU06HrC6CqO1Q++/KJJHD7BpBAUrcOd93E=
+			db4adRKZJbVoTNxYSaqnd4cI4DPxYA/BGikQNC0QPQM=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -505,28 +505,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i0phMC8f7/4fs5MBU8qPeW1TUF+JqGXsWwKRwSV6hOY=
+			wC3E8KsLXwbWws9Grp5fDMhWSsAz2WgGbZfxloXT9ek=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			doTIM5v9RVD7SgpqErTYJQTsUnGbW8VIySJQIdwuz9w=
+			8rMgNCAV6JWquUwR2jrWeN/BHu0PIC1nBrQzVdT8muk=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i0phMC8f7/4fs5MBU8qPeW1TUF+JqGXsWwKRwSV6hOY=
+			wC3E8KsLXwbWws9Grp5fDMhWSsAz2WgGbZfxloXT9ek=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DqjtFdmPolGTpuNNsETgjOBF90FIMLYuNdSO2j5scVE=
+			u25okrJpPicXDs6CKeiGjZNxsKxzq2bYcF4qRj0xAl8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

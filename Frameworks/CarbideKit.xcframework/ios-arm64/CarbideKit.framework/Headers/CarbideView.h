@@ -79,6 +79,8 @@ typedef enum : NSUInteger {
 @property (nonatomic, readonly) BOOL closing;
 /// True once this runtime has submitted its first frame; cleared on reset.
 @property (atomic, readonly) BOOL hasRenderedFrame;
+/// Number of frames submitted since this runtime was initialized or reset.
+@property (atomic, readonly) uint64_t renderedFrameCount;
 @property (nonatomic, readonly) struct lua_State* luaState;
 @property (nonatomic, weak) id<CarbideViewDelegate> delegate;
 @property (strong, nullable) RuntimeStringLoader *stringLoader;

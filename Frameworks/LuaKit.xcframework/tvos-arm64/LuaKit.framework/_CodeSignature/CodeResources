@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/LuaKit-Swift.h</key>
 		<data>
-		S3My8b6xLAfSIr32zFVSqCal200=
+		R6ytnCK8J+/ufXceiHp7m1Dn3HE=
 		</data>
 		<key>Headers/LuaKit.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jDTHpWzm+OT9w9/C5O1ug0EdnTg=
+		src59ZcpLRwjc4LlNhUC146Odko=
 		</data>
 		<key>LuaBridge.lua</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/Project/arm64-apple-tvos.swiftsourceinfo</key>
 		<data>
-		wleS1vkl3bNYeTEt4g615hTD8Pk=
+		cM6mh8a7ghiFO7RbwD7JuvcEMVk=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
@@ -146,19 +146,19 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		zuoxfYCxeitfZ4uPYbYY8vkijOs=
+		K56jLc85vh0fuPu3wyx7v9NztW8=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		OgyXgIs4nmMOmnDA/jAwLR3+o8c=
+		N/1Q7mOzMSuK+O+YFxsBC6M40Jo=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		zuoxfYCxeitfZ4uPYbYY8vkijOs=
+		K56jLc85vh0fuPu3wyx7v9NztW8=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		rPSgu3I4skdA50JN89RU/BfQ2pM=
+		BcsqrLgmvzq3KH4yCbWUu91hd+I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -316,7 +316,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VRldyJB23m059fRqOE5VgeAeA2fMMlh/dncnKWpOTD8=
+			maAnD5wmtPHx+qNiHjco5ux7iXoUU4FiWb9r3kkYX08=
 			</data>
 		</dict>
 		<key>Headers/LuaKit.h</key>
@@ -491,7 +491,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d+AUcbWGAiT2sLvBntbvx+5DaIP7FesmOF9SqRzwfgA=
+			QHtxiRd27BCYy+fSxwt0MSRGjdZU5hPwNB7DnCMJ3ZQ=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-tvos.abi.json</key>
@@ -505,28 +505,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x4Q26eNAieX2+6pH3PnqoId6uk3PaAWdp2UIKg9GLx4=
+			UNR0TekY8y/4qYIQbBjnWvxCQFIhOJjdRvqGF14zkJE=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iE6hWohB0bf1M0+DV+F8omUuSbrKceMAD1bPf5FWcj4=
+			5/kjpcWjG6qzvnHf/LBQ8/OUWOmTzNYoG7sdp5TVkWc=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x4Q26eNAieX2+6pH3PnqoId6uk3PaAWdp2UIKg9GLx4=
+			UNR0TekY8y/4qYIQbBjnWvxCQFIhOJjdRvqGF14zkJE=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bzt0R7S/B+bbLH5dB/337cb8H7+jWdrbvFzmaM1qISw=
+			QxihgK4Q0VU42uNZQERREbkNUHcsZNH2PPzWf6Fh+QQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

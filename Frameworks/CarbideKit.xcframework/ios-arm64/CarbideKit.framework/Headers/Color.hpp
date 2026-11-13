@@ -45,6 +45,16 @@ namespace Carbide
             return (a<<24) | (b<<16) | (g<<8) | r;
         }
         
+        static Color fromIntABGR(uint32_t color)
+        {
+            Color out;
+            out.r = float(color & 0xFF) / 255.0f;
+            out.g = float((color >> 8) & 0xFF) / 255.0f;
+            out.b = float((color >> 16) & 0xFF) / 255.0f;
+            out.a = float((color >> 24) & 0xFF) / 255.0f;
+            return out;
+        }
+
         static Color toColor(uint32_t color)
         {
             Color out;

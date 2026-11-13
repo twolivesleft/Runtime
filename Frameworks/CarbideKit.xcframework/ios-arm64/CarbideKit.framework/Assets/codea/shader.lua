@@ -244,7 +244,7 @@ function chunk:texture(def)
         samplerType = imageFormatToGLSLSamplerType(format, value.type)
     end
     
-    local u = {name = def[1], type = samplerType, binding = def.binding, linkedOption = def.option}
+    local u = {name = def[1], type = samplerType, samplerUniform = true, explicitBinding = def.binding, binding = def.binding, linkedOption = def.option}
     table.insert(self._properties, p)
     table.insert(self._uniforms, u)
     
@@ -585,7 +585,36 @@ function modular:buffer(def)
     return self
 end
 
+-- Assign texture stages independently of ordinary uniform locations. Reserve all
+-- explicit bindings first, including ones declared after implicit textures.
+function modular:assignSamplerBindings()
+    local used = {}
+    for _, u in ipairs(self._chunk._uniforms) do
+        if u.samplerUniform and u.explicitBinding ~= nil then
+            local binding = u.explicitBinding
+            assert(type(binding) == "number" and binding >= 0 and binding % 1 == 0,
+                   "Invalid sampler binding for " .. u.name)
+            assert(not used[binding], "Duplicate sampler binding for " .. u.name)
+            used[binding] = true
+        end
+    end
+    local nextBinding = 0
+    for _, u in ipairs(self._chunk._uniforms) do
+        if u.samplerUniform then
+            if u.explicitBinding ~= nil then
+                u.binding = u.explicitBinding
+            else
+                while used[nextBinding] do nextBinding = nextBinding + 1 end
+                u.binding = nextBinding
+                used[nextBinding] = true
+                nextBinding = nextBinding + 1
+            end
+        end
+    end
+end
+
 function modular:buildSurfaceDefinition()
+    self:assignSamplerBindings()
     local def =
     {
         name = self._name,
@@ -725,6 +754,7 @@ function modular:buildSurfaceDefinition()
 end
 
 function modular:buildComputeDefinition()
+    self:assignSamplerBindings()
     assert(self._chunk._threads, "Compute shader must define workgroup thread counts via builder:threads(x, y, z)")
 
     local def =

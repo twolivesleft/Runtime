@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-compiler-version: Apple Swift version 6.4.2 effective-5.10 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
 // swift-module-flags: -target arm64-apple-ios16.6 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CarbideKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4.2
 import AVFAudio
 @_exported import CarbideKit
 import Foundation
 import ImagePlayground
+import Inspector
 import Swift
 import UIKit
 import _Concurrency
@@ -29,6 +30,13 @@ public protocol CarbideDelegate {
   func carbide(_ carbide: CarbideKit::CarbideViewController, didSetPaused paused: Swift::Bool)
   func carbideDidRestart(_ carbide: CarbideKit::CarbideViewController)
   func carbideWillStop(_ carbide: CarbideKit::CarbideViewController)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency::MainActor @preconcurrency final public class CarbideExampleViewController : UIKit::UIViewController {
+  @_Concurrency::MainActor @preconcurrency public init(code: Swift::String, projectURL: Foundation::URL? = nil) throws
+  @_Concurrency::MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency::MainActor @preconcurrency @objc override final public func viewDidAppear(_ animated: Swift::Bool)
+  @_Concurrency::MainActor @preconcurrency final public func stop()
+  @objc deinit
 }
 @objc @_Concurrency::MainActor @preconcurrency public class CarbideViewController : UIKit::UIViewController {
   @objc @_Concurrency::MainActor @preconcurrency public var retainInLua: Swift::Bool {

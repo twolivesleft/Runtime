@@ -11,6 +11,7 @@ function ui.label:created()
 end
 
 function ui.label:draw()
+    style.shapeMode(CORNER) -- The label bounds start at the entity origin.
     style.fontSize(self.fontSize)
     style.fill(self.color)
     style.textAlign(self.align).textRenderer(self.textRenderer)

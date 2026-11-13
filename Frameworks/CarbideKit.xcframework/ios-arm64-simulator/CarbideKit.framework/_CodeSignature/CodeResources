@@ -38,7 +38,7 @@
 		</data>
 		<key>Assets/codea/legacy.lua</key>
 		<data>
-		X4SwBZnX/iIr4u1Ctobf7Bgy3i4=
+		X95Fcc/b0szVTX2XyERWP87LmWk=
 		</data>
 		<key>Assets/codea/lustache.lua</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Assets/codea/shader.lua</key>
 		<data>
-		EB2TjbuvT+FSydfvXWZtXoyD9G8=
+		f1mRzSQLvIPxcgK9l1h6VtGS7H4=
 		</data>
 		<key>Assets/codea/shaders/ambient_occlusion.fs</key>
 		<data>
@@ -302,7 +302,7 @@
 		</data>
 		<key>Assets/codea/ui.lua</key>
 		<data>
-		sm18CNZh834OG4JZmboso4fKDWk=
+		TfFyjffGAWp5mzekQ3nOYanHl9Y=
 		</data>
 		<key>Assets/codea/utilities.glsl</key>
 		<data>
@@ -410,7 +410,7 @@
 		</data>
 		<key>Headers/CarbideKit-Swift.h</key>
 		<data>
-		6MeTa23Y3cYvvz2xzws3WXRC7v8=
+		Vp1enxsDFlRhlEN8wZw4zlBpXFI=
 		</data>
 		<key>Headers/CarbideKit.h</key>
 		<data>
@@ -426,11 +426,11 @@
 		</data>
 		<key>Headers/CarbideView.h</key>
 		<data>
-		G7OTpuISYC+7vS+mCkAMSZLtJQY=
+		EinkW3nkITZUXQlTlueyclg6TO4=
 		</data>
 		<key>Headers/Color.hpp</key>
 		<data>
-		XwoSBCouBZ1BM8hjGjShyz9I9kk=
+		HK9RvPm1bUo+notWjJp75C9cpSU=
 		</data>
 		<key>Headers/Forward.hpp</key>
 		<data>
@@ -462,36 +462,81 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		L5/VCnVrYaiKQm492k02pXjiBgo=
+		eWSm2SmhB/PbbQ1HVks2toNMHa8=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		evRktbFEdrAM4AcR7/cz1gNAjPg=
+		sE05Ns9gMA3ybBNo0u+TkS0VRtY=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		tsHZ3CyR4vecrblE0s/rUS65Fdc=
+		4swtlxPmR02J2yO0fWVzJAKStjU=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		OWwdAzcwY4mOcLQaCEnyY7B0FG8=
+		RfqBBfLkAcmTF9xvs8Ae7i0OM9Y=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7eoHEwYk8L6RmjNDH1aZt30uVyU=
+		ms4bMqw2+b7ou/Cwe41hqpgazog=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OWwdAzcwY4mOcLQaCEnyY7B0FG8=
+		RfqBBfLkAcmTF9xvs8Ae7i0OM9Y=
 		</data>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SpOC4UDva8f7WstvDpOs/ZZvWP8=
+		C/i0NX8GrSUrCH4iayRWDy8iKyI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Qd4vHG5+u6Fe6xnTSYPtfjIt0VE=
 		</data>
+		<key>ca.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QivTqA+QMjDSW1MTqzAQyjNqNAQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pBDyRZ0VbsQNTNgSTpJsiUjb9bM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vaqNJL1xsD3t4F/DGkdu0EeywHs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			683iUPBgwEt58H5tjlHG0VtPAjc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Syl1r44PBz2yphjMPeqYS+1QENo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fs_color_gradient.sc</key>
 		<data>
 		7pjYAEFufZS+qQcEtBsw2+4C9F8=
@@ -508,6 +553,42 @@
 		<data>
 		mYva/LRRSC+eE8s1BpcjWZqHhZ0=
 		</data>
+		<key>it.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gFGuXWwsvC+nc08kHMwjzjdvm1Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kwwVxYKb4/66ykRqwYXATNhWOk8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J7NgJcOjRA0HvoehP7IByr0CYWM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dulU/y+NpWmj/DQny4jrOhWYu24=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl/Date.lua</key>
 		<data>
 		fnb3G+aqErd7HiWVnS4F5GR5dpY=
@@ -664,6 +745,15 @@
 		<data>
 		ynDxzv6ckkwuokPzSdB83m6vpes=
 		</data>
+		<key>ru.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mKC6y3wnWv5aBFfBC4qHnrSUrmE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>varying.def.sc</key>
 		<data>
 		Hw2MsfIK8hGc0cdayN3ZWmIA2ac=
@@ -684,6 +774,15 @@
 		<data>
 		IXj2O4D7DtOMYlLK4IQMRi6GVv0=
 		</data>
+		<key>zh-Hans.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vTUs058bYtg6+hMWvJ3cYSvaZTU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -747,7 +846,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l8JqijqJSNpBIcEj1lkJ5uJWKgkMzg+QEaT2SeW0I/o=
+			jEqwPPLY05iZJQxV6s/UBbAXczakEPrZcJzWBmdjQZk=
 			</data>
 		</dict>
 		<key>Assets/codea/lustache.lua</key>
@@ -887,7 +986,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			np9vfFA7SdbJseposTcVU0/eTwqp+ZZUTJE2zrxbjPc=
+			T392JJbVjE5Ndg7nYGpBKQ5DyhXQKi5Lh7XWEP1eiC4=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/ambient_occlusion.fs</key>
@@ -1209,7 +1308,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zX7B3da3zMt7KA+rlURzt9NDqx5qcZMYWg/eevBXaVo=
+			hOqXe+Dm9w23Vw1MIiyuq/WaDn9rsTI9iK+UGWIoky0=
 			</data>
 		</dict>
 		<key>Assets/codea/utilities.glsl</key>
@@ -1398,7 +1497,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b8mI+XxW0COCbwz0i/xlMXCJyZ4POL97aZlb8hWZ7ao=
+			xNVuHqzsB+UXh8XbzFNat+fZ390KIvOT6uIwTWjuW78=
 			</data>
 		</dict>
 		<key>Headers/CarbideKit.h</key>
@@ -1426,14 +1525,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			USs6rJER9uNLdlTzebtW/IVUj7sIBB8Yx6l6hTh4MtY=
+			GTOnBsJmGgZ1PHuBiIDAbwWKhdbWERgdBLWnHlRIWDQ=
 			</data>
 		</dict>
 		<key>Headers/Color.hpp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			io83puKr5VQQQuOh7P4EUpiM0UGf2ba9UjVc1fsKbVA=
+			xjgT0069EtklnJUgpCM3kdteuwly7wfYZPu+TCbuFTA=
 			</data>
 		</dict>
 		<key>Headers/Forward.hpp</key>
@@ -1489,42 +1588,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dIWiGlGLhurQ74xSigvX/0Em9O+6v0L+xTk8UNToa/s=
+			/10uN070QVL/ooqVu15grsvQIr0fbPGopkfpeO+KKHE=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YYGxL8n3l4CA/0WB4v6UY4XH0rG27Vkr43RtFpZGV2I=
+			ZAHVL/T+dW4Qejy9w5zUsLezcCLKNYfX5avWUPvXORo=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mgBTVXTagDL8I1Clw6CNLLS8dpO7c5yw6TTUQ8Q2X0I=
+			roT/qC3+XgzKXo1rK31Gby0gUSUMu5wHST1l2KEV30M=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+IAFyIEMDBrEvhLIzvZuQviKldDmWIHCTHD3h7C7lqU=
+			IpbH0FP6v02MS/bgO7p60zXfFgG/nf0mnY2Ko5nlH7M=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mgBTVXTagDL8I1Clw6CNLLS8dpO7c5yw6TTUQ8Q2X0I=
+			roT/qC3+XgzKXo1rK31Gby0gUSUMu5wHST1l2KEV30M=
 			</data>
 		</dict>
 		<key>Modules/CarbideKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5pbLWpFiCqWlzpf/ZcV5sYEB05IuuSCIYrX1dP4LkBY=
+			p01vehbm88wVO8TrCC3ofWxgzK+RqZVuZ5i9tfOp6oA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1533,6 +1632,51 @@
 			<data>
 			/GfIOHQyyu+brgi12kU3D1Jryl77OUe8x5HoWuJ6J5c=
 			</data>
+		</dict>
+		<key>ca.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P6NSjTgMMq6u/+mEjO+jXkKV88esyCHAEMStoQCR5ZI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QJiIUPLEz5WGk3y8pM5GnIrj00pysVb9DxvimJ6VEYE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tXEKY/zlQNB8vVnM3Eda5kKJrtSvNAfT4NsMQJhro9U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CYSc9cNKNbFgdH8qPFieSexvWlLc/YgwtQEibigjxos=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4tgaKoI/sI7CxT1Lo7N49ck9/HOxF3BBKzGgV4EyHmM=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 		<key>fs_color_gradient.sc</key>
 		<dict>
@@ -1561,6 +1705,42 @@
 			<data>
 			ncByzFWyEc/35vgsPSoQfen2fr8Bd9R3N2xyioSjQTo=
 			</data>
+		</dict>
+		<key>it.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zHd2IYxfEG6Mc21BmOL8nYq7DV6lWU4ZazU6m6gbiGg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mqELbL+TXAmJt+4nOcHt0aW0r2op3YPK2iY3LYPGeZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jH2aRkRR3mj9eAz8HqVcz+oqj7J7vetWswAyDPM+3mI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gyszhlxYQsg4rX9iV242fSll1R4JRaDntRVskC8tJIc=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 		<key>pl/Date.lua</key>
 		<dict>
@@ -1835,6 +2015,15 @@
 			Pu9VlZZNNP+ZovnHso564giTJKmXp0/mWiHdXL/RKGw=
 			</data>
 		</dict>
+		<key>ru.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p54PDDcOT6T2XCJu6M4idW6BneOIUI9l9brGj17iuyw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>varying.def.sc</key>
 		<dict>
 			<key>hash2</key>
@@ -1869,6 +2058,15 @@
 			<data>
 			9HOGv+Tl0lFzDqj/fxCnZ+sbGFbOrbzGgtAK8qvbnHo=
 			</data>
+		</dict>
+		<key>zh-Hans.lproj/ReferenceExample.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Opsn3H8v66Ce2l/hUycq2/p18VxI0ocRCv31+FzUMRg=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
