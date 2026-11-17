@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.twolivesleft",
+    "module": "codea-runtime",
+    "version": "4.0.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "codea-runtime-4.0.5.aar",
+          "url": "codea-runtime-4.0.5.aar",
+          "size": 20001101,
+          "sha512": "98d9e33a558c5856586a79e97e76d8c75cf7ea904861c256260bbbda8038eb6030b820cb42ed343e0f9847bec709fb7d72dc5d0a33887e85f0fd1874de489551",
+          "sha256": "4f95a901630928f5e25be4e7072254f37d0a8efc50cdd1ec02d7a83886e3587e",
+          "sha1": "30547ffe6a8247db53d3bd3fcdbc26520e788a22",
+          "md5": "3893e795bd6cb42ab7c653178f1f399a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.15.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.games",
+          "module": "games-activity",
+          "version": {
+            "requires": "4.4.1"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2025.06.00"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "androidx.compose.material",
+          "module": "material-icons-extended"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "codea-runtime-4.0.5.aar",
+          "url": "codea-runtime-4.0.5.aar",
+          "size": 20001101,
+          "sha512": "98d9e33a558c5856586a79e97e76d8c75cf7ea904861c256260bbbda8038eb6030b820cb42ed343e0f9847bec709fb7d72dc5d0a33887e85f0fd1874de489551",
+          "sha256": "4f95a901630928f5e25be4e7072254f37d0a8efc50cdd1ec02d7a83886e3587e",
+          "sha1": "30547ffe6a8247db53d3bd3fcdbc26520e788a22",
+          "md5": "3893e795bd6cb42ab7c653178f1f399a"
+        }
+      ]
+    }
+  ]
+}
