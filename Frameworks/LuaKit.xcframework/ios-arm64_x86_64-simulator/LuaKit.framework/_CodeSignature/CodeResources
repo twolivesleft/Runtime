@@ -162,7 +162,7 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GsllYGlaXhTKU+Zxn0ROlfJkmDQ=
+		p6A9t0WTJzaID6oKj30EObJ4LAw=
 		</data>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		K2x/8Zs1/5r7B2kMbWFpBBmOPIk=
+		AjWkOyUGkTeLBBUSLrEyQLPRJ1Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -557,7 +557,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ua363KdhgMl0DWevTBRm81p45n3/xXrBYvImQ2ewqus=
+			k47nJ23HJ2trDrM+CMwyzIRyLp9rT5umaWioyzhUegA=
 			</data>
 		</dict>
 		<key>Modules/LuaKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -592,7 +592,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YBMh3CUXYsQoI0+3NwfQX6mcUneEkLH7iZyFR69En+8=
+			NjY+x0OjW4Rn3ZhwJkz/VjZqcWekp8mNFHZIZlWOS2Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
