@@ -3,6 +3,7 @@
 
     options =
     {
+        HAS_SKINNING_OR_MORPHING = {false},
     },
 
     properties =
@@ -27,14 +28,31 @@
                 #if defined(SPIRV)
                 layout(std140, binding = 0) uniform VertexUniforms {
                     mat4 u_modelViewProj;
+                    #if defined(HAS_SKINNING_OR_MORPHING)
+                    mat4 u_model[BGFX_CONFIG_MAX_BONES];
+                    #endif
                 };
                 #endif
 
                 layout (location = POSITION) in vec3 a_position;
+                #if defined(HAS_SKINNING_OR_MORPHING)
+                layout (location = INDICES) in uvec4 a_indices;
+                layout (location = WEIGHT) in vec4 a_weight;
+                #endif
 
                 void main()
                 {
-                    gl_Position = u_modelViewProj * vec4(a_position, 1.0);
+                    vec3 position = a_position;
+                    #if defined(HAS_SKINNING_OR_MORPHING)
+                    // Match surface/getters.vs: slot zero is the model transform,
+                    // and each bone's world * inverse-bind matrix starts at one.
+                    vec4 vertex = vec4(position, 1.0);
+                    position = (u_model[a_indices.x + 1u] * vertex).xyz * a_weight.x
+                             + (u_model[a_indices.y + 1u] * vertex).xyz * a_weight.y
+                             + (u_model[a_indices.z + 1u] * vertex).xyz * a_weight.z
+                             + (u_model[a_indices.w + 1u] * vertex).xyz * a_weight.w;
+                    #endif
+                    gl_Position = u_modelViewProj * vec4(position, 1.0);
                 }
             ]],
 

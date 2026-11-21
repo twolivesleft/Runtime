@@ -4,7 +4,9 @@
     options =
     {
         HAS_BASE_COLOR_MAP = {false},
+        MATERIAL_HAS_ALPHA_CUTOFF = {true},
         HAS_EMISSIVE_MAP = {false},
+        MULTIPLY_EMISSIVE_MAP = {false},
         HAS_ROUGHNESS_MAP = {false},
         HAS_NORMAL_MAP = {false},
         HAS_METALLIC_MAP = {false},
@@ -15,26 +17,29 @@
         HAS_HEIGHT_MAP = {false},
         HAS_OCCLUSION_MAP = {false},
         HAS_COMBINED_METALLIC_ROUGHNESS_MAPS = {false},
+        HAS_COMBINED_OCCLUSION = {false},
         MATERIAL_HAS_EMISSIVE = {true},
     },
 
     -- Compute current set of options based on logic derived from property values
     computedOptions =
     {
-        HAS_BASE_COLOR_MAP = function(map) return map ~= nil end,
-        HAS_EMISSIVE_MAP = function(emissiveMap) return emissiveMap ~= nil end,
-        HAS_ROUGHNESS_MAP = function(roughnessMap) return roughnessMap ~= nil end,
-        HAS_METALLIC_MAP = function(metallicMap) return metallicMap ~= nil end,
-        HAS_NORMAL_MAP = function(normalMap) return normalMap ~= nil end,
-        HAS_OCCLUSION_MAP = function(occlusionMap) return occlusionMap ~= nil end,
-        HAS_HEIGHT_MAP = function(heightMap) return heightMap ~= nil end,
-        MATERIAL_HAS_NORMAL = function(normalMap) return normalMap ~= nil end,
+        MULTIPLY_EMISSIVE_MAP = function(emissiveMultiply) return emissiveMultiply end,
+        HAS_BASE_COLOR_MAP = function(map) return map end,
+        HAS_EMISSIVE_MAP = function(emissiveMap) return emissiveMap end,
+        HAS_ROUGHNESS_MAP = function(roughnessMap) return roughnessMap end,
+        HAS_METALLIC_MAP = function(metallicMap) return metallicMap end,
+        HAS_NORMAL_MAP = function(normalMap) return normalMap end,
+        -- Texture arguments are presence booleans in computed-option callbacks.
+        HAS_OCCLUSION_MAP = function(occlusionMap) return occlusionMap end,
+        HAS_HEIGHT_MAP = function(heightMap) return heightMap end,
+        MATERIAL_HAS_NORMAL = function(normalMap) return normalMap end,
         -- Tangent matrix needed by material if anisotropy or normal mapping are enabled, compute with lua function
         MATERIAL_NEEDS_TBN = function(enableAnisotropy, normalMap)
-            return enableAnisotropy or normalMap ~= nil
+            return enableAnisotropy or normalMap
         end,
         MATERIAL_HAS_ANISOTROPY = function(enableAnisotropy) return enableAnisotropy end,
-        HAS_ANISOTROPY_DIRECTION_MAP = function(anisotropyDirectionMap) return anisotropyDirectionMap ~= nil end,
+        HAS_ANISOTROPY_DIRECTION_MAP = function(anisotropyDirectionMap) return anisotropyDirectionMap end,
         MATERIAL_HAS_CLEAR_COAT = function(enableClearCoat) return enableClearCoat end,
         -- MATERIAL_HAS_CLEAR_COAT_NORMAL
         HAS_REFRACTION = function(enableRefraction) return enableRefraction end,
@@ -47,8 +52,11 @@
         HAS_COMBINED_METALLIC_ROUGHNESS_MAPS = function(hasCombinedMetallicRoughnessMaps)
             return hasCombinedMetallicRoughnessMaps
         end,
-        MATERIAL_HAS_AMBIENT_OCCLUSION = function(occlusionMap, hasCombinedMetallicRoughnessMaps)
-            return hasCombinedMetallicRoughnessMaps or (occlusionMap ~= nil)
+        HAS_COMBINED_OCCLUSION = function(hasCombinedMetallicRoughnessMaps, useSeparateOcclusion)
+            return hasCombinedMetallicRoughnessMaps and not useSeparateOcclusion
+        end,
+        MATERIAL_HAS_AMBIENT_OCCLUSION = function(occlusionMap, hasCombinedMetallicRoughnessMaps, useSeparateOcclusion)
+            return (hasCombinedMetallicRoughnessMaps and not useSeparateOcclusion) or occlusionMap
         end,
     },
 
@@ -71,6 +79,8 @@
             shader:setOption("BLEND_MODE_SCREEN", v == 6)
 
             local pass = shader:pass(1)
+            -- Blended materials must sort back to front after opaque geometry
+            pass.renderQueue = (v == 1 or v == 4) and OPAQUE or TRANSPARENT
 
             if v == 1 or v == 4 then
                 pass.blendMode = DISABLED
@@ -90,6 +100,10 @@
             end
         end},
 
+        {"alphaCutoff", "float", 0.5, range = {0,1}, visible = function(shader)
+            return shader.blend == 4
+        end},
+
         {"tintBlend", "uint", 1, enum = {"None", "Opaque", "Transparent", "Add", "Multiply", "Screen"}, onSet = function(shader, v)
             shader:setOption("POST_LIGHTING_BLEND_MODE_OPAQUE", v == 2)
             shader:setOption("POST_LIGHTING_BLEND_MODE_TRANSPARENT", v == 3)
@@ -104,6 +118,7 @@
 
         {"map", "texture"},
         {"emissiveMap", "texture"},
+        {"emissiveMultiply", "bool", false},
         {"emissive", "vec4", {0,0,0,0}, color = true, hdr = true},
         {"scaleOffset", "vec4", {1,1,0,0}},
         {"color", "vec4", {1,1,1,1}, color = true, alias = "diffuse"},
@@ -128,6 +143,8 @@
         {"heightMap", "texture"},
         {"heightScale", "float", 0.0},
         {"occlusionMap", "texture"},
+        {"occlusionStrength", "float", 1.0, range = {0,1}},
+        {"useSeparateOcclusion", "bool", false},
         {"enableRefraction", "bool", false, onSet = function(shader, v)
             if v then
                 shader.refractionMode = 1
@@ -201,7 +218,7 @@
             #if defined(HAS_EMISSIVE_MAP)
             layout(binding=5) uniform sampler2D emissiveMap;
             #endif
-            #if defined (HAS_OCCLUSION_MAP) && !defined(HAS_COMBINED_METALLIC_ROUGHNESS_MAPS)
+            #if defined(HAS_OCCLUSION_MAP)
             layout(binding=6) uniform sampler2D occlusionMap;
             #endif
             #if defined(HAS_ANISOTROPY_DIRECTION_MAP)
@@ -215,6 +232,9 @@
             uniform float roughness;
             uniform float metallic;
             uniform float reflectance;
+            #if defined(MATERIAL_HAS_AMBIENT_OCCLUSION)
+            uniform float occlusionStrength;
+            #endif
             #if defined(MATERIAL_HAS_CLEAR_COAT)
             uniform vec2 clearCoat;
             #endif
@@ -267,7 +287,11 @@
                 
                 material.emissive = emissive;
                 #if defined(HAS_EMISSIVE_MAP)
+                    #if defined(MULTIPLY_EMISSIVE_MAP)
+                    material.emissive.rgb *= texture(emissiveMap, uv).rgb;
+                    #else
                     material.emissive.rgb += texture(emissiveMap, uv).rgb;
+                    #endif
                 #endif
 
                 #if defined(BLEND_MODE_TRANSPARENT)
@@ -283,7 +307,9 @@
                 
                 #if defined(HAS_COMBINED_METALLIC_ROUGHNESS_MAPS)
                     vec3 maskMap = texture(metallicMap, uv).rgb;
+                    #if defined(HAS_COMBINED_OCCLUSION)
                     material.ambientOcclusion = maskMap.r;
+                    #endif
                     material.roughness *= maskMap.g;
                     #if !defined(SHADING_MODEL_CLOTH)
                     material.metallic *= maskMap.b;
@@ -295,9 +321,12 @@
                     #if defined(HAS_ROUGHNESS_MAP)
                         material.roughness *= texture(roughnessMap, uv).r;
                     #endif
-                    #if defined(HAS_OCCLUSION_MAP)
-                        material.ambientOcclusion = texture(occlusionMap, uv).r;
-                    #endif
+                #endif
+                #if defined(HAS_OCCLUSION_MAP)
+                    material.ambientOcclusion = texture(occlusionMap, uv).r;
+                #endif
+                #if defined(MATERIAL_HAS_AMBIENT_OCCLUSION)
+                    material.ambientOcclusion = mix(1.0, material.ambientOcclusion, clamp(occlusionStrength, 0.0, 1.0));
                 #endif
                 
                 #if !defined(SHADING_MODEL_CLOTH)

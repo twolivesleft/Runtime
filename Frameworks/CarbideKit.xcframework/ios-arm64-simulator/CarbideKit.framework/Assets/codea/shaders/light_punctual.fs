@@ -7,14 +7,14 @@
 // texture, light_froxels, LIGHT_GRID_WIDTH texels wide:
 //
 //  * From texel 0, one texel per froxel: the first record (x) and the count (y)
-//  * From LIGHT_GRID_RECORDS, the records: light indices, four to a texel
 //  * From LIGHT_GRID_LIGHTS, four texels per light
+//  * From LIGHT_GRID_RECORDS, variable-length records: light indices, four to a texel
 //
 // Make sure these match the constants in LightGrid.hpp
 #define LIGHT_GRID_WIDTH_SHIFT      7
 #define LIGHT_GRID_WIDTH_MASK       127
-#define LIGHT_GRID_RECORDS          8192
-#define LIGHT_GRID_LIGHTS           16384
+#define LIGHT_GRID_RECORDS          12288
+#define LIGHT_GRID_LIGHTS           8192
 
 #define LIGHT_TYPE_POINT            0u
 #define LIGHT_TYPE_SPOT             1u

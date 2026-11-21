@@ -18,11 +18,15 @@
 		</data>
 		<key>Assets/codea/common.glsl</key>
 		<data>
-		GPd7JB7w2boOlnZxfGo6ro0+d8I=
+		a51fIZ52iJ8MB3dDVlOnp8XGbCc=
 		</data>
 		<key>Assets/codea/component.lua</key>
 		<data>
 		FvB9WMbG51W/U7KHf2+zSivBwWM=
+		</data>
+		<key>Assets/codea/dither.glsl</key>
+		<data>
+		g0wbVTZy3jvqBQTIjidvMMkYYSM=
 		</data>
 		<key>Assets/codea/dkjson.lua</key>
 		<data>
@@ -35,6 +39,10 @@
 		<key>Assets/codea/extensions.lua</key>
 		<data>
 		VCSXjBMtt2QKC+mgzLLvRPe+ZKM=
+		</data>
+		<key>Assets/codea/grading.glsl</key>
+		<data>
+		Nt8SaiAF4c2rgjWxydSVbiFWXAE=
 		</data>
 		<key>Assets/codea/legacy.lua</key>
 		<data>
@@ -186,7 +194,7 @@
 		</data>
 		<key>Assets/codea/shaders/getters.fs</key>
 		<data>
-		6YXIfGy0fE8UZIkyhlOFEfQu/mY=
+		Bq/GPXNDLTdx5VI1pd4yjb9yDBI=
 		</data>
 		<key>Assets/codea/shaders/getters.vs</key>
 		<data>
@@ -210,11 +218,11 @@
 		</data>
 		<key>Assets/codea/shaders/light_punctual.fs</key>
 		<data>
-		PTul95mWlwNzNC+dPcuW5kWI4lc=
+		CakB1ZXJ48S+QtDV+UjrkTw1rpM=
 		</data>
 		<key>Assets/codea/shaders/main.fs</key>
 		<data>
-		TnMvLNLdedCQ6+bqN4qfYzJTwPc=
+		X5LI11y5r1jujOo3VjwSKfMkN6A=
 		</data>
 		<key>Assets/codea/shaders/main.vs</key>
 		<data>
@@ -316,9 +324,13 @@
 		<data>
 		oKHVQZkeV9veCxtgtnb4EsQNCH8=
 		</data>
+		<key>Assets/runtime/cameraEffects/deband.fs</key>
+		<data>
+		qPr2IdmQyIiVuzwbUxquuO1E6Lc=
+		</data>
 		<key>Assets/runtime/cameraEffects/finish.fs</key>
 		<data>
-		h5dGwDlMT6GLsHPDkamQOeP1OEM=
+		5BE5o8WEivJXmx3GJk+zna94QNs=
 		</data>
 		<key>Assets/runtime/cameraEffects/fullscreen.vs</key>
 		<data>
@@ -330,7 +342,7 @@
 		</data>
 		<key>Assets/runtime/depth/ShaderV2.lua</key>
 		<data>
-		rDyLx6G5By2fKS9CzdaMrMzqvX0=
+		uNASCE//jmaDNu+F1r/YRhBa4fc=
 		</data>
 		<key>Assets/runtime/entityID/ShaderV2.lua</key>
 		<data>
@@ -394,7 +406,7 @@
 		</data>
 		<key>Assets/runtime/standard/ShaderV2.lua</key>
 		<data>
-		lAumMmcAvVI1v/vnlG9inijKMgA=
+		Td7IwFSo5Ju20rZNCZ+xYoVEvmE=
 		</data>
 		<key>Assets/runtime/surface/ShaderV2.lua</key>
 		<data>
@@ -426,7 +438,7 @@
 		</data>
 		<key>Headers/CarbideView.h</key>
 		<data>
-		EinkW3nkITZUXQlTlueyclg6TO4=
+		ftrG1RfxX/vnTNtD/1guCyxnt9g=
 		</data>
 		<key>Headers/Color.hpp</key>
 		<data>
@@ -811,7 +823,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KoYyVdrfMu35OnVFhuOF9uO8Ajg/Wi2ofFQRhh8vKuA=
+			bOYhLV/8nS12MoHZqpjhvEPcydDnZ+Nl/f5waTO1E+g=
 			</data>
 		</dict>
 		<key>Assets/codea/component.lua</key>
@@ -819,6 +831,13 @@
 			<key>hash2</key>
 			<data>
 			ovpmeB1B7h8X4lRa/MtJjRdFjnvUaDKfpGlemttD5TY=
+			</data>
+		</dict>
+		<key>Assets/codea/dither.glsl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OWx9R9EkcScDqHA5TVb5wNksSCrS44+PpxmkUuz3NLw=
 			</data>
 		</dict>
 		<key>Assets/codea/dkjson.lua</key>
@@ -840,6 +859,13 @@
 			<key>hash2</key>
 			<data>
 			XcDN2UaK88Fcx9KswiChaWtS/Ne3V0eSVnA5PndYCzg=
+			</data>
+		</dict>
+		<key>Assets/codea/grading.glsl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LN1ebSuugGq+XZVeI0eB5JO9hK4tx2lsoyjLtn/ooBo=
 			</data>
 		</dict>
 		<key>Assets/codea/legacy.lua</key>
@@ -1105,7 +1131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SIP6WvipiQplPRc9Wr3hGOv+nh7ejrpcqkCLMvcsWUY=
+			1WrhF1kLoGU8x4FVJWRGpOuxXF/LaPQA/Gvt0+5CriQ=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/getters.vs</key>
@@ -1147,14 +1173,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zz9T0ZU1wRUhMS+owtlwClWMGqVUpsDtxbyLFlMDC4U=
+			RTaHB8dPVEdIFevU8FTYcVdC09QybZO/iB/iAhEKXV0=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/main.fs</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kwgqlpMa0j9d67mnOyBQK7SgvnysId2GVg5hLffPYN8=
+			YYMrvwDiQp+Qx/Zm0TDA3bICjB2roYs8Zg9wObm3f/4=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/main.vs</key>
@@ -1332,11 +1358,18 @@
 			vHGpAxfF2UZs/KHYaIl8tX2bb5FRir4KYGJBWnhRcIQ=
 			</data>
 		</dict>
+		<key>Assets/runtime/cameraEffects/deband.fs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			915JEsE6fVFLfmcgAq0s4o+jQBg72aLNPG3BP60rgUY=
+			</data>
+		</dict>
 		<key>Assets/runtime/cameraEffects/finish.fs</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EikZ97WlXCMF9ibZgYzNsDMPCZgM8sjGciVdgzA9J98=
+			PpyjdTKRMlVv3k+8dYIXjcQpVyl2IEjs118gCj9n/H4=
 			</data>
 		</dict>
 		<key>Assets/runtime/cameraEffects/fullscreen.vs</key>
@@ -1357,7 +1390,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gUUr83KmjfG2darXBLwhkocaccginZ+nY/3Nb1WIsw8=
+			SpAQeB6OmTcWp8axQDLsau62hlWb1JXEJ6NohW7NAJQ=
 			</data>
 		</dict>
 		<key>Assets/runtime/entityID/ShaderV2.lua</key>
@@ -1469,7 +1502,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PSRvwHH8f7rT8sDSWcSXKcODCBs/5jJJkhyrC5ak8TE=
+			aCT1RbNHMkwjn8wwba6IfplGfp5ALLWpq3UFzTYwdhY=
 			</data>
 		</dict>
 		<key>Assets/runtime/surface/ShaderV2.lua</key>
@@ -1525,7 +1558,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GTOnBsJmGgZ1PHuBiIDAbwWKhdbWERgdBLWnHlRIWDQ=
+			Zv5c7NgUcVV23EGVKU4mOWzwya8pN5rU/hWjmAv2650=
 			</data>
 		</dict>
 		<key>Headers/Color.hpp</key>

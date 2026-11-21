@@ -72,6 +72,8 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) NSInteger preferredFPS;
 @property (nonatomic, assign) BOOL displayStats;
 @property (nonatomic, assign) BOOL paused;
+/// Whether playing makes the view first responder, for hardware keys. Defaults to YES.
+@property (nonatomic, assign) BOOL takesFocusOnPlay;
 @property (nonatomic, readonly) UIEdgeInsets safeArea;
 @property (nonatomic, readonly) UIUserInterfaceSizeClass horizontalSizeClass;
 @property (nonatomic, readonly) UIUserInterfaceSizeClass verticalSizeClass;

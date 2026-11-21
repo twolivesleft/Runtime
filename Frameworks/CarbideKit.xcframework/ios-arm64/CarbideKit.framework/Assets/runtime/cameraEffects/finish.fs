@@ -1,5 +1,7 @@
 #version 430
 #include <codea/common.glsl>
+#include <codea/grading.glsl>
+#include <codea/dither.glsl>
 
 in vec2 uv;
 out vec4 FragColor;
@@ -14,6 +16,10 @@ uniform vec4 band;
 uniform vec4 bloom;
 // Saturation (x), vignette (y) and grain (z)
 uniform vec4 grade;
+// Brightness, contrast, and whether the scene is in GAMMA mode
+uniform vec4 adjustments;
+// Quantization step and whether the destination encodes sRGB
+uniform vec4 outputDither;
 
 // Finishes the tilt shift blur, adds the bloom and grades the picture
 void main()
@@ -38,6 +44,7 @@ void main()
         c.rgb += (texture(glow, uv).rgb * 0.8 + texture(haze, uv).rgb * 0.6) * bloom.x;
     }
 
+    c.rgb = cameraBrightnessContrast(c.rgb, adjustments);
     float luma = dot(c.rgb, vec3(0.299, 0.587, 0.114));
     c.rgb = mix(vec3(luma), c.rgb, grade.x);
 
@@ -47,5 +54,5 @@ void main()
     float noise = fract(sin(dot(uv * 1000.0 + fract(u_time.x * 0.1) * 100.0, vec2(12.9898, 78.233))) * 43758.5453);
     c.rgb += (noise - 0.5) * grade.z * 0.05;
 
-    FragColor = c;
+    FragColor = cameraDither(c, gl_FragCoord.xy, outputDither);
 }

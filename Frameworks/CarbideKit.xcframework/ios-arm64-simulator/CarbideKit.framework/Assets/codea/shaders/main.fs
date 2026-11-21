@@ -27,6 +27,13 @@ void main() {
     // Invoke user code
     material(inputs);
 
+#if defined(BLEND_MODE_TRANSPARENT)
+    // Base color is premultiplied for transparent blending
+    inputs.baseColor *= vec4(u_entityColor.rgb * u_entityColor.a, u_entityColor.a);
+#else
+    inputs.baseColor *= u_entityColor;
+#endif
+
     fragColor = evaluateMaterial(inputs);
 
     bool visualizeCascades = bool(frameUniforms.cascades & 0x10u);

@@ -55,6 +55,8 @@ uniform vec4 u_time;
 uniform sampler2D s_texture;
 uniform sampler2D s_curveAtlasTexture;
 uniform vec4 u_tintColor;
+// Per-entity color applied to the base color of materials
+uniform vec4 u_entityColor;
 
 #define CURVE(_name) \
     uniform float _name

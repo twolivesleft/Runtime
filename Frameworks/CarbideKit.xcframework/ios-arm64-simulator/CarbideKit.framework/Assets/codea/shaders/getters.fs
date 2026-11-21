@@ -20,9 +20,17 @@ vec2 getUV1() {
 #endif
 
 #if defined(BLEND_MODE_MASKED)
+#if defined(MATERIAL_HAS_ALPHA_CUTOFF)
+uniform float alphaCutoff;
+#endif
 /** @public-api */
 float getMaskThreshold() {
-    return materialParams._maskThreshold;
+#if defined(MATERIAL_HAS_ALPHA_CUTOFF)
+    return clamp(alphaCutoff, 0.0, 1.0);
+#else
+    // Custom surface shaders can use masking without declaring a property.
+    return 0.5;
+#endif
 }
 #endif
 
