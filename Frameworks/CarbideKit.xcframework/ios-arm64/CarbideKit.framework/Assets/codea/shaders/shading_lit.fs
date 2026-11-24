@@ -250,8 +250,11 @@ vec4 evaluateLights(const MaterialInputs material) {
     vec3 color = vec3(0.0);
 
     // We always evaluate the IBL as not having one is going to be uncommon,
-    // it also saves 1 shader variant
+    // it also saves 1 shader variant. Materials with custom surface shading
+    // can opt out, for shading models that have no ambient term.
+#if !defined(MATERIAL_SKIPS_IBL)
     evaluateIBL(material, pixel, color);
+#endif
 
 #if defined(HAS_DIRECTIONAL_LIGHTING)
     evaluateDirectionalLight(material, pixel, color);

@@ -1,5 +1,8 @@
 #version 430
 #include <codea/common.glsl>
+#include <codea/tonemap.glsl>
+#include <codea/color_lut.glsl>
+
 #include <codea/grading.glsl>
 #include <codea/dither.glsl>
 
@@ -16,12 +19,19 @@ uniform vec4 band;
 uniform vec4 bloom;
 // Saturation (x), vignette (y) and grain (z)
 uniform vec4 grade;
+// Tonemapper (0 = linear, 1 = AgX), exposure multiplier, gamma-space input
+uniform vec4 tonemap;
+
+uniform sampler2D colorLut;
+// Cube edge length, strength, and whether the scene is in GAMMA mode
+uniform vec4 lutSettings;
+
 // Brightness, contrast, and whether the scene is in GAMMA mode
 uniform vec4 adjustments;
 // Quantization step and whether the destination encodes sRGB
 uniform vec4 outputDither;
 
-// Finishes the tilt shift blur, adds the bloom and grades the picture
+// Finishes the tilt shift blur, adds bloom, tone maps and grades the picture
 void main()
 {
     float radius = smoothstep(band.y, band.y + band.z, abs(uv.y - band.x)) * band.w;
@@ -44,9 +54,24 @@ void main()
         c.rgb += (texture(glow, uv).rgb * 0.8 + texture(haze, uv).rgb * 0.6) * bloom.x;
     }
 
+    // The default render path is linear, including the floating-point camera image.
+    // The sRGB display target performs the final encoding. Convert explicitly only
+    // for projects using colorspace(GAMMA), whose targets do not encode sRGB.
+    if (tonemap.x > 0.0 || tonemap.y != 1.0)
+    {
+        vec3 rgb = max(c.rgb, vec3(0.0));
+        if (tonemap.z > 0.0) rgb = cameraSRGBToLinear(rgb);
+        rgb *= tonemap.y;
+        if (tonemap.x > 0.0) rgb = cameraTonemapAgX(rgb);
+        if (tonemap.z > 0.0) rgb = cameraLinearToSRGB(rgb);
+        c.rgb = rgb;
+    }
+
+
     c.rgb = cameraBrightnessContrast(c.rgb, adjustments);
     float luma = dot(c.rgb, vec3(0.299, 0.587, 0.114));
     c.rgb = mix(vec3(luma), c.rgb, grade.x);
+    c.rgb = cameraColorLut(c.rgb, colorLut, lutSettings);
 
     // Dark corners, and grain that also stops dark gradients banding
     vec2 d = uv - 0.5;

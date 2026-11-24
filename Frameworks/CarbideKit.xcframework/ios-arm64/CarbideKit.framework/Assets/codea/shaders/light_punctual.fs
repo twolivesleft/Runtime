@@ -7,7 +7,7 @@
 // texture, light_froxels, LIGHT_GRID_WIDTH texels wide:
 //
 //  * From texel 0, one texel per froxel: the first record (x) and the count (y)
-//  * From LIGHT_GRID_LIGHTS, four texels per light
+//  * From LIGHT_GRID_LIGHTS, four texels per light (last texel z selects the spot shadow map)
 //  * From LIGHT_GRID_RECORDS, variable-length records: light indices, four to a texel
 //
 // Make sure these match the constants in LightGrid.hpp
@@ -116,9 +116,9 @@ Light getLight(const uint index) {
     light.attenuation = getDistanceAttenuation(posToLight, positionFalloff.w);
     light.NoL = saturate(dot(shading_normal, light.l));
     light.worldPosition = positionFalloff.xyz;
-    light.castsShadows = false;
+    light.castsShadows = scaleOffsetType.z > 0.5;
     light.contactShadows = false;
-    light.shadowIndex = 0u;
+    light.shadowIndex = uint(max(scaleOffsetType.z - 1.0, 0.0));
     light.shadowLayer = 0u;
 
     if (uint(scaleOffsetType.w) == LIGHT_TYPE_SPOT) {
@@ -133,6 +133,10 @@ Light getLight(const uint index) {
  * The result of the lighting computations is accumulated in the color
  * parameter, as linear HDR RGB.
  */
+#if defined(HAS_SPOT_SHADOW)
+#include <codea/shaders/spot_shadow.fs>
+#endif
+
 void evaluatePunctualLights(const MaterialInputs material, const PixelParams pixel, inout vec3 color) {
     // Fetch the light information stored in the froxel that contains the
     // current fragment
@@ -150,6 +154,9 @@ void evaluatePunctualLights(const MaterialInputs material, const PixelParams pix
     for ( ; index < end; index++) {
         Light light = getLight(index);
         float visibility = 1.0;
+#if defined(HAS_SPOT_SHADOW)
+        if (light.castsShadows && light.attenuation > 0.0) visibility = spotShadowVisibility(light);
+#endif
 #if defined(MATERIAL_CAN_SKIP_LIGHTING)
         if (light.NoL <= 0.0) {
             continue;

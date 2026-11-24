@@ -3,9 +3,12 @@
 
     options =
     {
+        RENDER_DEPTH_ONLY = {false},
+        HAS_SSAO = {false},
         HAS_DIRECTIONAL_LIGHTING = {false},
         HAS_SHADOWING = {false},
         HAS_DYNAMIC_LIGHTING = {false},
+        HAS_SPOT_SHADOW = {false},
 
         SHADING_MODEL_STANDARD = {false},
         SHADING_MODEL_UNLIT = {false},
@@ -14,6 +17,7 @@
         
         MATERIAL_NEEDS_TBN = {false},
         MATERIAL_HAS_CUSTOM_SURFACE_SHADING = {false},
+        MATERIAL_SKIPS_IBL = {false},
         MATERIAL_HAS_NORMAL = {false},
         MATERIAL_HAS_ANISOTROPY = {false},
         MATERIAL_HAS_AMBIENT_OCCLUSION = {false},
@@ -291,6 +295,7 @@
                 #include <codea/shaders/material_inputs.fs>
                 #include <codea/shaders/shading_parameters.fs>
 
+                #if !defined(RENDER_DEPTH_ONLY)
                 #if defined(HAS_SHADOWING)
                 #if defined(CODEA_EMULATE_SHADOW_COMPARE)
                 #define CODEA_SHADOW_SAMPLER sampler2DArray
@@ -330,11 +335,17 @@
                 #include <codea/shaders/shading_lit.fs>
                 #endif
 
+                #endif
+
                 #include "user_fragment_variables.glsl"
                 #include <codea/shaders/voxel_getters.fs>
                 #include "user_material.glsl"
 
+                #if defined(RENDER_DEPTH_ONLY)
+                #include <codea/shaders/depth_main.fs>
+                #else
                 #include <codea/shaders/main.fs>
+                #endif
             ]],
         },
         

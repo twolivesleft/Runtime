@@ -3,7 +3,9 @@
 
     options =
     {
-        USE_TEXTURE = {false, multicompile = true}
+        USE_TEXTURE = {false, multicompile = true},
+        -- Vertex colours are given in sRGB; in the gamma colour space they're drawn as given
+        COLORSPACE_GAMMA = {false, multicompile = true},
     },
 
     passes =
@@ -57,14 +59,19 @@
 
                 void main()
                 {
+                #ifdef COLORSPACE_GAMMA
+                    vec4 color = v_color0;
+                #else
+                    vec4 color = toLinear(v_color0);
+                #endif
                 #ifdef USE_TEXTURE
                     #if defined(SPIRV)
-                    FragColor = texture(sampler2D(s_texture, s_textureSampler), v_texcoord0) * toLinear(v_color0);
+                    FragColor = texture(sampler2D(s_texture, s_textureSampler), v_texcoord0) * color;
                     #else
-                    FragColor = texture(s_texture, v_texcoord0) * toLinear(v_color0);
+                    FragColor = texture(s_texture, v_texcoord0) * color;
                     #endif
                 #else
-                    FragColor = toLinear(v_color0);
+                    FragColor = color;
                 #endif
                 }
             ]],

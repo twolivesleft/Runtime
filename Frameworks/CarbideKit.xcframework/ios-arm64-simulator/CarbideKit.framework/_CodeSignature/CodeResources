@@ -10,7 +10,11 @@
 		</data>
 		<key>Assets/codea/camera.lua</key>
 		<data>
-		3iK8SB6rnT+j0QQZzgqp5ehZ1S0=
+		TZaNvMMztJWWpM41W0V9Vb8G55k=
+		</data>
+		<key>Assets/codea/color_lut.glsl</key>
+		<data>
+		wzRI5k9eUnKEqOVCmoYFKqP9pXY=
 		</data>
 		<key>Assets/codea/colorspace.glsl</key>
 		<data>
@@ -128,9 +132,13 @@
 		<data>
 		f1mRzSQLvIPxcgK9l1h6VtGS7H4=
 		</data>
+		<key>Assets/codea/shaders/GODOT-SHADOW-LICENSE.txt</key>
+		<data>
+		q9ocsEWCQ1BxynEXVPVAvBdwaq8=
+		</data>
 		<key>Assets/codea/shaders/ambient_occlusion.fs</key>
 		<data>
-		bCmdAIoON85fOlpBm8UAB5Obm+M=
+		Mt/yUJOkRQ8xzIwn0l26rLy+kDk=
 		</data>
 		<key>Assets/codea/shaders/bloom.fs</key>
 		<data>
@@ -174,7 +182,7 @@
 		</data>
 		<key>Assets/codea/shaders/depth_main.fs</key>
 		<data>
-		U1KZr5hJv288qjad0OmwJL0zPdQ=
+		1uN2Qma/FvFMsEH6FMyPfOne8y4=
 		</data>
 		<key>Assets/codea/shaders/depth_main.vs</key>
 		<data>
@@ -218,7 +226,7 @@
 		</data>
 		<key>Assets/codea/shaders/light_punctual.fs</key>
 		<data>
-		CakB1ZXJ48S+QtDV+UjrkTw1rpM=
+		/6XEPHUpk/D9zeXoZp08JzM2KMU=
 		</data>
 		<key>Assets/codea/shaders/main.fs</key>
 		<data>
@@ -258,7 +266,7 @@
 		</data>
 		<key>Assets/codea/shaders/shading_lit.fs</key>
 		<data>
-		QauvhYNqvixQliddaAuvXcvYiJg=
+		GkZwR/fhqp3nhlBCcgI0vEiYVjU=
 		</data>
 		<key>Assets/codea/shaders/shading_lit_custom.fs</key>
 		<data>
@@ -288,6 +296,10 @@
 		<data>
 		pWizGUnvEkER0KLjO/0Nn77Wonk=
 		</data>
+		<key>Assets/codea/shaders/spot_shadow.fs</key>
+		<data>
+		pcHt/3YzpX+05VOQIqxMJWo2mWA=
+		</data>
 		<key>Assets/codea/shaders/vignette.fs</key>
 		<data>
 		cUjTqwFtoHrX7/d9MZ8vUsiKCeY=
@@ -304,6 +316,10 @@
 		<data>
 		5VC0vYB3voqIAYbR/qpQpkVDgE4=
 		</data>
+		<key>Assets/codea/tonemap.glsl</key>
+		<data>
+		EUNHI9GFozBemPlidODOFHYpUYs=
+		</data>
 		<key>Assets/codea/touch.lua</key>
 		<data>
 		o9LYhkNMMc9My5mYmkfKJdnta7U=
@@ -315,6 +331,10 @@
 		<key>Assets/codea/utilities.glsl</key>
 		<data>
 		mLzH0m7Qkq6bnNJ8RpBnZ7G1ojI=
+		</data>
+		<key>Assets/runtime/cameraEffects/S4AO-LICENSE.txt</key>
+		<data>
+		q9ocsEWCQ1BxynEXVPVAvBdwaq8=
 		</data>
 		<key>Assets/runtime/cameraEffects/blur.fs</key>
 		<data>
@@ -330,11 +350,43 @@
 		</data>
 		<key>Assets/runtime/cameraEffects/finish.fs</key>
 		<data>
-		5BE5o8WEivJXmx3GJk+zna94QNs=
+		JoRqZFtXu4eJwJxEGBI2uGtd1EM=
 		</data>
 		<key>Assets/runtime/cameraEffects/fullscreen.vs</key>
 		<data>
 		gOl+s53j3JAmVZvxWckzM6KhmNY=
+		</data>
+		<key>Assets/runtime/cameraEffects/smaa/AreaTex.png</key>
+		<data>
+		AdIB5XG/fH6PFJQCQ/gGmcsH8wo=
+		</data>
+		<key>Assets/runtime/cameraEffects/smaa/GODOT_LICENSE.txt</key>
+		<data>
+		q9ocsEWCQ1BxynEXVPVAvBdwaq8=
+		</data>
+		<key>Assets/runtime/cameraEffects/smaa/LICENSE.txt</key>
+		<data>
+		rXplAdvMEPLBhco+5M6JxpeERfo=
+		</data>
+		<key>Assets/runtime/cameraEffects/smaa/SearchTex.png</key>
+		<data>
+		hh7+rJdXlcoHX4xYF08J3SuUcvk=
+		</data>
+		<key>Assets/runtime/cameraEffects/smaa/blend.fs</key>
+		<data>
+		LHBp3StSL+J+wG6K6l6Gaf3X3jI=
+		</data>
+		<key>Assets/runtime/cameraEffects/smaa/edges.fs</key>
+		<data>
+		se9/SN7GLKYqKvOa9oTTaSWVtco=
+		</data>
+		<key>Assets/runtime/cameraEffects/smaa/weights.fs</key>
+		<data>
+		+vF4hDOTcZewjCzMttJCDM8nlUI=
+		</data>
+		<key>Assets/runtime/cameraEffects/ssao.fs</key>
+		<data>
+		49J13XhgogzNXlhwxUre2/rjlG8=
 		</data>
 		<key>Assets/runtime/cameraEffects/tiltShift.fs</key>
 		<data>
@@ -366,7 +418,7 @@
 		</data>
 		<key>Assets/runtime/mesh/ShaderV2.lua</key>
 		<data>
-		9XXiLAOgtlfwu0jCugMpMQ0pVcU=
+		yKjTFlrY69dKDnzLAtTzEAY5m2Q=
 		</data>
 		<key>Assets/runtime/missing/ShaderV2.lua</key>
 		<data>
@@ -410,7 +462,7 @@
 		</data>
 		<key>Assets/runtime/surface/ShaderV2.lua</key>
 		<data>
-		baTGWB/LFhxIExpL+IpNlTXyDBQ=
+		56J1X42qi//P9MwAMXCs5+wEuVY=
 		</data>
 		<key>Assets/runtime/voxel/ShaderV2.lua</key>
 		<data>
@@ -438,7 +490,7 @@
 		</data>
 		<key>Headers/CarbideView.h</key>
 		<data>
-		ftrG1RfxX/vnTNtD/1guCyxnt9g=
+		JI4UAmkBKDHHGBCOsyrYH7mWbY8=
 		</data>
 		<key>Headers/Color.hpp</key>
 		<data>
@@ -809,7 +861,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EOc2Sxnz+Z1ouRFBpmDJ1nwrzSsNe9hfGSsi7DFoTus=
+			eNquZvk75bMPmkms+M3Iw+hrTGWTwleMw61en6LlOkM=
+			</data>
+		</dict>
+		<key>Assets/codea/color_lut.glsl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bI6CGI4JzenPIQVBnXK/InYn3feLpPQxCGLIEgIk+c0=
 			</data>
 		</dict>
 		<key>Assets/codea/colorspace.glsl</key>
@@ -1015,11 +1074,18 @@
 			T392JJbVjE5Ndg7nYGpBKQ5DyhXQKi5Lh7XWEP1eiC4=
 			</data>
 		</dict>
+		<key>Assets/codea/shaders/GODOT-SHADOW-LICENSE.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sENeOz5OVSOPBfSzBvMFJKGy4gFHgQ1DbqpVT6aFXIA=
+			</data>
+		</dict>
 		<key>Assets/codea/shaders/ambient_occlusion.fs</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			715CWJz2l2H+HMtyzAuBGYY3Q0i8A5/9UAaplhFdLo8=
+			bfpUTBnHO/ohwBiYjL96L3JFME3QVF++zxmNsvC0fYo=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/bloom.fs</key>
@@ -1096,7 +1162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tpk1qLlOsgtPalskOYTF05MYddhGBq9NQpY98D7y6Wc=
+			RVpnQF9pM3uPlE0k7WJPMWCvm4mfSYdCV6gcKqGC2LI=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/depth_main.vs</key>
@@ -1173,7 +1239,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RTaHB8dPVEdIFevU8FTYcVdC09QybZO/iB/iAhEKXV0=
+			fk8YfBa6Y7w6G9MBeFCAeuSkTFMvniamHGNKZy7y/oU=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/main.fs</key>
@@ -1243,7 +1309,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ytq2F6QNYsY5vSwiHVqa5hjm54EG90jn9yUqdLgaulM=
+			VqHqeMdVaNvZoYwUM4YUvXY8zvdTrArVG4T6voN+XqA=
 			</data>
 		</dict>
 		<key>Assets/codea/shaders/shading_lit_custom.fs</key>
@@ -1295,6 +1361,13 @@
 			Zpy1DsH3Z2dMxxcId8GUBoVFIC7fwFbnMz/sw3qzaLs=
 			</data>
 		</dict>
+		<key>Assets/codea/shaders/spot_shadow.fs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			caTnWbyI0H+CU4IQHM8mIRL5eRINql4WNBfFRQmpl+I=
+			</data>
+		</dict>
 		<key>Assets/codea/shaders/vignette.fs</key>
 		<dict>
 			<key>hash2</key>
@@ -1323,6 +1396,13 @@
 			9QZZHtmufvJDPZQF8NLp3xF6Oniik8aQnkuhNkNLAlQ=
 			</data>
 		</dict>
+		<key>Assets/codea/tonemap.glsl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			od5OYKmE+4CM+seadVQfetdp2qQTbQZVulMRCc1BGL8=
+			</data>
+		</dict>
 		<key>Assets/codea/touch.lua</key>
 		<dict>
 			<key>hash2</key>
@@ -1342,6 +1422,13 @@
 			<key>hash2</key>
 			<data>
 			nMH4lIPdcFRssA+j1u/B114wKkdpAUd71Z+gK7sN1HA=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/S4AO-LICENSE.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sENeOz5OVSOPBfSzBvMFJKGy4gFHgQ1DbqpVT6aFXIA=
 			</data>
 		</dict>
 		<key>Assets/runtime/cameraEffects/blur.fs</key>
@@ -1369,7 +1456,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpyjdTKRMlVv3k+8dYIXjcQpVyl2IEjs118gCj9n/H4=
+			EEkgBsINW077RUq3qyuM/72HO39sTTpe5figMTK20Qs=
 			</data>
 		</dict>
 		<key>Assets/runtime/cameraEffects/fullscreen.vs</key>
@@ -1377,6 +1464,62 @@
 			<key>hash2</key>
 			<data>
 			shrEmDh3jcCVFELoiymkp93RAMXu8NUfGsHMhuCMdeM=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/smaa/AreaTex.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nOI9VG2XDdMGBB+vz9yMORnlRAJwO4lynHCdRbaIUsE=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/smaa/GODOT_LICENSE.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sENeOz5OVSOPBfSzBvMFJKGy4gFHgQ1DbqpVT6aFXIA=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/smaa/LICENSE.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YIjauyEmcp3bI1Wxec4FmOfCRkBmd7MDlfIiIGldaf4=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/smaa/SearchTex.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oX9lOlq+h373yrLM2vKbTB6P4Dr66SzTbXQXXvgCTOE=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/smaa/blend.fs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0BNeQy42XohNF6Yt2MjT/3xu8W9jrzag5XQVtBojYGs=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/smaa/edges.fs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TT62YUVVJwQ2h01orEuZS75dYdkHEYAw/HQgw1+I3Bc=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/smaa/weights.fs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FXRVLuWLKdAPuBWzd9yJovQ+rpLMcFpJ5B9ie9VfYtE=
+			</data>
+		</dict>
+		<key>Assets/runtime/cameraEffects/ssao.fs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RSVp2DYne+HcroD0CWgjOJhxAYMnYoAeBaaTbSCYvns=
 			</data>
 		</dict>
 		<key>Assets/runtime/cameraEffects/tiltShift.fs</key>
@@ -1432,7 +1575,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eDBnuTWGQ2vNb4GcOk5VPWEgkZmrhBwYOSrYHgRNVUk=
+			HNUlfkNYHAkOBb5UMdK0qBNQh4YPnOwarvJB+WeHLxc=
 			</data>
 		</dict>
 		<key>Assets/runtime/missing/ShaderV2.lua</key>
@@ -1509,7 +1652,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rrCyQTNIbGwZHwg9tT0Qm4RP5sfWXzNEyy/WNeP+PwA=
+			cvHOeVsUioevGoXMMaZDDSE+2bzaLMfq6dCN6KpMISc=
 			</data>
 		</dict>
 		<key>Assets/runtime/voxel/ShaderV2.lua</key>
@@ -1558,7 +1701,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zv5c7NgUcVV23EGVKU4mOWzwya8pN5rU/hWjmAv2650=
+			FvO73cVSslWOknjY3Gj5x50AR71wvowbueym6yBAnII=
 			</data>
 		</dict>
 		<key>Headers/Color.hpp</key>
